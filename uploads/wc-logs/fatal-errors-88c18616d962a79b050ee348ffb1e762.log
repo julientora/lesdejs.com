@@ -1,0 +1,70 @@
+2018-04-13T23:13:55+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on unknown in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/header.php:29
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(688): require_once()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(647): load_template('/Users/juliento...', true)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/general-template.php(45): locate_template(Array, true)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php(23): get_header('shop')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento
+
+2018-04-13T23:15:47+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on unknown in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/header.php:29
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(688): require_once()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(647): load_template('/Users/juliento...', true)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/general-template.php(45): locate_template(Array, true)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php(23): get_header('shop')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento
+
+2018-04-13T23:30:19+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php:69
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#3 {main}
+  thrown
+
+2018-04-13T23:32:02+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on boolean in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php:68
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#3 {main}
+  thrown
+
+2018-04-13T23:35:21+00:00 CRITICAL Uncaught Error: Call to undefined function get__description() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php:66
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#3 {main}
+  thrown
+
+2018-04-13T23:35:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_description() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php:66
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#3 {main}
+  thrown
+
+2018-04-13T23:37:37+00:00 CRITICAL Uncaught Error: Call to a member function get_description() on boolean in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/woocommerce/archive-product.php:67
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#3 {main}
+  thrown
+
+2018-04-14T00:06:08+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::has_description() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:131
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(298): show_description('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/content-product.php(68): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(690): require('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(180): load_template('/Users/juliento...', false)
+#6 /Users/julientora/Google Dr
+

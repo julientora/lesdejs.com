@@ -1,0 +1,61 @@
+@titles : 'Oranienbaum', serif;
+@textes_light : 'Roboto';
+
+html{
+	height: 100%;
+	body{
+		margin: 0;
+		height: 100%;
+		font-family: @textes_light;
+		font-weight: 300;
+		font-size: 11pt;
+		h1, h2, h3{
+			font-family: @titles;
+		}
+		a{
+			color: grey;
+			transition: .5s;
+			text-decoration: none;
+			&:hover{
+				background-color: grey;
+				color: white;
+			}
+		}
+		.menu-description{
+			display: none;
+		}
+		.products{
+			margin: 0;
+			padding: 0;
+			.product{
+				margin: 0;
+				padding: 0;
+				.product-image{
+					background-size: cover !important;
+					background-position: center !important;
+				}
+				.bouton-ingredients{
+					cursor: pointer;
+				}
+			}
+		}
+		.page-wrapper{
+			.photos{
+				background-size: cover !important;
+				background-position: center top !important;
+			}
+		}
+	}
+}
+@media (min-width: 568px){
+	html{
+		body{
+		}
+	}
+}
+@media (min-width: 1024px){
+	html{
+		body{
+		}
+	}
+}
