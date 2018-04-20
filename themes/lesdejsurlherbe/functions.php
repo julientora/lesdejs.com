@@ -1,7 +1,7 @@
 <?php 
 
 
-// 😘
+// 👌
 
 //Ensure the $wp_rewrite global is loaded
 global $wp_rewrite;
