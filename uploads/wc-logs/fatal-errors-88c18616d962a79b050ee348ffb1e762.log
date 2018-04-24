@@ -68,3 +68,113 @@ Stack trace:
 #5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(180): load_template('/Users/juliento...', false)
 #6 /Users/julientora/Google Dr
 
+2018-04-20T15:18:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:205
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /
+
+2018-04-20T15:26:00+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_title() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:205
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template(
+
+2018-04-20T15:29:24+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /
+
+2018-04-20T15:29:37+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php
+
+2018-04-20T15:37:07+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_
+
+2018-04-20T15:37:15+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_
+
+2018-04-20T15:37:32+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_post_thumbnail_url() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_
+
+2018-04-20T15:42:02+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_
+
+2018-04-20T15:44:30+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:205
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(146): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_
+
+2018-04-20T15:49:56+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/c
+
+2018-04-20T15:51:37+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart_button() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template(
+
+2018-04-20T16:10:20+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/c
+
