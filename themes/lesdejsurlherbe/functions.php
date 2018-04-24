@@ -126,13 +126,13 @@ add_action( 'template_redirect', 'remove_sidebar_in_wcmp_vendor_shop', 999 );
 function show_description() {
     global $product;
     $description = $product->get_description();
-        echo '<div class="menu-description">' . $description . '</div></br>';
+        echo '<div class="menu-description">' . $description . '</div></div>';
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'show_description', 9 );
 
 // Put an "ingredients" button for each photo
 function bouton_ingredients() {
-        echo '<div class="bouton-ingredients">MENU</div></br>';
+        echo '<div class="detail-menu"><div class="bouton-ingredients">MENU</div>';
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'bouton_ingredients', 8 );
 

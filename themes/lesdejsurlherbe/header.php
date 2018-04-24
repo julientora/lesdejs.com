@@ -11,7 +11,7 @@
 <?php else: ?>
     <link rel="stylesheet" type="text/css" href="<?php get_asset("css/main.css", true, true); ?>">
 <?php endif; ?>
-	<link href="https://fonts.googleapis.com/css?family=Oranienbaum|Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Franklin:400,500" rel="stylesheet">
 	
 	
 	<!--[if lt IE 9]>

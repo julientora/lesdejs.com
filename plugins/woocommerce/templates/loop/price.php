@@ -24,5 +24,7 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price"><?php echo $price_html; ?></span>
+	<div class="cta-order">
+        <div class="anti-rotate">
+            <span class="price"><?php echo $price_html; ?></span>
 <?php endif; ?>
