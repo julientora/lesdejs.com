@@ -1,17 +1,70 @@
-@titles : 'Oranienbaum', serif;
-@textes_light : 'Roboto';
+@titles : 'Crimson Text', serif;
+@textes_light : 'Libre Franklin', sans-serif;
+@brun : #bda27e;
+@vert : #566d64;
+@black : #000;
+
+
+.medium{
+    font-weight: 500;
+}
+.flex{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+}
+
+.flex-direction (@direction){
+    flex-direction: (@direction);
+    -webkit-flex-direction: (@direction);
+    -moz-flex-direction: (@direction);
+    -o-flex-direction: (@direction);
+}
+
+.justify-content (@justify){
+    justify-content: (@justify);
+    -webkit-justify-content: (@justify);
+    -moz-justify-content: (@justify);
+    -o-justify-content: (@justify);
+}
+.align-items (@align){
+    align-items: (@align);
+    -webkit-align-items: (@align);
+    -moz-align-items: (@align);
+    -o-align-items: (@align);
+}
 
 html{
 	height: 100%;
+    
 	body{
 		margin: 0;
 		height: 100%;
 		font-family: @textes_light;
 		font-weight: 300;
 		font-size: 11pt;
+        width: 100%;
+        overflow-x: hidden;
+        background: @brun;
+        
 		h1, h2, h3{
 			font-family: @titles;
 		}
+        h3{
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            
+            a{
+                color: @black;
+                
+                &:hover{
+                    background: transparent;
+                    color: @black;
+                }
+            }
+        }
 		a{
 			color: grey;
 			transition: .5s;
@@ -21,6 +74,9 @@ html{
 				color: white;
 			}
 		}
+        img{
+            width: 100%;
+        }
 		.menu-description{
 			display: none;
 		}
@@ -32,7 +88,8 @@ html{
 				padding: 0;
 				.product-image{
 					background-size: cover !important;
-					background-position: center !important;
+					background-position-x: 50% !important;
+                    background-position-y: 25% !important;
 				}
 				.bouton-ingredients{
 					cursor: pointer;
@@ -58,4 +115,73 @@ html{
 		body{
 		}
 	}
+}
+/* Header page */
+header{
+    width: 100%;
+ 
+    .menu-menu-principal-container{
+        width: 100%;
+        display: block;
+        position: fixed;
+        top: 0;
+        background: @brun;
+        z-index: 20;
+
+        
+        ul{
+            padding-left:0;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 1200px;
+            width: 100%;           
+
+            li{
+                display: inline-block;
+                text-transform: uppercase;
+                border-right: 1px solid @black;
+                padding: 0 20px;
+                
+                &:last-child{
+                    border: 0;
+                    padding-right: 0;
+                }
+                
+                a{
+                    color: @black;
+                    
+                    &:hover{
+                        background: none;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    
+    #logo{
+        max-width: 800px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 80px 0 30px 0;
+    }
+}
+
+/* Liste Product */
+.product{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+    .product-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%!important;
+        height: 100%!important;
+        z-index: -1;
+    }
+
 }
