@@ -178,3 +178,12 @@ Stack trace:
 #4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
 #5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/c
 
+2018-04-25T11:37:11+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:206
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/c
+
