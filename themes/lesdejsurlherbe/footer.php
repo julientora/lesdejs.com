@@ -3,7 +3,7 @@
 
 
 <script type="text/javascript" src="<?php get_asset("js/jquery.parallax-1.1.3.js"); ?>"></script>
-<script type="text/javascript" src="<?php get_asset("js/script.js"); ?>"></script>
+<!-- <script type="text/javascript" src="<?php get_asset("js/script.js"); ?>"></script> -->
 <script>
 (function ($){
 	$(document).ready(function() {
@@ -20,11 +20,20 @@
 	(function ($){
 		$(document).ready(function(){	
 		    	$('.bloc_photo').parallax("center", .2, 0, true);
-            
-                $('.bouton-ingredients').click(function() {
-                    $('$this').addClass('active');
-                }); 
-            
+  
+// 	Petit cours de jQuery --> .toggleClass() pour ajouter/virer une classe
+//	.toggle() pour faire un display:none ou :block. 
+//	Cela permet d'éviter les répétitions du genre : addClass/removeClass, puisqu'à chaque événement, la classe ou le display sont changés. 
+//	Pour qu'un élément ayant une class commune avec d'autres soit ciblé, il faut appeler $(this) dans la fonction. Pour rappel, tu avais 
+//	écrit $('$this'), ce qui n'est pas correct. 
+				//Voici donc une fonction qui "fonctionne" : 
+            	$('.bouton-ingredients').click(function() {
+               		$(this).toggleClass('active');
+               		$(this).next().slideToggle(500, 'linear');
+            	}); 
+            // 	Je te laisse faire apparaître le menu comme tu préfères
+
+            // Ton code. 
                 $('.burger-menu').click(function() {
                     $('.responsive-menu').addClass('active');
                 }); 
