@@ -22,7 +22,14 @@
 		    	$('.bloc_photo').parallax("center", .2, 0, true);
             
                 $('.bouton-ingredients').click(function() {
-                    $('.bouton-ingredients').addClass('active');
+                    $('$this').addClass('active');
+                }); 
+            
+                $('.burger-menu').click(function() {
+                    $('.responsive-menu').addClass('active');
+                }); 
+                $('#close').click(function() {
+                    $('.responsive-menu').removeClass('active');
                 }); 
 	    })
 	}(jQuery));	    	

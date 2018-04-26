@@ -23,6 +23,15 @@
 <body <?php body_class(); ?>>
 <header>
 	<?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
+    <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+	<div class="responsive-menu">
+        <button id="close"></button>
+        <?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
+    </div>
 	<?php
 	$logo_query = new WP_Query( array ('pagename' => 'logo') );
 	if ( $logo_query->have_posts() ) {
