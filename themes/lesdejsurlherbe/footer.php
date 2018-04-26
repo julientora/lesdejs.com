@@ -24,6 +24,13 @@
                 $('.bouton-ingredients').click(function() {
                     $('$this').addClass('active');
                 }); 
+            
+                $('.burger-menu').click(function() {
+                    $('.responsive-menu').addClass('active');
+                }); 
+                $('#close').click(function() {
+                    $('.responsive-menu').removeClass('active');
+                }); 
 	    })
 	}(jQuery));	    	
 </script>
