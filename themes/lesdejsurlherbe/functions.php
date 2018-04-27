@@ -62,7 +62,8 @@ add_action( 'init', 'register_my_menu' );
 
 // register menus
 register_nav_menus( array(
-	'menu_principal' => 'Menu principal'
+	'menu_principal' => 'Menu principal';
+	'menu_footer' => 'Menu footer';
 ) );
 
 
@@ -192,20 +193,20 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     } 
     
 }
-//add_drinks_products_to_cart
-//add a reminder for drinks
-//add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
+// add_drinks_products_to_cart
+// add a reminder for drinks
+add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
 
-//function add_drinks_products_to_cart() {
-//	$args = array(
-//    'category' => array( 'boissons' ),
-//	);
-//	$products = wc_get_products( $args );
-//	foreach ($products as $indiv_product) {
-//		echo 'Avez-vous pensé aux boissons ?';
-//		echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
-//		echo '<div class="product-title">'.$indiv_product->get_title().'</div';
-//		woocommerce_quantity_input();
-//		woocommerce_add_to_cart();
-//	}
-//}
+function add_drinks_products_to_cart() {
+	$args = array(
+   'category' => array( 'boissons' ),
+	);
+	$products = wc_get_products( $args );
+	foreach ($products as $indiv_product) {
+		echo 'Avez-vous pensé aux boissons ?';
+		echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
+		echo '<div class="product-title">'.$indiv_product->get_title().'</div';
+		woocommerce_quantity_input();
+		// woocommerce_add_to_cart();
+	}
+}
