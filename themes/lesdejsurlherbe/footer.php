@@ -1,9 +1,13 @@
 
 <?php wp_footer(); ?>
+<footer>
+    <h4>Commandez avant 12h, c’est livré entre 11h et 15h.</h4>
+    <h5>Les déjeuners sur l’herbe . Lourmarin</h5>
+    <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); ?>
 
+</footer>
 
 <script type="text/javascript" src="<?php get_asset("js/jquery.parallax-1.1.3.js"); ?>"></script>
-$
 <script>
 (function ($){
 	$(document).ready(function() {
