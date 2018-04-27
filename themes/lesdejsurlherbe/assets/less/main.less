@@ -1021,6 +1021,7 @@ html{
                             width: 100%;
                             text-align: center;
                             margin-bottom: 30px;
+                            padding-right: 0;
                         }
                         .texte-droite{
                             width: 100%;
@@ -1139,6 +1140,131 @@ html{
                             width: 100%;
                             text-align: center;
                             margin-bottom: 30px;
+                            padding-right: 0;
+                        }
+                        .texte-droite{
+                            width: 100%;
+                        }
+                    }
+                }
+                .livraison{
+                    &.photos{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                #photo-livraison{
+                    height: 300px!important;
+                    background-position-y: 55%!important;
+                }
+            }
+            footer{
+                h4{
+                    max-width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .menu-menu-footer-container{
+                    ul{
+                        li{
+                            display: block;
+                            border-right: none;
+                            padding: 10px;
+                            
+                            &:after{
+                                content: "";
+                                width: 20px;
+                                height: 1px;
+                                background: @black;
+                                display: block;
+                                margin: 10px auto;
+                            }
+
+                            &:last-child{
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+                &:after{
+                    background-size: 100%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:380px){
+    .container-1200{
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    html{
+        body{
+            h3, .h3{
+                font-size: 20px;
+            } 
+            .products{
+                .product{
+                    height: 250px;
+                    .detail-menu{
+                        order: 2;
+                        .transform(translate(0, 60px));
+                        
+                        .menu-description{
+                            bottom: -13px;
+                            }
+                        .active{
+                            .transform(translateY(-100px));
+                        }
+                    }
+                    .cta-order{
+                        .anti-rotate{                    
+                            .price{
+                                font-size: 15px;
+                            }
+                            .button{
+                                font-size: 15px;
+                                &:after{
+                                    border-left: 10px solid transparent;
+                                    border-right: 10px solid transparent;
+                                    border-bottom: 20px solid @white;
+                                    top: -6px;
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                    &.product_cat-dessert{
+                        width: 100%;
+                        .cta-order{
+                            position: relative;
+                            transform: none;
+                            left: 0;
+                            order: 3;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+            .page-wrapper{
+                .photos{
+                    height: 320px!important;
+                    .presentation{
+                        max-width: 600px;
+                    }
+                }
+                .cadre-bas{
+                    .container-1200{
+                        .flex-wrap;
+                        
+                        .titre-gauche{
+                            width: 100%;
+                            text-align: center;
+                            margin-bottom: 30px;
+                            font-size: 25px;
                         }
                         .texte-droite{
                             width: 100%;
