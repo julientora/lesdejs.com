@@ -42,8 +42,8 @@ $
                 }); 
 	    })
 	    $(function() {
-	    	$(".quantity").prepend('<div class="inc bouton">+</div>');
-	    	$(".quantity").append('<div class="dec bouton">-</div>');
+	    	$(".quantity").append('<div class="inc bouton">+</div>');
+	    	$(".quantity").prepend('<div class="dec bouton">-</div>');
 			$(".bouton").click(function(){
 				var $bouton = $(this);
 				var oldValue = $bouton.parent().find("input").val();
