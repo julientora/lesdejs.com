@@ -206,3 +206,773 @@ Stack trace:
 #4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
 #5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/c
 
+2018-04-27T08:58:35+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:00:23+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:00:50+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:03:40+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:09:18+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:09:53+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:11:05+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:11:38+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:11:53+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:12:16+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:13:18+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:14:16+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:15:03+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:15:37+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:16:01+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:16:32+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:16:45+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:17:57+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:18:40+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:19:24+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:20:22+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:20:51+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:21:03+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:21:25+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:21:43+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:22:36+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:23:21+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:30:15+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:30:42+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:31:56+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:32:46+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:33:33+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:33:40+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:34:13+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:34:18+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:34:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:34:52+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:34:55+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:35:01+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:36:13+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:36:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:37:17+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:37:55+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:38:09+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:42:23+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:43:14+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:43:37+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:44:11+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:44:28+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:45:33+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:45:59+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:47:40+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:47:53+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:48:03+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:49:04+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:49:57+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:50:08+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:50:22+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:50:39+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:50:54+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:51:03+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:51:47+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:52:02+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:52:17+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:52:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:53:32+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:54:01+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:54:19+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:55:55+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:57:07+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:57:11+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:57:21+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:57:24+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:57:43+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:58:12+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:58:54+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+
+2018-04-27T09:59:23+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_add_to_cart() in /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:209
+Stack trace:
+#0 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): add_drinks_products_to_cart('')
+#1 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/cart/cart.php(149): do_action('woocommerce_aft...')
+#4 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/cart.php')
+#6 /Applications/MAMP/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerc
+

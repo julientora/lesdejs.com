@@ -120,6 +120,14 @@ html{
 				color: white;
 			}
 		}
+        button{
+            border: none;
+            .transition;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
         img{
             width: 100%;
         }
@@ -499,6 +507,119 @@ html{
                 background-size: cover!important;
                 background-repeat: no-repeat;
                 background-position: top center !important
+            }
+            
+            .woocommerce{
+                .product-thumbnail, .thumb{
+                    display: none;
+                }
+                .woocommerce-message{
+                    text-align: center;
+                    border: 1px solid @vert;
+                    font-size: 22px;
+                    padding: 10px;
+                    width: 100%;
+                    max-width: 500px;
+                    display: block;
+                    margin: 0 auto 30px;
+                    color: @vert;
+                    font-family: @textes_light;
+                }
+                table{
+                    width: 100%;
+                    .container-1200;
+                    margin: 0 auto;
+                    
+                    .product-name{
+                        text-align: left;
+                    }
+                    .product-price, .product-quantity, .product-subtotal{
+                        text-align: right;
+                    }
+                    thead{
+                        font-family: @textes_light;;
+                        .h3;
+                        color: @vert;
+                        width: 100%;
+                        
+                    }
+                    tbody{
+                        font-family: @titles;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                        width: 100%;
+                        
+                        tr{
+                            td{
+                                border-bottom: 1px solid @black;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                margin-bottom: 20px;
+                                
+                                &.product-quantity{
+                                    label{
+                                        display: none;
+                                    }
+                                    .quantity{
+                                        &:before, &:after{
+                                            height: 30px;
+                                            width: 30px;
+                                            color: @white;
+                                            background: @vert;
+                                            font-size: 22px;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            box-sizing: border-box;
+                                            .medium;
+                                            .border-radius(100px);
+                                            .transition;
+                                            text-align: center;
+                                        }
+                                        &:before{
+                                            content: "-";
+                                        }
+                                        &:after{
+                                            content: "+";
+                                        }
+                                        &:before:hover{
+                                                background: @white;
+                                                color: @vert;
+                                                cursor: pointer;
+                                        }
+                                    }
+                                    input[type=number]{
+                                        background: none;
+                                        border: none;
+                                        text-align: center;
+                                        -moz-appearance:textfield;
+                                    }
+                                    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+                                            -webkit-appearance: none;  
+                                            margin: 0; 
+                                    }
+                                }
+                                .button{
+                                    background: @vert;
+                                    padding: 10px 20px;
+                                    color: @white;
+                                    border: none;
+                                    font-size: 22px;
+                                    
+                                    &:hover{
+                                        background: @white;
+                                        color: @vert;
+                                    }
+                                }
+                            }
+                            
+                            &:last-child{
+                                td{
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 		}
 	}
