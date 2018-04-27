@@ -3,7 +3,7 @@
 
 
 <script type="text/javascript" src="<?php get_asset("js/jquery.parallax-1.1.3.js"); ?>"></script>
-<!-- <script type="text/javascript" src="<?php get_asset("js/script.js"); ?>"></script> -->
+$
 <script>
 (function ($){
 	$(document).ready(function() {
@@ -41,6 +41,25 @@
                     $('.responsive-menu').removeClass('active');
                 }); 
 	    })
+	    $(function() {
+	    	$(".quantity").prepend('<div class="inc bouton">+</div>');
+	    	$(".quantity").append('<div class="dec bouton">-</div>');
+			$(".bouton").click(function(){
+				var $bouton = $(this);
+				var oldValue = $bouton.parent().find("input").val();
+				if ($bouton.text() == "+") {
+					var newVal = parseFloat(oldValue) + 1;
+				} else {
+				   // n'allons pas en-dessous de zéro...
+					if (oldValue > 0) {
+				      var newVal = parseFloat(oldValue) - 1;
+				    } else {
+				      newVal = 0;
+				    }
+				  }
+				$bouton.parent().find("input").val(newVal);
+			});
+		});
 	}(jQuery));	    	
 </script>
 </body>
