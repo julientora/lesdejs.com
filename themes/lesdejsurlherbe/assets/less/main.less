@@ -105,6 +105,10 @@ html{
         background: @brun;
         max-width: 1800px;
         
+        &.home .page-wrapper{
+            max-width: 100%;
+        }
+        
 		h1, h2, h3{
 			font-family: @titles;
 		}
@@ -446,6 +450,9 @@ html{
 			}
 		}
 		.page-wrapper{
+            .container-1200;
+            .block;
+            
 			.photos{
 				background-size: cover !important;
 				background-position: center top !important;
@@ -746,18 +753,13 @@ html{
             }
         }
         &.single-product{
-            .page-wrapper{
-                .container-1200;
-                .block;
-
-                .product{
-                    img{
-                        height: 100%;
-                    }
-                    h1{
-                        .h3;
-                        text-align: center;
-                    }
+            .product{
+                img{
+                    height: 100%;
+                }
+                h1{
+                    .h3;
+                    text-align: center;
                 }
             }
         }
@@ -826,7 +828,7 @@ html{
             }
             footer{
                 &:after{
-                    background-size: 100%;
+                    background-size: cover;
                     height: 400px;
                 }
             }
@@ -909,6 +911,11 @@ html{
                 #photo-livraison{
                     height: 500px!important;
                 }
+                table{
+                    thead{
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }
@@ -988,6 +995,34 @@ html{
                     height: 300px!important;
                     background-position-y: 55%!important;
                 }
+                table{
+                    thead{
+                        font-size: 20px;
+                    }
+                    tbody{
+                        font-size: 18px;
+                        tr{
+                            td{
+                                &:first-child{
+                                    padding-left: 0;
+                                }
+                            }
+                            .product-quantity{
+                                input{
+                                    max-width: 55px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            table{
+                thead{
+                    font-size: 20px;
+                }
+                tbody{
+                    font-size: 18px;
+                }
             }
             footer{
                 h4{
@@ -1018,7 +1053,7 @@ html{
                     }
                 }
                 &:after{
-                    background-size: 100%;
+                    background-size: cover;
                     height: 200px;
                 }
             }
@@ -1190,7 +1225,35 @@ html{
                     height: 300px!important;
                     background-position-y: 55%!important;
                 }
+                table{
+                    thead{
+                        font-size: 15px;
+                    }
+                    tbody{
+                        font-size: 15px;
+                        tr{
+                            td{
+                                &:first-child{
+                                    padding-left: 0;
+                                }
+                            }
+                            .product-quantity{
+                                input{
+                                    max-width: 45px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
+                table{
+                    thead{
+                        font-size: 15px;
+                    }
+                    tbody{
+                        font-size: 15px;
+                    }
+                }
             footer{
                 h4{
                     max-width: 500px;
@@ -1220,7 +1283,7 @@ html{
                     }
                 }
                 &:after{
-                    background-size: 100%;
+                    background-size: cover;
                     height: 200px;
                 }
             }
@@ -1314,6 +1377,11 @@ html{
                     height: 300px!important;
                     background-position-y: 55%!important;
                 }
+                table{
+                    .product-price{
+                        display: none;
+                    }
+                }
             }
             footer{
                 h4{
@@ -1344,7 +1412,7 @@ html{
                     }
                 }
                 &:after{
-                    background-size: 100%;
+                    background-size: cover;
                     height: 200px;
                 }
             }
