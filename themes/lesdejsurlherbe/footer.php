@@ -2,7 +2,7 @@
 <?php wp_footer(); ?>
 <footer>
     <h4>Commandez avant 12h, c’est livré entre 11h et 15h.</h4>
-    <h5>Les déjeuners sur l’herbe . Lourmarin</h5>
+    <h5>Les dejeuners sur l’herbe . Lourmarin</h5>
     <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); ?>
 
 </footer>

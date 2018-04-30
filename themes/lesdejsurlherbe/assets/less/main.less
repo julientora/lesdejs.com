@@ -81,6 +81,14 @@
 .hover{
     background: @red;
 }
+.block{
+    margin: 0 auto;
+    display: block;
+    
+    p{
+        line-height: 1.5;
+    }
+}
 /* CSS BASE */
 html{
 	height: 100%;
@@ -426,6 +434,14 @@ html{
                         left: ~'calc(50% - 100px)';
                         .transform(rotateZ(45deg) translate(0,0));
                     }
+                }
+                &.product_cat-boissons{
+                    .cta-order{
+                        display: none;
+                    }
+                }
+                &.product_cat-vins, &.product_cat-eaux{
+                    display: none;
                 }
 			}
 		}
