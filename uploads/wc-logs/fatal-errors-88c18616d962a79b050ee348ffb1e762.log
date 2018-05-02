@@ -1050,3 +1050,23 @@ Stack trace:
 #4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
 #5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php(87): wc_get_template('cart/ca
 
+2018-05-02T16:16:24+00:00 CRITICAL Uncaught Error: Call to a member function get_short_description() on unknown in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:145
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-settings.php(426): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-config.php(112): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-load.php(37): require_once('/Users/juliento...')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(13): require_once('/Users/juliento...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#5 {main}
+  thrown
+
+2018-05-02T16:18:26+00:00 CRITICAL Uncaught Error: Call to a member function get_short_description() on unknown in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:145
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-settings.php(426): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-config.php(112): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-load.php(37): require_once('/Users/juliento...')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(13): require_once('/Users/juliento...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#5 {main}
+  thrown
+

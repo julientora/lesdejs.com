@@ -134,6 +134,18 @@ function show_description() {
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'show_description', 9 );
 
+// Get short description
+function woocommerce_after_shop_loop_item_title_short_description() {
+	global $product;
+	if ( ! $product->get_short_description() ) return;
+	?>
+	<div class="short-description">
+		<?php echo apply_filters( 'woocommerce_short_description', $product->get_short_description() ) ?>
+	</div>
+	<?php
+}
+add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_after_shop_loop_item_title_short_description', 5);
+
 // Put an "ingredients" button for each photo
 function bouton_ingredients() {
         echo '<div class="detail-menu"><div class="bouton-ingredients">MENU</div>';
@@ -188,7 +200,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     // add the product thumbnail and title back in with custom structure
     add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 10 );
     function sls_woocommerce_template_loop_product_thumbnail() {
-       echo '<div class="product-image" style="background:url('.get_the_post_thumbnail_url().')"></div>';
+       echo '<div class="product-image" data-parallax="scroll" data-image-src="'.get_the_post_thumbnail_url().'" style="background:transparent" data-speed="0.9"></div>';
        echo '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
     } 
     
@@ -199,14 +211,14 @@ add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
 
 function add_drinks_products_to_cart() {
 	$args = array(
-   'category' => array( 'boissons' ),
+   		'category' => array( 'boissons' ),
 	);
 	$products = wc_get_products( $args );
-	echo '<p>Avez-vous pensé aux boissons ?</p>';
+	echo '<p>Nos boissons : </p>';
 	foreach ($products as $indiv_product) {
 		//echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
-		echo '<div class="product-title">'.$indiv_product->get_title().'</div';
-		echo '<div class="product-price">'.$indiv_product->get_price().'</div';
+		echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
+		echo '<div class="product-price">'.$indiv_product->get_price().'€</div>';
 		woocommerce_quantity_input();
 		
 		echo apply_filters( 'woocommerce_loop_add_to_cart_link',
@@ -220,3 +232,4 @@ function add_drinks_products_to_cart() {
 $indiv_product, $args );
 	}
 }
+

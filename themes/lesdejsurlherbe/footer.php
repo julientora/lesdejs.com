@@ -7,7 +7,7 @@
 
 </footer>
 
-<script type="text/javascript" src="<?php get_asset("js/jquery.parallax-1.1.3.js"); ?>"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <script>
 (function ($){
 	$(document).ready(function() {
@@ -23,7 +23,7 @@
 <script>	
 	(function ($){
 		$(document).ready(function(){	
-		    	$('.bloc_photo').parallax("center", .2, 0, true);
+		    	//$('.product-image').parallax(0.2, 0, true);
   
 // 	Petit cours de jQuery --> .toggleClass() pour ajouter/virer une classe
 //	.toggle() pour faire un display:none ou :block. 

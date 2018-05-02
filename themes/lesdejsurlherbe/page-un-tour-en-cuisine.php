@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="page-wrapper">
-	<div class="portrait photos" style="background:url(<?php the_field("portraits");?>)">
+	<div class="portrait photos" data-parallax="scroll" data-image-src="<?php the_field("portraits");?>" data-position="center top" data-speed="0.9">
         <div class="presentation">
             <h3 class="titre noms1"><?php the_field("nom_1")?></h3>
             <h3 class="titre noms2"><?php the_field("nom_2")?></h3>
@@ -15,7 +15,7 @@
             <div class="texte-droite"><?php the_field("texte_droite");?></div>
         </div>
     </div>
-	<div class="producteurs photos" id="background-producteur" style="background:url(<?php the_field("photo_produits");?>)">
+	<div class="producteurs photos" id="background-producteur" data-parallax="scroll" data-position="center" data-speed="0.6" data-image-src="<?php the_field("photo_produits");?>">
 		<h2 class="titre nos-producteurs h3"><?php the_field("titre")?></h2>
 	</div>
     <div class="cadre-bas">
