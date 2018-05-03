@@ -222,7 +222,7 @@ function add_drinks_products_to_cart() {
 		woocommerce_quantity_input();
 		
 		echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-		sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div></div>',
+		sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
 		esc_url( $indiv_product->add_to_cart_url() ),
 		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
@@ -231,5 +231,6 @@ function add_drinks_products_to_cart() {
 	),
 $indiv_product, $args );
 	}
+    echo '</div>';
 }
 

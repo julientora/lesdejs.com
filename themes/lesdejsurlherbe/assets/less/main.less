@@ -769,6 +769,48 @@ html {
                     text-align: left;
                 }
             }
+            div{
+                font-family: @titles;
+                text-transform: uppercase;
+                font-size: 22px;
+                
+                    &.quantity {
+                        label {
+                            display: none;
+                        }
+                        .bouton {
+                            height: 30px;
+                            width: 30px;
+                            color: @white;
+                            background: @vert;
+                            font-size: 22px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            box-sizing: border-box;
+                            .medium;
+                            .border-radius(100px);
+                            .transition;
+                            text-align: center;
+                            line-height: 1.2;
+                        }
+                        .bouton:hover {
+                            background: @white;
+                            color: @vert;
+                            cursor: pointer;
+                        }
+                        input[type=number] {
+                            background: none;
+                            border: none;
+                            text-align: center;
+                            -moz-appearance: textfield;
+                        }
+                        input[type=number]::-webkit-inner-spin-button,
+                        input[type=number]::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+            }
         }
         footer {
             text-align: center;
