@@ -31,10 +31,10 @@
 //	Pour qu'un élément ayant une class commune avec d'autres soit ciblé, il faut appeler $(this) dans la fonction. Pour rappel, tu avais 
 //	écrit $('$this'), ce qui n'est pas correct. 
 				//Voici donc une fonction qui "fonctionne" : 
-            	$('.bouton-ingredients').click(function() {
-               		$(this).toggleClass('active');
-               		$(this).next().slideToggle(500, 'linear');
-            	}); 
+//            	$('.bouton-ingredients').click(function() {
+//               		$(this).toggleClass('active');
+//               		$(this).next().slideToggle(500, 'linear');
+//            	}); 
             // 	Je te laisse faire apparaître le menu comme tu préfères
 
             // Ton code. 

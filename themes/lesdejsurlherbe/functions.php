@@ -214,7 +214,7 @@ function add_drinks_products_to_cart() {
    		'category' => array( 'boissons' ),
 	);
 	$products = wc_get_products( $args );
-	echo '<p>Nos boissons : </p>';
+	echo '<div class="drinks-choice"><p>Nos boissons : </p>';
 	foreach ($products as $indiv_product) {
 		//echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
 		echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
