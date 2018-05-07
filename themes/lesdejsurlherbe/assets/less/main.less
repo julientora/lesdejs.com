@@ -371,21 +371,21 @@ html {
                     .transform(rotateZ(45deg) translate(-110px, 10px));
                     .transition;
 
-                    &:hover {
-                        background: @white;
-
-                        .anti-rotate {
-                            .price {
-                                color: @vert;
-                            }
-                            .button:after {
-                                border-bottom-color: @vert;
-                            }
-                        }
-                    }
+//                    &:hover {
+//                        background: @white;
+//
+//                        .anti-rotate {
+//                            .price {
+//                                color: @vert;
+//                            }
+//                            .button:after {
+//                                border-bottom-color: @vert;
+//                            }
+//                        }
+//                    }
 
                     .anti-rotate {
-                        .transform(rotateZ(-45deg));
+                        .transform(rotateZ(-45deg) translateY(15px));
 
                         .price {
                             color: @white;
@@ -394,12 +394,53 @@ html {
                             .transition;
                         }
                         .quantity {
-                            display: none;
+                            margin:10px 0 20px;
+                            label {
+                                display: none;
+                            }
+                            .bouton {
+                                height: 30px;
+                                width: 30px;
+                                color: @vert;
+                                background: @white;
+                                font-size: 22px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                box-sizing: border-box;
+                                .medium;
+                                .border-radius(100px);
+                                .transition;
+                                text-align: center;
+                                line-height: 1.4;
+                            }
+                            .bouton:hover {
+                                background: @white;
+                                color: @vert;
+                                cursor: pointer;
+                            }
+                            input[type=number] {
+                                background: none;
+                                border: none;
+                                text-align: center;
+                                -moz-appearance: textfield;
+                                max-width: 55px;
+                                color: @white;
+                                font-size: 22px;
+                            }
+                            input[type=number]::-webkit-inner-spin-button,
+                            input[type=number]::-webkit-outer-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
                         }
                         .button {
                             color: @brun;
                             font-size: 22px;
                             text-transform: uppercase;
+                            
+                            &.added{
+                                display: none;
+                            }
 
                             &:hover {
                                 background: none;
@@ -411,13 +452,22 @@ html {
                                 content: " ";
                                 width: 0;
                                 height: 0;
-                                border-left: 25px solid transparent;
-                                border-right: 25px solid transparent;
-                                border-bottom: 42px solid @white;
+                                border-left: 15px solid transparent;
+                                border-right: 15px solid transparent;
+                                border-bottom: 25px solid @white;
                                 margin: 10px auto 0;
                                 .transform(rotateZ(90deg));
                                 .transition;
                             }
+                        }
+                        .added_to_cart{
+                            color: @brun;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            background: white;
+                            padding: 15px;
+                            position: relative;
+                            top: 60px;
                         }
                     }
                 }
@@ -467,7 +517,7 @@ html {
                     }
                     .cta-order {
                         position: absolute;
-                        bottom: 80px;
+                        bottom: 120px;
                         left: ~'calc(50% - 100px)';
                         .transform(rotateZ(45deg) translate(0, 0));
                     }
@@ -931,16 +981,28 @@ html {
                         width: 150px;
 
                         .anti-rotate {
+                            .transform(rotateZ(-45deg) translateY(30px));
                             .price {
                                 font-size: 30px;
                             }
                             .button {
                                 font-size: 19px;
-                                &:after {
-                                    border-left: 20px solid transparent;
-                                    border-right: 20px solid transparent;
-                                    border-bottom: 37px solid @white;
+                                background: @white;
+                                color: @brun;
+                                padding: 15px 10px;
+                                display: block;
+                                top: 40px;
+                                
+                                &:after{
+                                    display: none;
                                 }
+                            }
+                            .added_to_cart{
+                                font-size: 16px;
+                                padding: 15px 10px;
+                                margin-top: 20px;
+                                display: block;
+                                top: 0;
                             }
                         }
                     }
@@ -950,6 +1012,7 @@ html {
                             bottom: 60px;
                         }
                     }
+
                 }
             }
             .page-wrapper {
@@ -1018,11 +1081,9 @@ html {
                             }
                             .button {
                                 font-size: 15px;
-                                &:after {
-                                    border-left: 15px solid transparent;
-                                    border-right: 15px solid transparent;
-                                    border-bottom: 32px solid @white;
-                                }
+                            }
+                            .added_to_cart{
+                                padding: 15px 2px;
                             }
                         }
                     }
@@ -1108,16 +1169,28 @@ html {
                         .transform(rotateZ(45deg) translate(-80px, 10px));
 
                         .anti-rotate {
+                            .transform(rotateZ(-45deg) translateY(30px));
                             .price {
                                 font-size: 25px;
                             }
                             .button {
                                 font-size: 15px;
+                                color: @brun;
+                                background: @white;
+                                padding: 15px 10px;
+                                display: block;
+                                top: 20px;
+                                
                                 &:after {
-                                    border-left: 15px solid transparent;
-                                    border-right: 15px solid transparent;
-                                    border-bottom: 32px solid @white;
+                                    display: none;
                                 }
+                            }
+                            .added_to_cart{
+                                font-size: 14px;
+                                padding: 15px 3px;
+                                margin-top: 20px;
+                                display: block;
+                                top: 0;
                             }
                         }
                     }
