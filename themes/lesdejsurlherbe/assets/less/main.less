@@ -647,7 +647,13 @@ html {
         .cart-collaterals {
             max-width: 1200px;
             .block;
-
+            .cart_totals{
+                h2{
+                    font-family: @textes_light;
+                    font-size: 50px;
+                    color: @vert;
+                }
+            }
             .wc-proceed-to-checkout {
                 width: 100%;
                 max-width: 1200px;
@@ -809,6 +815,9 @@ html {
         .drinks-choice {
             width: 100%;
             max-width: 1200px;
+            max-height: 70px;
+            overflow: hidden;
+            transition: .5s;
             .block;
             margin-top: 80px;
 
@@ -823,9 +832,11 @@ html {
             }
             p {
                 &:first-child {
-                    .medium;
+                    //.medium;
+                    font-weight: 700;
                     color: @vert;
                     text-align: left;
+                    cursor: pointer;
                 }
             }
             .drinks-line {
@@ -837,7 +848,7 @@ html {
                 .justify-content(space-between);
                 .flex-direction(row);
                 .align-items(center);
-                max-width: 1000px;
+                //max-width: 1000px;
 
                 &:last-child {
                     border-bottom: none;
@@ -905,6 +916,9 @@ html {
                     text-transform: uppercase;
                 }
             }
+        }
+        .open{
+            max-height: 2000px;
         }
         footer {
             text-align: center;

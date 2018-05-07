@@ -158,6 +158,7 @@ function custom_woocommerce_product_add_to_cart_text() {
 	return __( 'Order', 'woocommerce' );
 }
 
+remove_action('woocommerce_after_shop_loop_item_price', 'woocommerce_quantity_input');
 /**
  * Add quantity field on the archive page.
  */
@@ -214,7 +215,7 @@ function add_drinks_products_to_cart() {
    		'category' => array( 'boissons' ),
 	);
 	$products = wc_get_products( $args );
-	echo '<div class="drinks-choice"><p class="h3">Nos boissons : </p>';
+	echo '<div class="drinks-choice"><p class="h3">Nos boissons <span>&#8595;</span></p>';
 	foreach ($products as $indiv_product) {
 		//echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
         echo '<div class="drinks-line">';

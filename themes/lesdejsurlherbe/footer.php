@@ -44,7 +44,11 @@
                 $('#close').click(function() {
                     $('.responsive-menu').removeClass('active');
                 }); 
-	    })
+
+                $(".drinks-choice").click(function(){
+                	$(this).toggleClass('open');
+                });
+
 	    function moreOrLess() {
 	    	$(".quantity").append('<div class="inc bouton">+</div>');
 	    	$(".quantity").prepend('<div class="dec bouton">-</div>');
@@ -71,9 +75,10 @@
 			}
 		});
 
-$(document).on("click",".bouton", function (e) {
-		var myButton = $('.button' );
-		myButton.removeProp( 'disabled');
+		$(document).on("click",".bouton", function (e) {
+			var myButton = $('.button' );
+			myButton.removeProp( 'disabled');
+    	});
     });
 
 	}(jQuery));	    	
