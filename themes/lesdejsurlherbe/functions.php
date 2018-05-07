@@ -220,17 +220,17 @@ function add_drinks_products_to_cart() {
         echo '<div class="drinks-line">';
 		echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
 		echo '<div class="product-price">'.$indiv_product->get_price().'€</div>';
-		woocommerce_quantity_input();
+		//woocommerce_quantity_input();
 		
 		echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-		sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div>',
-		esc_url( $indiv_product->add_to_cart_url() ),
-		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
-		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-		isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-		esc_html( $indiv_product->add_to_cart_text() )
-	),
-$indiv_product, $args );
+			sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div>',
+			esc_url( $indiv_product->add_to_cart_url() ),
+			esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
+			esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
+			isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
+			esc_html( $indiv_product->add_to_cart_text() )
+		),
+	$indiv_product, $args );
 	}
     echo '</div>';
 }

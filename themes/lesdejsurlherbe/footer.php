@@ -65,7 +65,11 @@
 			});
 		};
 		moreOrLess();
-		$(".woocommerce").ajaxStop(moreOrLess);
+		$(".woocommerce").ajaxStop(function(){
+			if($(".bouton").length == 0){
+				moreOrLess();
+			}
+		});
 
 $(document).on("click",".bouton", function (e) {
 		var myButton = $('.button' );
