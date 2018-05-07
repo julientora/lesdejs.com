@@ -152,7 +152,7 @@ function bouton_ingredients() {
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'bouton_ingredients', 8 );
 
-// Change "add to cart" button text
+//Change "add to cart" button text
 add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
 function custom_woocommerce_product_add_to_cart_text() {
 	return __( 'Order', 'woocommerce' );
@@ -179,9 +179,9 @@ function custom_add_to_cart_quantity_handler() {
 		jQuery( ".post-type-archive-product" ).on( "change input", ".quantity .qty", function() {
 			var add_to_cart_button = jQuery( this ).parents( ".product" ).find( ".add_to_cart_button" );
 			// For AJAX add-to-cart actions
-			add_to_cart_button.data( "quantity", jQuery( this ).val() );
+			add_to_cart_button.data( "quantity", jQuery( this ).attr("value") );
 			// For non-AJAX add-to-cart actions
-			add_to_cart_button.attr( "href", "?add-to-cart=" + add_to_cart_button.attr( "data-product_id" ) + "&quantity=" + jQuery( this ).val() );
+			add_to_cart_button.attr( "href", "?add-to-cart=" + add_to_cart_button.attr( "data-product_id" ) + "&quantity=" + jQuery( this ).attr("value") );
 		});
 	' );
 }
@@ -200,8 +200,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     // add the product thumbnail and title back in with custom structure
     add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 10 );
     function sls_woocommerce_template_loop_product_thumbnail() {
-       echo '<div class="product-image" data-parallax="scroll" data-image-src="'.get_the_post_thumbnail_url().'" style="background:transparent" data-speed="0.9"></div>';
-       echo '<h3><a href="'.get_the_permalink().'">'.get_the_title().'</a></h3>';
+       echo '<div class="product-image" style="background:url('.get_the_post_thumbnail_url().')"></div>';
+       echo '<h3>'.get_the_title().'</a></h3>';
     } 
     
 }

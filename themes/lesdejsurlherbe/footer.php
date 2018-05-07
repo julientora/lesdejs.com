@@ -10,14 +10,14 @@
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <script>
 (function ($){
-	$(document).ready(function() {
-		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-			var page = $(this).attr('href'); // Page cible
-			var speed = 750; // Durée de l'animation (en ms)
-			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			return false;
-		});
-	})
+	// $(document).ready(function() {
+	// 	$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+	// 		var page = $(this).attr('href'); // Page cible
+	// 		var speed = 750; // Durée de l'animation (en ms)
+	// 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+	// 		return false;
+	// 	});
+	// })
 }(jQuery));
 </script>
 <script>	
@@ -45,7 +45,7 @@
                     $('.responsive-menu').removeClass('active');
                 }); 
 	    })
-	    $(function() {
+	    function moreOrLess() {
 	    	$(".quantity").append('<div class="inc bouton">+</div>');
 	    	$(".quantity").prepend('<div class="dec bouton">-</div>');
 			$(".bouton").click(function(){
@@ -61,9 +61,17 @@
 				      newVal = 0;
 				    }
 				  }
-				$bouton.parent().find("input").val(newVal);
+				$bouton.parent().find("input").attr('value', newVal);
 			});
-		});
+		};
+		moreOrLess();
+		$(".woocommerce").ajaxStop(moreOrLess);
+
+$(document).on("click",".bouton", function (e) {
+		var myButton = $('.button' );
+		myButton.removeProp( 'disabled');
+    });
+
 	}(jQuery));	    	
 </script>
 </body>
