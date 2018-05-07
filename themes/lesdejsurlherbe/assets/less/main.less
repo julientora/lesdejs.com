@@ -446,8 +446,12 @@ html {
                             &:hover {
                                 background: none;
                             }
+                            .triangle{
+                                display: block;
+                                font-size: 30px;
+                            }
 
-                            &:after {
+                            /*&:after {
                                 display: block;
                                 text-align: center;
                                 content: " ";
@@ -459,7 +463,7 @@ html {
                                 margin: 10px auto 0;
                                 .transform(rotateZ(90deg));
                                 .transition;
-                            }
+                            }*/
                         }
                         .added_to_cart{
                             color: @brun;
@@ -820,7 +824,10 @@ html {
             overflow: hidden;
             transition: .5s;
             .block;
-            margin-top: 80px;
+            margin-top: 20px;
+            &:hover .h3{
+                color: #DDD;
+            };
 
             &:after {
                 content: '';
@@ -1444,7 +1451,7 @@ html {
                             }
                             .button {
                                 font-size: 25px;
-                                &:after {
+                                /*&:after {
                                     border-left: 12px solid transparent;
                                     border-right: 12px solid transparent;
                                     border-bottom: 23px solid @white;
@@ -1453,7 +1460,7 @@ html {
                                     position: relative;
                                     top: -6px;
                                     margin-left: 20px;
-                                }
+                                }*/
                             }
                         }
                     }
@@ -1629,13 +1636,16 @@ html {
                             }
                             .button {
                                 font-size: 15px;
-                                &:after {
+                                .triangle{
+                                    display: block;
+                                }
+                                /*&:after {
                                     border-left: 10px solid transparent;
                                     border-right: 10px solid transparent;
                                     border-bottom: 20px solid @white;
                                     top: -6px;
                                     margin-left: 20px;
-                                }
+                                }*/
                             }
                         }
                     }

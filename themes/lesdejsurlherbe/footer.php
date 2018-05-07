@@ -45,10 +45,21 @@
                     $('.responsive-menu').removeClass('active');
                 }); 
 
-                $(".drinks-choice").click(function(){
-                	$(this).toggleClass('open');
+                // $(".drinks-choice .h3").click(function(){
+                // 	$(".drinks-choice").toggleClass('open');
+                // });
+                $(".woocommerce").ajaxStop(function(){
+                	$(".drinks-choice .h3").click(function(){
+                		$(".drinks-choice").toggleClass('open');
+                	});
+                	$('.burger-menu').click(function() {
+	                    $('.responsive-menu').addClass('active');
+	                }); 
+                	$('#close').click(function() {
+                    	$('.responsive-menu').removeClass('active');
+                	}); 
                 });
-
+                $(".add_to_cart_button").append('<span class="triangle">&#x25B6;</span>');
 	    function moreOrLess() {
 	    	$(".quantity").append('<div class="inc bouton">+</div>');
 	    	$(".quantity").prepend('<div class="dec bouton">-</div>');
