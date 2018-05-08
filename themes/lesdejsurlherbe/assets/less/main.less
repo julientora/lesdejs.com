@@ -632,6 +632,15 @@ html {
         }
         .cart-collaterals {
             max-width: 1200px;
+            &:before{
+                content: '';
+                width: 100%;
+                //max-width: 300px;
+                height: 2px;
+                background: @vert;
+                margin: 100px 0 50px 0;
+                display: block;
+            }
             .block;
             .cart_totals {
                 h2 {
@@ -830,16 +839,6 @@ html {
                 color: #DDD;
             }
             ;
-
-            &:after {
-                content: '';
-                width: 100%;
-                max-width: 200px;
-                height: 5px;
-                background: @vert;
-                margin: 100px auto 50px;
-                display: block;
-            }
             p {
                 &:first-child {
                     //.medium;

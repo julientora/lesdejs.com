@@ -23,6 +23,7 @@
 <body <?php body_class(); ?>>
 <header>
 	<?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
+	<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
     <div class="burger-menu">
         <span></span>
         <span></span>

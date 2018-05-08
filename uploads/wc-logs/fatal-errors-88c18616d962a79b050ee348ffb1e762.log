@@ -1070,3 +1070,73 @@ Stack trace:
 #5 {main}
   thrown
 
+2018-05-08T10:14:50+00:00 CRITICAL Uncaught Error: Call to a member function get_cart() on null in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:246
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-settings.php(426): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-config.php(112): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-load.php(37): require_once('/Users/juliento...')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(13): require_once('/Users/juliento...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#5 {main}
+  thrown
+
+2018-05-08T10:20:56+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_post_thumbnail_url() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:253
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): get_my_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/archive-product.php(61): do_action('woocommerce_bef...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17)
+
+2018-05-08T10:36:11+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:248
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): get_my_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/archive-product.php(61): do_action('woocommerce_bef...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento
+
+2018-05-08T10:36:31+00:00 CRITICAL Uncaught Error: Call to a member function get_title() on null in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:248
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): get_my_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/archive-product.php(61): do_action('woocommerce_bef...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento.
+
+2018-05-08T10:37:05+00:00 CRITICAL Uncaught Error: Call to a member function get_the_title() on array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:248
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): get_my_cart('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/archive-product.php(61): do_action('woocommerce_bef...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template-loader.php(74): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(19): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juli
+
+2018-05-08T19:10:48+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:275
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-settings.php(426): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-config.php(112): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-load.php(37): require_once('/Users/juliento...')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(13): require_once('/Users/juliento...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#5 {main}
+  thrown
+
+2018-05-08T21:53:35+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:275
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-settings.php(426): include()
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-config.php(112): require_once('/Users/juliento...')
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-load.php(37): require_once('/Users/juliento...')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-blog-header.php(13): require_once('/Users/juliento...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/index.php(17): require('/Users/juliento...')
+#5 {main}
+  thrown
+

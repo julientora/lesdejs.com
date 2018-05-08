@@ -242,3 +242,60 @@ function add_drinks_products_to_cart() {
     echo '</div>';
 }
 
+// function get_my_cart(){
+// global $woocommerce;
+//     $items = $woocommerce->cart->get_cart();
+//     echo '<div id="cart">'.get_the_title(70);
+//         foreach ( WC()->cart->get_cart() as $cart_item ) {
+// 		    $item_name = $cart_item['data']->get_title();
+// 		    $quantity = $cart_item['quantity'];
+// 		    $price = $cart_item['data']->get_price();
+// 		    echo '<div class="small-cart-board">';
+//             echo '<div class="small-cart-product-qty">'.$quantity.'</div><div class="small-cart-product-title">'.$item_name.'</div>'; 
+//             echo '<div class="small-cart-price">'.$price."€</div>";
+//             echo "</div>";
+//         }
+//         echo '<div id="small-cart-total">TOTAL : ' .$woocommerce->cart->get_cart_total().'</div>';
+//     echo '</div>';
+// }
+// add_action('woocommerce_before_shop_loop', 'get_my_cart', 1);
+
+
+
+/**
+ * These functions will add WooCmmerce or Easy Digital Downloads cart icons/menu items to the "top_nav" WordPress menu area (if it exists).
+ * Please customize the following code to fit your needs.
+ */
+ 
+/**
+ * This function adds the WooCommerce or Easy Digital Downloads cart icons/items to the top_nav menu area as the last item.
+ */
+add_filter( 'wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 2 );
+function my_wp_nav_menu_items( $items, $args, $ajax = false ) {
+	// Top Navigation Area Only
+	if ( ( isset( $ajax ) && $ajax ) || ( property_exists( $args, 'theme_location' ) && $args->theme_location === 'menu_principal' ) ) {
+		// WooCommerce
+		if ( class_exists( 'woocommerce' ) ) {
+			$css_class = 'menu-item menu-item-type-cart menu-item-type-woocommerce-cart';
+			// Is this the cart page?
+			if ( is_cart() ) {
+				$css_class .= ' current-menu-item';
+			}
+			$items .= '<li class="' . esc_attr( $css_class ) . '">';
+				$items .= '<a class="cart-contents" href="' . esc_url( WC()->cart->get_cart_url() ) . '">';
+					$items .= __('Cart', 'woocommerce') .' : '. wp_kses_data( WC()->cart->get_cart_total() ) . ' - <span class="count">' .  wp_kses_data( sprintf( _n( '%d ' . __('Item', 'woocommerce'), '%d '. __('Items', 'woocommerce'), WC()->cart->get_cart_contents_count(), 'simple-shop' ), WC()->cart->get_cart_contents_count() ) ) . '</span>';
+				$items .= '</a>';
+			$items .= '</li>';
+		}
+	}
+	return $items;
+}
+/**
+ * This function updates the Top Navigation WooCommerce cart link contents when an item is added via AJAX.
+ */
+add_filter( 'woocommerce_add_to_cart_fragments', 'my_woocommerce_add_to_cart_fragments' );
+function my_woocommerce_add_to_cart_fragments( $fragments ) {
+	// Add our fragment
+	$fragments['li.menu-item-type-woocommerce-cart'] = my_wp_nav_menu_items( '', new stdClass(), true );
+	return $fragments;
+}

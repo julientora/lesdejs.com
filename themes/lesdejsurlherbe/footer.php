@@ -45,9 +45,9 @@
                     $('.responsive-menu').removeClass('active');
                 }); 
 
-                // $(".drinks-choice .h3").click(function(){
-                // 	$(".drinks-choice").toggleClass('open');
-                // });
+                $(".drinks-choice .h3").click(function(){
+                	$(".drinks-choice").toggleClass('open');
+                });
                 $(".woocommerce").ajaxStop(function(){
                 	$(".drinks-choice .h3").click(function(){
                 		$(".drinks-choice").toggleClass('open');
