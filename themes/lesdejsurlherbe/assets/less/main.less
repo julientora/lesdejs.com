@@ -154,7 +154,7 @@ html {
             .transition;
             text-decoration: none;
             &:hover {
-                opacity: 0.7;
+                opacity: 0.5;
             }
         }
         button {
@@ -371,19 +371,18 @@ html {
                     .transform(rotateZ(45deg) translate(-110px, 10px));
                     .transition;
 
-//                    &:hover {
-//                        background: @white;
-//
-//                        .anti-rotate {
-//                            .price {
-//                                color: @vert;
-//                            }
-//                            .button:after {
-//                                border-bottom-color: @vert;
-//                            }
-//                        }
-//                    }
-
+                    //                    &:hover {
+                    //                        background: @white;
+                    //
+                    //                        .anti-rotate {
+                    //                            .price {
+                    //                                color: @vert;
+                    //                            }
+                    //                            .button:after {
+                    //                                border-bottom-color: @vert;
+                    //                            }
+                    //                        }
+                    //                    }
                     .anti-rotate {
                         .transform(rotateZ(-45deg) translateY(15px));
 
@@ -395,58 +394,20 @@ html {
                         }
                         .quantity {
                             display: none;
-                            margin:10px 0 20px;
-                            label {
-                                display: none;
-                            }
-                            .bouton {
-                                height: 30px;
-                                width: 30px;
-                                color: @vert;
-                                background: @white;
-                                font-size: 22px;
-                                display: inline-block;
-                                vertical-align: middle;
-                                box-sizing: border-box;
-                                .medium;
-                                .border-radius(100px);
-                                .transition;
-                                text-align: center;
-                                line-height: 1.4;
-                            }
-                            .bouton:hover {
-                                background: @white;
-                                color: @vert;
-                                cursor: pointer;
-                            }
-                            input[type=number] {
-                                background: none;
-                                border: none;
-                                text-align: center;
-                                -moz-appearance: textfield;
-                                max-width: 55px;
-                                color: @white;
-                                font-size: 22px;
-                            }
-                            input[type=number]::-webkit-inner-spin-button,
-                            input[type=number]::-webkit-outer-spin-button {
-                                -webkit-appearance: none;
-                                margin: 0;
-                            }
                         }
                         .button {
                             color: @brun;
                             font-size: 22px;
                             text-transform: uppercase;
-                            
-                            &.added{
+
+                            &.added {
                                 display: none;
                             }
 
                             &:hover {
                                 background: none;
                             }
-                            .triangle{
+                            .triangle {
                                 display: block;
                                 font-size: 30px;
                             }
@@ -465,7 +426,7 @@ html {
                                 .transition;
                             }*/
                         }
-                        .added_to_cart{
+                        .added_to_cart {
                             color: @brun;
                             font-size: 18px;
                             text-transform: uppercase;
@@ -473,6 +434,8 @@ html {
                             padding: 15px;
                             position: relative;
                             top: 60px;
+                            white-space: nowrap;
+                            text-align: center;
                         }
                     }
                 }
@@ -483,12 +446,7 @@ html {
                     .align-self(center);
 
                     .bouton-ingredients {
-                        .transition;
-                        font-size: 16pt; //font-weight: 900;
-                        color: #566d64;
-                        background-color: #bda27e;
-                        display: inline-block;
-                        padding: 5px;
+                        display: none;
                     }
                     .active {
                         .transform(translateY(-58px));
@@ -528,6 +486,14 @@ html {
                     }
                 }
                 &.product_cat-boissons {
+                    .justify-content(flex-start);
+
+                    .short-description {
+                        text-align: center;
+                        .container-1200;
+                        display: block;
+                        font-size: 15px;
+                    }
                     .cta-order {
                         display: none;
                     }
@@ -536,6 +502,7 @@ html {
                 &.product_cat-eaux {
                     display: none;
                 }
+
             }
         }
         .page-wrapper {
@@ -631,6 +598,20 @@ html {
             }
 
             .woocommerce {
+                .cart-empty {
+                    text-align: center;
+                }
+                .return-to-shop {
+                    a {
+                        text-align: center;
+                        color: @white;
+                        background: @vert;
+                        padding: 20px;
+                        margin: 0 auto;
+                        display: block;
+                        max-width: 200px;
+                    }
+                }
                 .product-thumbnail,
                 .thumb {
                     display: none;
@@ -652,11 +633,20 @@ html {
         .cart-collaterals {
             max-width: 1200px;
             .block;
-            .cart_totals{
-                h2{
+            .cart_totals {
+                h2 {
                     font-family: @textes_light;
                     font-size: 50px;
                     color: @vert;
+                }
+                .shop_table {
+                    th,
+                    td {
+                        text-align: right;
+                    }
+                    th {
+                        padding-right: 100px;
+                    }
                 }
             }
             .wc-proceed-to-checkout {
@@ -691,11 +681,22 @@ html {
 
             .product-name {
                 text-align: left;
+                a {
+                    max-width: 370px;
+                    width: 100%;
+                    display: block;
+                }
             }
             .product-price,
             .product-quantity,
             .product-subtotal {
                 text-align: right;
+            }
+            .product-quantity {
+                .quantity {
+                    max-width: 240px;
+                    margin-left: auto;
+                }
             }
             thead {
                 font-family: @textes_light;
@@ -825,9 +826,10 @@ html {
             transition: .5s;
             .block;
             margin-top: 20px;
-            &:hover .h3{
+            &:hover .h3 {
                 color: #DDD;
-            };
+            }
+            ;
 
             &:after {
                 content: '';
@@ -855,9 +857,7 @@ html {
                 .flex;
                 .justify-content(space-between);
                 .flex-direction(row);
-                .align-items(center);
-                //max-width: 1000px;
-
+                .align-items(center); //max-width: 1000px;
                 &:last-child {
                     border-bottom: none;
                 }
@@ -925,7 +925,7 @@ html {
                 }
             }
         }
-        .open{
+        .open {
             max-height: 2000px;
         }
         footer {
@@ -1014,12 +1014,14 @@ html {
                                 padding: 15px 10px;
                                 display: block;
                                 top: 40px;
-                                
-                                &:after{
+                                margin-top: 20px;
+                                display: block;
+
+                                .triangle {
                                     display: none;
                                 }
                             }
-                            .added_to_cart{
+                            .added_to_cart {
                                 font-size: 16px;
                                 padding: 15px 10px;
                                 margin-top: 20px;
@@ -1031,10 +1033,16 @@ html {
                     &.product_cat-dessert {
                         .cta-order {
                             left: ~'calc(50% - 75px)';
-                            bottom: 60px;
+                            bottom: 90px;
                         }
                     }
-
+                    .detail-menu {
+                        .menu-description {
+                            div {
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
             }
             .page-wrapper {
@@ -1104,7 +1112,7 @@ html {
                             .button {
                                 font-size: 15px;
                             }
-                            .added_to_cart{
+                            .added_to_cart {
                                 padding: 15px 2px;
                             }
                         }
@@ -1112,7 +1120,7 @@ html {
                     &.product_cat-dessert {
                         .cta-order {
                             left: ~'calc(50% - 65px)';
-                            bottom: 50px;
+                            bottom: 110px;
                         }
                     }
                 }
@@ -1200,14 +1208,14 @@ html {
                                 color: @brun;
                                 background: @white;
                                 padding: 15px 10px;
+                                margin-top: 20px;
                                 display: block;
-                                top: 20px;
-                                
-                                &:after {
+
+                                .triangle {
                                     display: none;
                                 }
                             }
-                            .added_to_cart{
+                            .added_to_cart {
                                 font-size: 14px;
                                 padding: 15px 3px;
                                 margin-top: 20px;
@@ -1219,8 +1227,11 @@ html {
                     &.product_cat-dessert {
                         .cta-order {
                             left: ~'calc(50% - 65px)';
-                            bottom: 50px;
+                            bottom: 110px;
                         }
+                    }
+                   &.product_cat-dessert {
+                        width: 32.9%;
                     }
                     .menu-description {
                         padding: 10px 0;
@@ -1282,13 +1293,14 @@ html {
                     }
                     .drinks-line {
                         padding: 0 20px;
-                        
-                        div, a{
+
+                        div,
+                        a {
                             font-size: 18px;
-                            &.product-price{
+                            &.product-price {
                                 width: 10%;
                             }
-                            &.quantity{
+                            &.quantity {
                                 width: 30%;
                                 text-align: center;
                             }
@@ -1418,13 +1430,13 @@ html {
             }
             .products {
                 .product {
-                    height: 300px;
+                    height: 500px;
                     .detail-menu {
                         order: 2;
                         .transform(translate(0, 80px));
 
                         .menu-description {
-                            bottom: -13px;
+                            bottom: -123px;
                         }
                         .active {
                             .transform(translateY(-120px));
@@ -1451,16 +1463,16 @@ html {
                             }
                             .button {
                                 font-size: 25px;
-                                /*&:after {
-                                    border-left: 12px solid transparent;
-                                    border-right: 12px solid transparent;
-                                    border-bottom: 23px solid @white;
+                                .triangle {
                                     display: inline-block;
-                                    vertical-align: middle;
-                                    position: relative;
-                                    top: -6px;
                                     margin-left: 20px;
-                                }*/
+                                    position: relative;
+                                    top: 4px;
+                                }
+                            }
+                            .added_to_cart {
+                                top: 5px;
+
                             }
                         }
                     }
@@ -1478,6 +1490,11 @@ html {
                         padding: 10px 0;
                         div {
                             font-size: 12px;
+                        }
+                    }
+                    &.product_cat-boissons {
+                        .menu-description {
+                            bottom: -314px;
                         }
                     }
                 }
@@ -1515,33 +1532,36 @@ html {
                     height: 300px!important;
                     background-position-y: 55%!important;
                 }
-                
+
                 .drinks-choice {
                     .h3 {
-                        font-size: 15px;
+                        font-size: 20px;
                         padding-left: 20px;
                     }
                     .drinks-line {
                         padding: 20px;
-                        
-                        div, a{
-                            font-size: 15px;
-                            &.product-price{
+
+                        div {
+                            font-size: 20px;
+                            &.product-price {
                                 width: 10%;
                             }
-                            &.quantity{
+                            &.quantity {
                                 width: 30%;
                                 text-align: center;
                             }
+                        }
+                        a {
+                            font-size: 15px;
                         }
                     }
                 }
                 table {
                     thead {
-                        font-size: 15px;
+                        font-size: 20px;
                     }
                     tbody {
-                        font-size: 15px;
+                        font-size: 20px;
                         tr {
                             td {
                                 &:first-child {
@@ -1560,10 +1580,65 @@ html {
             }
             table {
                 thead {
-                    font-size: 15px;
+                    display: none;
                 }
                 tbody {
-                    font-size: 15px;
+                    font-size: 20px;
+                    tr {
+                        td {
+                            display: block;
+                            border-bottom: none;
+                            margin: 0;
+                            padding-bottom: 10px;
+                            padding-top: 0;
+
+                            &.product-remove {
+                                display: inline-block;
+                                width: 15%;
+                                text-align: center;
+                            }
+                            &.product-name {
+                                display: inline-block;
+                                width: 80%;
+                            }
+                            &.product-quantity {
+                                .quantity {
+                                    width: 90%;
+                                    .block;
+                                    text-align: center;
+
+                                    input {
+                                        max-width: 100%;
+                                    }
+                                }
+
+                            }
+                            &.product-subtotal {
+                                text-align: left;
+                                padding-left: 20px;
+                                padding-top: 20px;
+                                &:before {
+                                    content: "Prix :";
+                                    font-size: 15px;
+                                    display: inline;
+                                }
+                                &:after {
+                                    background: @black;
+                                    width: 50px;
+                                    height: 1px;
+                                    .block;
+                                    margin: 30px auto;
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-price {
+                    display: none;
+                }
+                .quantity {
+                    width: 130px;
                 }
             }
             footer {
@@ -1617,13 +1692,12 @@ html {
             }
             .products {
                 .product {
-                    height: 250px;
                     .detail-menu {
                         order: 2;
                         .transform(translate(0, 60px));
 
                         .menu-description {
-                            bottom: -13px;
+                            bottom: -154px;
                         }
                         .active {
                             .transform(translateY(-100px));
@@ -1632,12 +1706,14 @@ html {
                     .cta-order {
                         .anti-rotate {
                             .price {
-                                font-size: 15px;
+                                font-size: 20px;
                             }
                             .button {
-                                font-size: 15px;
-                                .triangle{
-                                    display: block;
+                                font-size: 20px;
+
+                                .triangle {
+                                    font-size: 20px;
+                                    top: 2px;
                                 }
                                 /*&:after {
                                     border-left: 10px solid transparent;
@@ -1657,6 +1733,11 @@ html {
                             left: 0;
                             order: 3;
                             bottom: 0;
+                        }
+                    }
+                    &.product_cat-boissons {
+                        .menu-description {
+                            bottom: -314px;
                         }
                     }
                 }
@@ -1700,50 +1781,50 @@ html {
                     }
                     tbody {
                         font-size: 20px;
-                        tr{
-                            td{
+                        tr {
+                            td {
                                 display: block;
                                 border-bottom: none;
                                 margin: 0;
                                 padding-bottom: 10px;
                                 padding-top: 0;
-                                
-                                &.product-remove{
+
+                                &.product-remove {
                                     display: inline-block;
                                     width: 15%;
                                     text-align: center;
                                 }
-                                &.product-name{
+                                &.product-name {
                                     display: inline-block;
                                     width: 80%;
                                 }
-                                &.product-quantity{
-                                    .quantity{
+                                &.product-quantity {
+                                    .quantity {
                                         width: 90%;
                                         .block;
                                         text-align: center;
-                                        
-                                        input{
+
+                                        input {
                                             max-width: 100%;
                                         }
                                     }
-                                    
+
                                 }
-                                &.product-subtotal{
+                                &.product-subtotal {
                                     text-align: left;
                                     padding-left: 20px;
                                     padding-top: 20px;
-                                    &:before{
+                                    &:before {
                                         content: "Prix :";
                                         font-size: 15px;
                                         display: inline;
                                     }
-                                    &:after{
+                                    &:after {
                                         background: @black;
                                         width: 50px;
                                         height: 1px;
                                         .block;
-                                        margin : 30px auto;
+                                        margin: 30px auto;
                                         content: "";
                                     }
                                 }
@@ -1753,41 +1834,41 @@ html {
                     .product-price {
                         display: none;
                     }
-                    .quantity{
+                    .quantity {
                         width: 130px;
                     }
                 }
-                .drinks-choice{
-                    .drinks-line{  
+                .drinks-choice {
+                    .drinks-line {
                         .align-items(flex-start);
                         .flex-wrap;
-                        div{
+                        div {
                             font-size: 20px;
-                            
-                            &.product-title{
+
+                            &.product-title {
                                 .align-self(flex-start);
                                 width: 70%;
                                 padding-bottom: 10px;
                             }
-                            &.product-price{
+                            &.product-price {
                                 width: 30%;
                                 order: 2;
                                 padding-bottom: 10px;
                             }
-                            &.quantity{
+                            &.quantity {
                                 order: 3;
                                 width: 90%;
                                 margin: 0 auto;
                                 display: block;
                                 text-align: center;
                                 padding-bottom: 10px;
-                                
-                                input{
+
+                                input {
                                     max-width: 100%;
                                 }
                             }
                         }
-                        .button{
+                        .button {
                             width: 100%;
                             order: 4;
                             display: block;
