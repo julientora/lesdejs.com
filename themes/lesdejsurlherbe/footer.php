@@ -1,18 +1,21 @@
 
 <?php wp_footer(); ?>
+
+
 <footer>
-    <h4>Commandez avant 12h, c’est livré entre 11h et 15h.</h4>
-    <h5>Les dejeuners sur l’herbe . Lourmarin</h5>
-    <ul class="contact">
-        <li>07 68 06 61 56</li>
-        <li>•</li>
-        <li><a href="mailto:contact@lesdejs.com">contact@lesdejs.com</a></li>
-    </ul>
-    <ul class="social">
-        <li><a href="https://www.facebook.com/lesdejeunersurlherbe" target="_blank">Facebook</a></li>
-        <li>•</li>
-        <li><a href="https://www.instagram.com/lesdejeunersurlherbe/" target="_blank">Instagram</a></li>   
-    </ul>
+<?php
+
+$the_query = new WP_Query( array( 'pagename' => 'footer' ) );
+
+if ( $the_query->have_posts() ) {
+	while ( $the_query->have_posts() ) {
+		$the_query->the_post();
+		the_content();
+	}
+	wp_reset_postdata();
+} else {
+}
+?>
     <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); ?>
 
 </footer>

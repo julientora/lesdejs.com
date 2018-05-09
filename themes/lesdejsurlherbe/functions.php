@@ -283,7 +283,7 @@ function my_wp_nav_menu_items( $items, $args, $ajax = false ) {
 			}
 			$items .= '<li class="' . esc_attr( $css_class ) . '">';
 				$items .= '<a class="cart-contents" href="' . esc_url( WC()->cart->get_cart_url() ) . '">';
-					$items .= __('Cart', 'woocommerce') .' : '. wp_kses_data( WC()->cart->get_cart_total() ) . ' - <span class="count">' .  wp_kses_data( sprintf( _n( '%d ' . __('Item', 'woocommerce'), '%d '. __('Items', 'woocommerce'), WC()->cart->get_cart_contents_count(), 'simple-shop' ), WC()->cart->get_cart_contents_count() ) ) . '</span>';
+					$items .= __('Cart', 'woocommerce') .' : '. wp_kses_data( WC()->cart->get_cart_total() ) . '<span class="count">' .  wp_kses_data( sprintf( _n( '%d ' . __('Item', 'woocommerce'), '%d '. __('Items', 'woocommerce'), WC()->cart->get_cart_contents_count(), 'simple-shop' ), WC()->cart->get_cart_contents_count() ) ) . '</span>';
 				$items .= '</a>';
 			$items .= '</li>';
 		}
@@ -298,4 +298,12 @@ function my_woocommerce_add_to_cart_fragments( $fragments ) {
 	// Add our fragment
 	$fragments['li.menu-item-type-woocommerce-cart'] = my_wp_nav_menu_items( '', new stdClass(), true );
 	return $fragments;
+}
+
+add_filter('pll_get_post_types', 'unset_cpt_pll', 10, 2);
+function unset_cpt_pll( $post_types, $is_settings ) {
+
+    $post_types['acf'] = 'acf';
+
+    return $post_types;
 }
