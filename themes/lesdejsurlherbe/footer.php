@@ -5,7 +5,13 @@
     <h5>Les dejeuners sur l’herbe . Lourmarin</h5>
     <ul class="contact">
         <li>07 68 06 61 56</li>
+        <li>•</li>
         <li><a href="mailto:contact@lesdejs.com">contact@lesdejs.com</a></li>
+    </ul>
+    <ul class="social">
+        <li><a href="https://www.facebook.com/lesdejeunersurlherbe" target="_blank">Facebook</a></li>
+        <li>•</li>
+        <li><a href="https://www.instagram.com/lesdejeunersurlherbe/" target="_blank">Instagram</a></li>   
     </ul>
     <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); ?>
 
