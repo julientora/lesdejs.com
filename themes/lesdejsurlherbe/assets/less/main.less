@@ -8,7 +8,8 @@ sans-serif;
 @vert : #566d64;
 @black : #000;
 @white : #fff;
-@red : rgba(219, 8, 18, 0.2);
+@red : rgb(219, 8, 18);
+
 
 .medium {
     font-weight: 500;
@@ -627,6 +628,155 @@ html {
                     margin: 0 auto 30px;
                     color: @vert;
                     font-family: @textes_light;
+                }
+                .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
+                    .container-1200;
+                    .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                        max-width: 1200px;
+                        .block;
+                        p{
+                            width: 100%;
+                            display: block;
+                            max-width: 730px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-bottom: 30px;
+                            
+                            label{
+                                max-width: 300px;
+                                text-align: right;
+                                font-family: @titles;
+                                text-transform: uppercase;
+                                display: inline-block;
+                                width: 100%;
+                                margin-right: 50px;
+                                font-size: 22px;
+                            }
+                            input, .select2, textarea{
+                                max-width: 350px;
+                                text-align: left;
+                                display: inline-block;
+                                width: 100%;
+                                font-size: 22px;
+                                font-family: @titles;
+                            }
+                            input{
+                                background: none;
+                                border-bottom: 1px solid @black;
+                                padding: 10px;
+                                box-shadow: none;
+                                outline:none;
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                .transition;
+                                
+                                &:active, &:focus{
+                                    border-bottom: @vert 1px solid;
+                                }
+                            }
+                            .select2{
+                                background: none;
+                                border: 1px solid @black;
+                                padding: 10px;
+                                
+                                .select2-selection--single{
+                                    background: none;
+                                    border: none;
+                                    
+                                    .select2-selection__arrow{
+                                        top: 10px;
+                                    }
+                                }
+                            }
+                            textarea{
+                                height: 200px;
+                                vertical-align: top;
+                                background: none;
+                                border: 1px solid @black;
+                                outline: none;
+                                .transition;
+                                padding: 10px;
+                                
+                                &:active, &:focus{
+                                    border: @vert 1px solid;
+                                }
+                            }
+                            &#billing_address_2_field, &#shipping_address_2_field{
+                                &:before{
+                                    max-width: 300px;
+                                    text-align: right;
+                                    font-family: @titles;
+                                    text-transform: uppercase;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-right: 50px;
+                                    content: "";
+                                }
+                            }
+                        }
+                    }
+                }
+                .woocommerce-checkout-payment{
+                    .container-1200;
+                    margin-top: 60px;
+
+                    ul{
+                        padding-left: 0;
+                        max-width: 1200px;
+                        .block;
+
+                        li{
+                            label{
+                                font-family: @titles;
+                                font-size: 22px;
+                                text-transform: uppercase;
+                                line-height: 1;
+                                
+                                img{
+                                    max-width: 40px;
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+                    }
+                    .place-order{
+                        max-width: 1200px;
+                        .block;
+                        
+                        .button{
+                            background: @vert;
+                            padding: 10px 20px;
+                            color: @white;
+                            border: none;
+                            font-size: 22px;
+                            margin-left: auto;
+                            display: block;
+                            max-width: 300px;
+                            text-align: center;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                background: @white;
+                                color: @vert;
+                            }
+                        }
+                    }
+                }
+                .woocommerce-NoticeGroup{
+                    .container-1200;
+                    .block;
+
+                    ul{
+                        padding-left: 0;
+                        max-width: 1200px;
+                        .block;
+
+                        li{
+                            margin-bottom: 20px;
+                            color: @red;
+                        }
+                    }
                 }
             }
         }
