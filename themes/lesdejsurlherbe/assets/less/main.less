@@ -631,6 +631,50 @@ html {
                 }
                 .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
                     .container-1200;
+                    
+                    h3{
+                        padding: 0 20px;
+                        box-sizing: border-box;
+                    }
+                    .woocommerce-form__label{
+                        position: relative;
+                        
+                        span{
+                            position: relative;
+                            
+                            &:hover{
+                                &:after{
+                                    border: 2px solid @vert;
+                                }
+                            }
+                            &:after{
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                background: @white;
+                                top: 10px;
+                                left: -30px;
+                                border: 2px solid @black;
+                                content: "";
+                                height: 20px;
+                                width: 20px;
+                                cursor: pointer;
+                                line-height: 1;
+                                .transition;
+                                color: @vert;
+                                font-size: 22px;
+                                font-family: @textes_light;
+
+                            }
+                            
+                            &.active{
+                                &:after{
+                                    content:"X";
+                                    border: 2px solid @vert;
+                                }
+                            }
+                        }
+                    }
                     .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
                         max-width: 1200px;
                         .block;
@@ -641,6 +685,7 @@ html {
                             margin-left: auto;
                             margin-right: auto;
                             margin-bottom: 30px;
+                            box-sizing: border-box;
                             
                             label{
                                 max-width: 300px;
@@ -659,6 +704,7 @@ html {
                                 width: 100%;
                                 font-size: 22px;
                                 font-family: @titles;
+                                box-sizing: border-box;
                             }
                             input{
                                 background: none;
@@ -714,6 +760,9 @@ html {
                                     content: "";
                                 }
                             }
+                            &#shipping_country_field{
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -768,7 +817,6 @@ html {
                     .block;
 
                     ul{
-                        padding-left: 0;
                         max-width: 1200px;
                         .block;
 
@@ -845,6 +893,9 @@ html {
                     width: 100%;
                     display: block;
                 }
+            }
+            .product-total{
+                text-align: right;
             }
             .product-price,
             .product-quantity,
@@ -1456,6 +1507,26 @@ html {
                         }
                     }
                 }
+                .woocommerce{
+                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
+                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                            p{
+                                padding: 0 20px;
+                                label{
+                                    max-width: 100%;
+                                    text-align: left;
+                                }
+                                input, .select2, textarea{
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .woocommerce-checkout-review-order{
+                        padding: 0 20px;
+                        box-sizing: border-box;
+                    }
+                }
             }
             table {
                 thead {
@@ -1548,6 +1619,26 @@ html {
                 #photo-livraison {
                     height: 300px!important;
                     background-position-y: 55%!important;
+                }
+                .woocommerce{
+                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
+                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                            p{
+                                padding: 0 20px;
+                                label{
+                                    max-width: 100%;
+                                    text-align: left;
+                                }
+                                input, .select2, textarea{
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .woocommerce-checkout-review-order{
+                        padding: 0 20px;
+                        box-sizing: border-box;
+                    }
                 }
             }
         }
@@ -1723,6 +1814,26 @@ html {
                                 }
                             }
                         }
+                    }
+                }
+                .woocommerce{
+                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
+                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                            p{
+                                padding: 0 20px;
+                                label{
+                                    max-width: 100%;
+                                    text-align: left;
+                                }
+                                input, .select2, textarea{
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .woocommerce-checkout-review-order{
+                        padding: 0 20px;
+                        box-sizing: border-box;
                     }
                 }
 
@@ -2062,4 +2173,8 @@ html {
             }
         }
     }
+}
+
+#wpadminbar{
+    display: none;
 }
