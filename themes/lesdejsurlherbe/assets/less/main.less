@@ -1,5 +1,3 @@
-/* CLASSES GÉNÉRALES */
-
 @titles : 'Crimson Text',
 serif;
 @textes_light : 'Libre Franklin',
@@ -9,80 +7,67 @@ sans-serif;
 @black : #000;
 @white : #fff;
 @red : rgb(219, 8, 18);
-
-
 .medium {
     font-weight: 500;
 }
-
 .flex {
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
 }
-
 .inline-flex {
     display: inline-flex;
     display: -webkit-inline-flex;
     display: -moz-inline-flex;
     display: -o-inline-flex;
 }
-
 .flex-direction (@direction) {
     flex-direction: (@direction);
     -webkit-flex-direction: (@direction);
     -moz-flex-direction: (@direction);
     -o-flex-direction: (@direction);
 }
-
 .flex-wrap {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -o-flex-wrap: wrap;
 }
-
 .justify-content (@justify) {
     justify-content: (@justify);
     -webkit-justify-content: (@justify);
     -moz-justify-content: (@justify);
     -o-justify-content: (@justify);
 }
-
 .align-items (@align-items) {
     align-items: (@align-items);
     -webkit-align-items: (@align-items);
     -moz-align-items: (@align-items);
     -o-align-items: (@align-items);
 }
-
 .align-self (@align-self) {
     align-self: (@align-self);
     -webkit-align-self: (@align-self);
     -moz-align-self: (@align-self);
     -o-align-self: (@align-self);
 }
-
 .transform (@arguments) {
     transform: @arguments;
     -webkit-transform: @arguments;
     -moz-transform: @arguments;
     -o-transform: @arguments;
 }
-
 .transition {
     transition: 0.5s linear all;
     -webkit-transition: 0.5s linear all;
     -moz-transition: 0.5s linear all;
     -o-transition: 0.5s linear all;
 }
-
 .container {
     max-width: 1000px;
     width: 100%;
 }
-
 .container-1200 {
     max-width: 1800px;
     width: 100%;
@@ -99,20 +84,14 @@ sans-serif;
     -moz-border-radius: (@radius);
     -o-border-radius: (@radius);
 }
-
-.hover {
-    background: @red;
-}
-
 .block {
     margin: 0 auto;
     display: block;
-
     p {
         line-height: 1.5;
     }
 }
-.button-dl{
+.button-dl {
     background: @vert;
     padding: 10px 20px;
     color: @white;
@@ -122,18 +101,14 @@ sans-serif;
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-
     &:hover {
         background: @white;
         color: @vert;
+        opacity: 1;
     }
 }
-
-/* CSS BASE */
-
 html {
     height: 100%;
-
     body {
         margin: 0 auto;
         display: block;
@@ -145,11 +120,9 @@ html {
         overflow-x: hidden;
         background: @brun;
         max-width: 1800px;
-
         &.home .page-wrapper {
             max-width: 100%;
         }
-
         h1,
         h2,
         h3 {
@@ -194,11 +167,10 @@ html {
         .bouton-ingredients {
             display: none;
         }
-        /* HEADER */
         header {
             width: 100%;
-
-            .menu-menu-principal-container, .menu-english-menu-container {
+            .menu-menu-principal-container,
+            .menu-english-menu-container {
                 width: 100%;
                 display: block;
                 position: fixed;
@@ -206,8 +178,6 @@ html {
                 background: @brun;
                 z-index: 20;
                 max-width: 1800px;
-
-
                 ul {
                     padding-left: 0;
                     margin: 5px auto;
@@ -227,28 +197,24 @@ html {
                             border: 0;
                             padding-right: 0;
                         }
-
                         a {
                             color: @black;
-
                             &:hover {
                                 background: none;
                             }
                         }
-                        &.menu-item-type-cart{
-                            a{
+                        &.menu-item-type-cart {
+                            a {
                                 background: @vert;
                                 padding: 10px;
                                 color: @white;
                                 display: block;
-                                
-                                &:hover{
+                                &:hover {
                                     background: @white;
                                     color: @vert;
                                     opacity: 1;
                                 }
-                                
-                                span{
+                                span {
                                     display: block;
                                     font-size: 10px;
                                     text-transform: capitalize;
@@ -263,10 +229,8 @@ html {
                 position: fixed;
                 top: 20px;
                 left: 20px;
-
                 &:hover {
                     cursor: pointer;
-
                     span {
                         background: @white;
                     }
@@ -292,23 +256,20 @@ html {
                 box-shadow: 0 0 5px @black;
                 top: 0;
                 left: -100%;
-
                 &.active {
                     left: 0;
                 }
-
-                .menu-menu-principal-container, .menu-english-menu-container {
+                .menu-menu-principal-container,
+                .menu-english-menu-container {
                     display: block;
                     position: relative;
                     background: none;
-
                     ul {
                         .flex;
                         .flex-direction(column);
                         padding: 50px;
                         width: 100%;
                         box-sizing: border-box;
-
                         li {
                             display: block;
                             border-bottom: 1px solid @black;
@@ -322,8 +283,8 @@ html {
                             &:last-child {
                                 border-bottom: none;
                             }
-                            &.menu-item-type-cart{
-                                a{
+                            &.menu-item-type-cart {
+                                a {
                                     .flex;
                                     .justify-content(space-around);
                                     .align-items(center);
@@ -340,16 +301,13 @@ html {
                     top: 20px;
                     right: 20px;
                     z-index: 101;
-
                     &:hover {
                         cursor: pointer;
-
                         &:before,
                         &:after {
                             background: @white;
                         }
                     }
-
                     &:before {
                         content: "";
                         width: 30px;
@@ -424,10 +382,8 @@ html {
                     text-align: center;
                     .transform(rotateZ(45deg) translate(-110px, 10px));
                     .transition;
-                    
                     .anti-rotate {
                         .transform(rotateZ(-45deg) translateY(15px));
-
                         .price {
                             color: @white;
                             font-size: 40px;
@@ -442,11 +398,9 @@ html {
                             color: @brun;
                             font-size: 22px;
                             text-transform: uppercase;
-
                             &.added {
                                 display: none;
                             }
-
                             &:hover {
                                 background: none;
                             }
@@ -473,7 +427,6 @@ html {
                     width: 100%;
                     text-align: center;
                     .align-self(center);
-
                     .bouton-ingredients {
                         display: none;
                     }
@@ -499,7 +452,6 @@ html {
                         margin-top: 30px;
                     }
                 }
-
                 &.product_cat-dessert {
                     .inline-flex;
                     width: 33%;
@@ -514,17 +466,15 @@ html {
                         .transform(rotateZ(45deg) translate(0, 0));
                     }
                 }
-                &.product_cat-boissons {
+                &.post-151 {
                     .justify-content(flex-start);
-
                     .short-description {
                         text-align: center;
                         .container-1200;
                         display: block;
                         font-size: 15px;
-                        
-                        p{
-                            background: rgba(255,255,255,0.2);
+                        p {
+                            background: rgba(255, 255, 255, 0.2);
                             padding: 5px;
                             max-width: 750px;
                             margin: 0 auto;
@@ -534,18 +484,11 @@ html {
                         display: none;
                     }
                 }
-                &.product_cat-vins,
-                &.product_cat-eaux,
-                &.product_cat-the-glace{
-                    display: none;
-                }
-
             }
         }
         .page-wrapper {
             .container-1200;
             .block;
-
             .photos {
                 background-size: cover !important;
                 background-position: center top !important;
@@ -553,15 +496,12 @@ html {
                 .flex;
                 .flex-direction(column);
                 .justify-content(space-between);
-
                 h2 {
                     text-align: center;
                 }
-
                 &#background-producteur {
                     background-position: 50% 50%!important;
                 }
-
                 .presentation {
                     .flex;
                     .flex-direction(row);
@@ -665,28 +605,31 @@ html {
                     color: @vert;
                     font-family: @textes_light;
                 }
-                .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-account-fields, .woocommerce-additional-fields{
+                .woocommerce-billing-fields,
+                .woocommerce-shipping-fields,
+                .woocommerce-account-fields,
+                .woocommerce-additional-fields {
                     .container-1200;
-                    
-                    h3{
+
+                    h3 {
                         padding: 0 20px;
                         box-sizing: border-box;
                     }
-                    .woocommerce-form__label{
+                    .woocommerce-form__label {
                         position: relative;
-                        #ship-to-different-address-checkbox{
+                        #ship-to-different-address-checkbox {
                             position: relative;
                             top: -7px;
                         }
-                        span{
+                        span {
                             position: relative;
-                            
-                            &:hover{
-                                &:before{
+
+                            &:hover {
+                                &:before {
                                     border: 2px solid @vert;
                                 }
                             }
-                            &:before{
+                            &:before {
                                 position: relative;
                                 background: @white;
                                 left: -30px;
@@ -703,19 +646,22 @@ html {
                                 display: inline-block;
 
                             }
-                            
-                            &.active{
-                                &:before{
-                                    content:"";
+
+                            &.active {
+                                &:before {
+                                    content: "";
                                     border: 2px solid @black;
                                 }
                             }
                         }
                     }
-                    .woocommerce-billing-fields__field-wrapper, .create-account, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                    .woocommerce-billing-fields__field-wrapper,
+                    .create-account,
+                    .shipping_address,
+                    .woocommerce-additional-fields__field-wrapper {
                         max-width: 1200px;
                         .block;
-                        p{
+                        p {
                             width: 100%;
                             display: block;
                             max-width: 730px;
@@ -723,8 +669,8 @@ html {
                             margin-right: auto;
                             margin-bottom: 30px;
                             box-sizing: border-box;
-                            
-                            label{
+
+                            label {
                                 max-width: 300px;
                                 text-align: right;
                                 font-family: @titles;
@@ -734,7 +680,9 @@ html {
                                 margin-right: 50px;
                                 font-size: 22px;
                             }
-                            input, .select2, textarea{
+                            input,
+                            .select2,
+                            textarea {
                                 max-width: 350px;
                                 text-align: left;
                                 display: inline-block;
@@ -743,36 +691,37 @@ html {
                                 font-family: @titles;
                                 box-sizing: border-box;
                             }
-                            input{
+                            input {
                                 background: none;
                                 border-bottom: 1px solid @black;
                                 padding: 10px;
                                 box-shadow: none;
-                                outline:none;
+                                outline: none;
                                 border-top: none;
                                 border-left: none;
                                 border-right: none;
                                 .transition;
-                                
-                                &:active, &:focus{
+
+                                &:active,
+                                &:focus {
                                     border-bottom: @vert 1px solid;
                                 }
                             }
-                            .select2{
+                            .select2 {
                                 background: none;
                                 border: 1px solid @black;
                                 padding: 10px;
-                                
-                                .select2-selection--single{
+
+                                .select2-selection--single {
                                     background: none;
                                     border: none;
-                                    
-                                    .select2-selection__arrow{
+
+                                    .select2-selection__arrow {
                                         top: 10px;
                                     }
                                 }
                             }
-                            textarea{
+                            textarea {
                                 height: 200px;
                                 vertical-align: top;
                                 background: none;
@@ -780,13 +729,15 @@ html {
                                 outline: none;
                                 .transition;
                                 padding: 10px;
-                                
-                                &:active, &:focus{
+
+                                &:active,
+                                &:focus {
                                     border: @vert 1px solid;
                                 }
                             }
-                            &#billing_address_2_field, &#shipping_address_2_field{
-                                &:before{
+                            &#billing_address_2_field,
+                            &#shipping_address_2_field {
+                                &:before {
                                     max-width: 300px;
                                     text-align: right;
                                     font-family: @titles;
@@ -797,40 +748,40 @@ html {
                                     content: "";
                                 }
                             }
-                            &#shipping_country_field{
+                            &#shipping_country_field {
                                 display: none;
                             }
                         }
                     }
                 }
-                .woocommerce-checkout-payment{
+                .woocommerce-checkout-payment {
                     .container-1200;
                     margin-top: 60px;
 
-                    ul{
+                    ul {
                         padding-left: 0;
                         max-width: 1200px;
                         .block;
 
-                        li{
-                            label{
+                        li {
+                            label {
                                 font-family: @titles;
                                 font-size: 22px;
                                 text-transform: uppercase;
                                 line-height: 1;
-                                
-                                img{
+
+                                img {
                                     max-width: 40px;
                                     vertical-align: top;
                                 }
                             }
                         }
                     }
-                    .place-order{
+                    .place-order {
                         max-width: 1200px;
                         .block;
-                        
-                        .button{
+
+                        .button {
                             background: @vert;
                             padding: 10px 20px;
                             color: @white;
@@ -849,65 +800,103 @@ html {
                         }
                     }
                 }
-                .woocommerce-NoticeGroup{
+                .woocommerce-NoticeGroup {
                     .container-1200;
                     .block;
 
-                    ul{
+                    ul {
                         max-width: 1200px;
                         .block;
 
-                        li{
+                        li {
                             margin-bottom: 20px;
                             color: @red;
                         }
                     }
                 }
-                .woocommerce-order{
+                .woocommerce-order {
                     max-width: 1200px;
                     .block;
-                    
-                    .woocommerce-notice{
+
+                    .woocommerce-notice {
                         .h3;
                         color: @vert;
                         .medium;
                         text-align: center;
                     }
-                    ul{
+                    ul {
                         list-style: none;
                         border: 1px solid @black;
                         max-width: 600px;
-                        margin : 50px auto;
+                        margin: 50px auto;
                         padding: 0 20px;
                         box-sizing: border-box;
-                        
-                        li{
+
+                        li {
                             border-bottom: 1px solid @black;
                             padding: 20px 0;
-                            
-                            &:last-child{
+
+                            &:last-child {
                                 border: none;
                             }
                         }
                     }
-                    p{
+                    p {
                         text-align: center;
                     }
-                    tfoot{
+                    tfoot {
                         text-align: right;
                     }
-                    .woocommerce-customer-details{
+                    .woocommerce-customer-details {
                         margin-top: 50px;
-                        .woocommerce-columns{
+                        .woocommerce-columns {
                             .flex;
                             .flex-wrap;
-                            
-                            div{
+
+                            div {
                                 width: 50%;
                                 min-width: 320px;
-                                p{
+                                p {
                                     text-align: left;
                                 }
+                            }
+                        }
+                    }
+                }
+                .woocommerce-info {
+                    text-align: center;
+                    .h3;
+                    .medium;
+                    color: @vert;
+                    margin-bottom: 50px;
+
+                    a {
+                        .button-dl;
+                        max-width: 430px;
+                    }
+                }
+                .woocommerce-account-fields {
+                    margin: 50px auto 0;
+                    .form-row-wide {
+                        margin-bottom: 50px;
+
+                        label {
+                            .button-dl;
+                            max-width: 480px;
+                            cursor: pointer;
+
+                            span {
+                                &:before {
+                                    display: none!important;
+                                }
+                            }
+                            input {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
                             }
                         }
                     }
@@ -916,10 +905,9 @@ html {
         }
         .cart-collaterals {
             max-width: 1200px;
-            &:before{
+            &:before {
                 content: '';
                 width: 100%;
-                //max-width: 300px;
                 height: 2px;
                 background: @vert;
                 margin: 100px 0 50px 0;
@@ -967,7 +955,6 @@ html {
                 }
             }
         }
-
         table {
             width: 100%;
             max-width: 1200px;
@@ -981,7 +968,7 @@ html {
                     display: block;
                 }
             }
-            .product-total{
+            .product-total {
                 text-align: right;
             }
             .product-price,
@@ -1091,9 +1078,7 @@ html {
                                 margin: 0;
                             }
                         }
-
                     }
-
                     &:last-child {
                         td {
                             border: none;
@@ -1110,11 +1095,10 @@ html {
                         display: block;
                         background: white;
                         padding: 10px;
-                        
-                        &:hover{
+
+                        &:hover {
                             opacity: 0.5;
                         }
-
                     }
                 }
             }
@@ -1130,7 +1114,7 @@ html {
             &:hover .h3 {
                 color: #DDD;
             }
-            .drinks-categories{
+            .drinks-categories {
                 width: 75%;
                 text-transform: uppercase;
                 color: white;
@@ -1141,10 +1125,8 @@ html {
                 padding: 10px;
                 box-sizing: border-box;
             }
-            ;
             p {
                 &:first-child {
-                    //.medium;
                     font-weight: 700;
                     color: @vert;
                     text-align: left;
@@ -1159,11 +1141,10 @@ html {
                 .flex;
                 .justify-content(space-between);
                 .flex-direction(row);
-                .align-items(center); //max-width: 1000px;
+                .align-items(center);
                 &:last-child {
                     border-bottom: none;
                 }
-
                 div {
                     font-family: @titles;
                     text-transform: uppercase;
@@ -1197,7 +1178,7 @@ html {
                             .transition;
                             text-align: center;
                             line-height: 1.2;
-                        
+
                             &:hover {
                                 background: @white;
                                 color: @vert;
@@ -1226,8 +1207,8 @@ html {
                     font-size: 22px;
                     text-transform: uppercase;
                     .transition;
-                    
-                    &:hover{
+
+                    &:hover {
                         background: @white;
                         color: @vert;
                         opacity: 1;
@@ -1249,24 +1230,25 @@ html {
                 font-size: 18px;
                 margin-bottom: 10px;
             }
-            .contact, .social{
+            .contact,
+            .social {
                 list-style: none;
                 text-align: center;
                 font-size: 15px;
-                li{
+                li {
                     display: inline-block;
                     padding: 0 5px;
                 }
             }
-            .social{
+            .social {
                 text-transform: uppercase;
             }
-            .menu-menu-footer-container, .menu-menu-footer-english-container {
+            .menu-menu-footer-container,
+            .menu-menu-footer-english-container {
                 ul {
                     text-align: center;
                     list-style: none;
                     padding: 0;
-
                     li {
                         display: inline-block;
                         border-right: 1px solid @black;
@@ -1280,10 +1262,9 @@ html {
                     }
                 }
             }
-
             &:after {
                 content: " ";
-                background: url(http://localhost:8888/lesdejsurlherbe/wp-content/uploads/2018/04/motif.svg);
+                background: url(/lesdejsurlherbe/wp-content/uploads/2018/04/motif.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -1304,8 +1285,6 @@ html {
         }
     }
 }
-
-
 @media screen and (min-width:768px) and (max-width:1024px) {
     .container,
     .container-1200 {
@@ -1338,7 +1317,6 @@ html {
                                 top: 40px;
                                 margin-top: 20px;
                                 display: block;
-
                                 .triangle {
                                     display: none;
                                 }
@@ -1387,10 +1365,13 @@ html {
                 #photo-livraison {
                     height: 500px!important;
                 }
-                .woocommerce{
-                    .woocommerce-order{
+                .woocommerce {
+                    .woocommerce-order {
                         padding: 0 20px;
                         box-sizing: border-box;
+                    }
+                    .woocommerce-info {
+                        font-size: 30px;
                     }
                 }
             }
@@ -1403,7 +1384,6 @@ html {
         }
     }
 }
-
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:portrait) {
     .container-1200 {
         max-width: 600px;
@@ -1415,7 +1395,8 @@ html {
                 font-size: 30px;
             }
             header {
-                .menu-menu-principal-container, .menu-english-menu-container {
+                .menu-menu-principal-container,
+                .menu-english-menu-container {
                     display: none;
                 }
                 .burger-menu {
@@ -1462,7 +1443,6 @@ html {
                 .cadre-bas {
                     .container-1200 {
                         .flex-wrap;
-
                         .titre-gauche {
                             width: 100%;
                             text-align: center;
@@ -1508,7 +1488,8 @@ html {
                 font-size: 30px;
             }
             header {
-                .menu-menu-principal-container, .menu-english-menu-container {
+                .menu-menu-principal-container,
+                .menu-english-menu-container {
                     display: none;
                 }
                 .burger-menu {
@@ -1525,7 +1506,6 @@ html {
                         height: 130px;
                         width: 130px;
                         .transform(rotateZ(45deg) translate(-80px, 10px));
-
                         .anti-rotate {
                             .transform(rotateZ(-45deg) translateY(30px));
                             .price {
@@ -1538,7 +1518,6 @@ html {
                                 padding: 15px 10px;
                                 margin-top: 20px;
                                 display: block;
-
                                 .triangle {
                                     display: none;
                                 }
@@ -1558,7 +1537,7 @@ html {
                             bottom: 110px;
                         }
                     }
-                   &.product_cat-dessert {
+                    &.product_cat-dessert {
                         width: 32.9%;
                     }
                     .menu-description {
@@ -1635,28 +1614,37 @@ html {
                         }
                     }
                 }
-                .woocommerce{
-                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
-                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
-                            p{
+                .woocommerce {
+                    .woocommerce-billing-fields,
+                    .woocommerce-shipping-fields,
+                    .woocommerce-additional-fields {
+                        .woocommerce-billing-fields__field-wrapper,
+                        .shipping_address,
+                        .woocommerce-additional-fields__field-wrapper {
+                            p {
                                 padding: 0 20px;
-                                label{
+                                label {
                                     max-width: 100%;
                                     text-align: left;
                                 }
-                                input, .select2, textarea{
+                                input,
+                                .select2,
+                                textarea {
                                     max-width: 100%;
                                 }
                             }
                         }
                     }
-                    .woocommerce-checkout-review-order{
+                    .woocommerce-checkout-review-order {
                         padding: 0 20px;
                         box-sizing: border-box;
                     }
-                    .woocommerce-order{
+                    .woocommerce-order {
                         padding: 0 20px;
                         box-sizing: border-box;
+                    }
+                    .woocommerce-info {
+                        font-size: 20px;
                     }
                 }
             }
@@ -1674,7 +1662,8 @@ html {
                     margin-left: auto;
                     margin-right: auto;
                 }
-                .menu-menu-footer-container, .menu-menu-footer-english-container {
+                .menu-menu-footer-container,
+                .menu-menu-footer-english-container {
                     ul {
                         li {
                             display: block;
@@ -1703,9 +1692,7 @@ html {
             }
         }
     }
-
 }
-
 @media screen and (min-width:600px) and (max-width:767px) and (orientation:portrait) {
     .container-1200 {
         max-width: 580px;
@@ -1752,22 +1739,28 @@ html {
                     height: 300px!important;
                     background-position-y: 55%!important;
                 }
-                .woocommerce{
-                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
-                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
-                            p{
+                .woocommerce {
+                    .woocommerce-billing-fields,
+                    .woocommerce-shipping-fields,
+                    .woocommerce-additional-fields {
+                        .woocommerce-billing-fields__field-wrapper,
+                        .shipping_address,
+                        .woocommerce-additional-fields__field-wrapper {
+                            p {
                                 padding: 0 20px;
-                                label{
+                                label {
                                     max-width: 100%;
                                     text-align: left;
                                 }
-                                input, .select2, textarea{
+                                input,
+                                .select2,
+                                textarea {
                                     max-width: 100%;
                                 }
                             }
                         }
                     }
-                    .woocommerce-checkout-review-order{
+                    .woocommerce-checkout-review-order {
                         padding: 0 20px;
                         box-sizing: border-box;
                     }
@@ -1790,7 +1783,8 @@ html {
                 font-size: 30px;
             }
             header {
-                .menu-menu-principal-container, .menu-english-menu-container {
+                .menu-menu-principal-container,
+                .menu-english-menu-container {
                     display: none;
                 }
                 .burger-menu {
@@ -1806,7 +1800,6 @@ html {
                     .detail-menu {
                         order: 2;
                         .transform(translate(0, 80px));
-
                         .menu-description {
                             bottom: -123px;
                         }
@@ -1829,7 +1822,6 @@ html {
                             padding: 10px 20px;
                             width: 100%;
                             box-sizing: border-box;
-
                             .price {
                                 font-size: 25px;
                             }
@@ -1844,7 +1836,6 @@ html {
                             }
                             .added_to_cart {
                                 top: 5px;
-
                             }
                         }
                     }
@@ -1948,34 +1939,42 @@ html {
                         }
                     }
                 }
-                .woocommerce{
-                    .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
-                        .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
-                            p{
+                .woocommerce {
+                    .woocommerce-billing-fields,
+                    .woocommerce-shipping-fields,
+                    .woocommerce-additional-fields {
+                        .woocommerce-billing-fields__field-wrapper,
+                        .shipping_address,
+                        .woocommerce-additional-fields__field-wrapper {
+                            p {
                                 padding: 0 20px;
-                                label{
+                                label {
                                     max-width: 100%;
                                     text-align: left;
                                 }
-                                input, .select2, textarea{
+                                input,
+                                .select2,
+                                textarea {
                                     max-width: 100%;
                                 }
                             }
                         }
                     }
-                    .woocommerce-checkout-review-order{
+                    .woocommerce-checkout-review-order {
                         padding: 0 20px;
                         box-sizing: border-box;
                     }
-                    .woocommerce-order{
+                    .woocommerce-order {
                         padding: 0 20px;
                         box-sizing: border-box;
-                        .woocommerce-notice{
+                        .woocommerce-notice {
                             font-size: 30px;
                         }
                     }
+                    .woocommerce-info {
+                        font-size: 20px;
+                    }
                 }
-
             }
             table {
                 thead {
@@ -1990,7 +1989,6 @@ html {
                             margin: 0;
                             padding-bottom: 10px;
                             padding-top: 0;
-
                             &.product-remove {
                                 display: inline-block;
                                 width: 15%;
@@ -2005,12 +2003,10 @@ html {
                                     width: 90%;
                                     .block;
                                     text-align: center;
-
                                     input {
                                         max-width: 100%;
                                     }
                                 }
-
                             }
                             &.product-subtotal {
                                 text-align: left;
@@ -2046,13 +2042,13 @@ html {
                     margin-left: auto;
                     margin-right: auto;
                 }
-                .menu-menu-footer-container, .menu-menu-footer-english-container {
+                .menu-menu-footer-container,
+                .menu-menu-footer-english-container {
                     ul {
                         li {
                             display: block;
                             border-right: none;
                             padding: 10px;
-
                             &:after {
                                 content: "";
                                 width: 20px;
@@ -2061,7 +2057,6 @@ html {
                                 display: block;
                                 margin: 10px auto;
                             }
-
                             &:last-child {
                                 padding: 10px;
                             }
@@ -2076,7 +2071,6 @@ html {
         }
     }
 }
-
 @media screen and (max-width:380px) {
     .container-1200 {
         max-width: 100%;
@@ -2114,13 +2108,6 @@ html {
                                     font-size: 20px;
                                     top: 2px;
                                 }
-                                /*&:after {
-                                    border-left: 10px solid transparent;
-                                    border-right: 10px solid transparent;
-                                    border-bottom: 20px solid @white;
-                                    top: -6px;
-                                    margin-left: 20px;
-                                }*/
                             }
                         }
                     }
@@ -2283,7 +2270,8 @@ html {
                     margin-left: auto;
                     margin-right: auto;
                 }
-                .menu-menu-footer-container, .menu-menu-footer-english-container {
+                .menu-menu-footer-container,
+                .menu-menu-footer-english-container {
                     ul {
                         li {
                             display: block;
@@ -2312,8 +2300,4 @@ html {
             }
         }
     }
-}
-
-#wpadminbar{
-    display: none;
 }
