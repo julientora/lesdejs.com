@@ -15,67 +15,41 @@ if ( $the_query->have_posts() ) {
 	wp_reset_postdata();
 } else {
 }
+wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); 
+
 ?>
-    <?php wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); ?>
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-<script>
-(function ($){
-	// $(document).ready(function() {
-	// 	$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-	// 		var page = $(this).attr('href'); // Page cible
-	// 		var speed = 750; // Durée de l'animation (en ms)
-	// 		$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-	// 		return false;
-	// 	});
-	// })
-}(jQuery));
-</script>
 <script>	
-	(function ($){
-		$(document).ready(function(){	
-		    	//$('.product-image').parallax(0.2, 0, true);
-  
-// 	Petit cours de jQuery --> .toggleClass() pour ajouter/virer une classe
-//	.toggle() pour faire un display:none ou :block. 
-//	Cela permet d'éviter les répétitions du genre : addClass/removeClass, puisqu'à chaque événement, la classe ou le display sont changés. 
-//	Pour qu'un élément ayant une class commune avec d'autres soit ciblé, il faut appeler $(this) dans la fonction. Pour rappel, tu avais 
-//	écrit $('$this'), ce qui n'est pas correct. 
-				//Voici donc une fonction qui "fonctionne" : 
-//            	$('.bouton-ingredients').click(function() {
-//               		$(this).toggleClass('active');
-//               		$(this).next().slideToggle(500, 'linear');
-//            	}); 
-            // 	Je te laisse faire apparaître le menu comme tu préfères
+(function ($){
+	$(document).ready(function(){	
+        $('.burger-menu').click(function() {
+            $('.responsive-menu').addClass('active');
+        }); 
+        $('#close').click(function() {
+            $('.responsive-menu').removeClass('active');
+        }); 
 
-            // Ton code. 
-                $('.burger-menu').click(function() {
-                    $('.responsive-menu').addClass('active');
-                }); 
-                $('#close').click(function() {
-                    $('.responsive-menu').removeClass('active');
-                }); 
+        $(".drinks-choice .h3").click(function(){
+        	$(".drinks-choice").toggleClass('open');
+        });
+        $(".woocommerce-form__label span").click(function(){
+        	$(".woocommerce-form__label span").toggleClass('active');
+        });
+        $(".woocommerce").ajaxStop(function(){
+        	$(".drinks-choice .h3").click(function(){
+        		$(".drinks-choice").toggleClass('open');
+        	});
+        	$('.burger-menu').click(function() {
+                $('.responsive-menu').addClass('active');
+            }); 
+        	$('#close').click(function() {
+            	$('.responsive-menu').removeClass('active');
+        	}); 
+        });
+        $(".add_to_cart_button").append('<span class="triangle">&#x25B6;</span>');
 
-                $(".drinks-choice .h3").click(function(){
-                	$(".drinks-choice").toggleClass('open');
-                });
-                $(".woocommerce-form__label span").click(function(){
-                	$(".woocommerce-form__label span").toggleClass('active');
-                });
-                $(".woocommerce").ajaxStop(function(){
-                	$(".drinks-choice .h3").click(function(){
-                		$(".drinks-choice").toggleClass('open');
-                	});
-                	$('.burger-menu').click(function() {
-	                    $('.responsive-menu').addClass('active');
-	                }); 
-                	$('#close').click(function() {
-                    	$('.responsive-menu').removeClass('active');
-                	}); 
-                });
-                $(".add_to_cart_button").append('<span class="triangle">&#x25B6;</span>');
 	    function moreOrLess() {
 	    	$(".quantity").append('<div class="inc bouton">+</div>');
 	    	$(".quantity").prepend('<div class="dec bouton">-</div>');
@@ -105,10 +79,10 @@ if ( $the_query->have_posts() ) {
 		$(document).on("click",".bouton", function (e) {
 			var myButton = $('.button' );
 			myButton.removeProp( 'disabled');
-    	});
-    });
+	});
+});
 
-	}(jQuery));	    	
+}(jQuery));	    	
 </script>
 </body>
 </html>

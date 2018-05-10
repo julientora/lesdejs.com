@@ -165,7 +165,9 @@ abstract class WC_Stripe_Payment_Gateway extends WC_Payment_Gateway_CC {
 	}
 
 	/**
-	 * Check if this gateway is enabled
+	 * Check if we need to make gateways available.
+	 *
+	 * @since 4.1.3
 	 */
 	public function is_available() {
 		if ( 'yes' === $this->enabled ) {
@@ -227,7 +229,6 @@ abstract class WC_Stripe_Payment_Gateway extends WC_Payment_Gateway_CC {
 			'jcb'        => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/jcb.svg" class="stripe-jcb-icon stripe-icon" alt="JCB" />',
 			'alipay'     => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/alipay.svg" class="stripe-alipay-icon stripe-icon" alt="Alipay" />',
 			'wechat'     => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/wechat.svg" class="stripe-wechat-icon stripe-icon" alt="Wechat Pay" />',
-			'bitcoin'    => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/bitcoin.svg" class="stripe-bitcoin-icon stripe-icon" alt="Bitcoin" />',
 			'bancontact' => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/bancontact.svg" class="stripe-bancontact-icon stripe-icon" alt="Bancontact" />',
 			'ideal'      => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/ideal.svg" class="stripe-ideal-icon stripe-icon" alt="iDeal" />',
 			'p24'        => '<img src="' . WC_STRIPE_PLUGIN_URL . '/assets/images/p24.svg" class="stripe-p24-icon stripe-icon" alt="P24" />',
@@ -937,7 +938,7 @@ abstract class WC_Stripe_Payment_Gateway extends WC_Payment_Gateway_CC {
 
 			$amount = wc_price( $response->amount / 100 );
 
-			if ( in_array( strtolower( $order->get_currency() ), WC_Stripe_Helper::no_decimal_currencies() ) ) {
+			if ( in_array( strtolower( WC_Stripe_Helper::is_pre_30() ? $order->get_order_currency() : $order->get_currency() ), WC_Stripe_Helper::no_decimal_currencies() ) ) {
 				$amount = wc_price( $response->amount );
 			}
 

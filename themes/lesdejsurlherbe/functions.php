@@ -136,7 +136,7 @@ add_action( 'template_redirect', 'remove_sidebar_in_wcmp_vendor_shop', 999 );
 function show_description() {
     global $product;
     $description = $product->get_description();
-        echo '<div class="menu-description">' . $description . '</div></div>';
+        echo '<div class="detail-menu"><div class="menu-description">' . $description . '</div></div>';
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'show_description', 9 );
 
@@ -151,12 +151,6 @@ function woocommerce_after_shop_loop_item_title_short_description() {
 	<?php
 }
 add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_after_shop_loop_item_title_short_description', 5);
-
-// Put an "ingredients" button for each photo
-function bouton_ingredients() {
-        echo '<div class="detail-menu"><div class="bouton-ingredients">MENU</div>';
-}
-add_action( 'woocommerce_after_shop_loop_item_title', 'bouton_ingredients', 8 );
 
 //Change "add to cart" button text
 add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
@@ -213,7 +207,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     
 }
 // add_drinks_products_to_cart
-// add a reminder for drinks
 add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
 
 function add_drinks_products_to_cart() {
@@ -274,33 +267,9 @@ function add_drinks_products_to_cart() {
     echo '</div>';
 }
 
-// function get_my_cart(){
-// global $woocommerce;
-//     $items = $woocommerce->cart->get_cart();
-//     echo '<div id="cart">'.get_the_title(70);
-//         foreach ( WC()->cart->get_cart() as $cart_item ) {
-// 		    $item_name = $cart_item['data']->get_title();
-// 		    $quantity = $cart_item['quantity'];
-// 		    $price = $cart_item['data']->get_price();
-// 		    echo '<div class="small-cart-board">';
-//             echo '<div class="small-cart-product-qty">'.$quantity.'</div><div class="small-cart-product-title">'.$item_name.'</div>'; 
-//             echo '<div class="small-cart-price">'.$price."€</div>";
-//             echo "</div>";
-//         }
-//         echo '<div id="small-cart-total">TOTAL : ' .$woocommerce->cart->get_cart_total().'</div>';
-//     echo '</div>';
-// }
-// add_action('woocommerce_before_shop_loop', 'get_my_cart', 1);
-
-
-
-/**
- * These functions will add WooCmmerce or Easy Digital Downloads cart icons/menu items to the "top_nav" WordPress menu area (if it exists).
- * Please customize the following code to fit your needs.
- */
  
 /**
- * This function adds the WooCommerce or Easy Digital Downloads cart icons/items to the top_nav menu area as the last item.
+ * This function adds the WooCommerce cart icons/items to the top_nav menu area as the last item.
  */
 add_filter( 'wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 2 );
 function my_wp_nav_menu_items( $items, $args, $ajax = false ) {

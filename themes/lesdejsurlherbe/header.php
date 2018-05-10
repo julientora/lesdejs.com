@@ -12,11 +12,6 @@
     <link rel="stylesheet" type="text/css" href="<?php get_asset("css/main.css", true, true); ?>">
 <?php endif; ?>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Franklin:400,500" rel="stylesheet">
-	
-	
-	<!--[if lt IE 9]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-<![endif]-->
 	<?php wp_head(); ?>
 </head>
 

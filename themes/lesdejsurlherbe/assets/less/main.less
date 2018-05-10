@@ -665,7 +665,7 @@ html {
                     color: @vert;
                     font-family: @textes_light;
                 }
-                .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-additional-fields{
+                .woocommerce-billing-fields, .woocommerce-shipping-fields, .woocommerce-account-fields, .woocommerce-additional-fields{
                     .container-1200;
                     
                     h3{
@@ -688,19 +688,17 @@ html {
                             }
                             &:before{
                                 position: relative;
-                                height: 100%;
-                                width: 100%;
                                 background: @white;
                                 left: -30px;
                                 border: 2px solid @vert;
-                                content: "X";
-                                height: 20px;
-                                width: 20px;
+                                content: '\00d7';
+                                height: 16px;
+                                width: 16px;
                                 cursor: pointer;
-                                line-height: 1;
+                                line-height: 0.7;
                                 .transition;
                                 color: @vert;
-                                font-size: 22px;
+                                font-size: 28px;
                                 font-family: @textes_light;
                                 display: inline-block;
 
@@ -714,7 +712,7 @@ html {
                             }
                         }
                     }
-                    .woocommerce-billing-fields__field-wrapper, .shipping_address, .woocommerce-additional-fields__field-wrapper{
+                    .woocommerce-billing-fields__field-wrapper, .create-account, .shipping_address, .woocommerce-additional-fields__field-wrapper{
                         max-width: 1200px;
                         .block;
                         p{
