@@ -1140,3 +1140,23 @@ Stack trace:
 #5 {main}
   thrown
 
+2018-05-10T11:53:26+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php:59
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php(64): PLL_Query->have_translated_taxonomy(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php(161): PLL_Query->have_translated_taxonomy(Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/frontend/frontend.php(127): PLL_Query->filter_query(Object(PLL_Language))
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): PLL_Frontend->parse_query(Object(WP_Query))
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#6 /Us
+
+2018-05-10T11:54:21+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php:59
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php(64): PLL_Query->have_translated_taxonomy(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/include/query.php(161): PLL_Query->have_translated_taxonomy(Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/polylang/frontend/frontend.php(127): PLL_Query->filter_query(Object(PLL_Language))
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): PLL_Frontend->parse_query(Object(WP_Query))
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#6 /Us
+

@@ -217,28 +217,60 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
 
 function add_drinks_products_to_cart() {
-	$args = array(
-   		'category' => array( 'boissons' ),
-	);
-	$products = wc_get_products( $args );
+
+	if (pll_current_language() == 'en') {
+		echo '<div class="drinks-choice"><p class="h3">Beverages<span>&#8595;</span></p>';
+	}else{
 	echo '<div class="drinks-choice"><p class="h3">Nos boissons <span>&#8595;</span></p>';
-	foreach ($products as $indiv_product) {
-		//echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
-        echo '<div class="drinks-line">';
-		echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
-		echo '<div class="product-price">'.$indiv_product->get_price().'€</div>';
-		//woocommerce_quantity_input();
-		
-		echo apply_filters( 'woocommerce_loop_add_to_cart_link',
-			sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div>',
-			esc_url( $indiv_product->add_to_cart_url() ),
-			esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
-			esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
-			isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
-			esc_html( $indiv_product->add_to_cart_text() )
-		),
-	$indiv_product, $args );
 	}
+
+	$taxonomy = "product_cat";
+	$args = array(
+		'taxonomy' => $taxonomy
+	);
+	$allcategories = get_categories( $args );
+	foreach ($allcategories as $cat) {
+		$cat_id = $cat->term_id;
+		$cat_slug = $cat->slug;
+		if($cat->category_parent == 0) {  
+			$args2 = array(
+                'child_of' => 0,
+        		'taxonomy' => $taxonomy,
+        		'parent' => $cat_id
+        	);
+	        $sub_cats = get_categories( $args2 );
+	        if($sub_cats) {
+	            foreach($sub_cats as $sub_category) {
+	                $subcat_name = $sub_category->name;
+	                $subcat_slug = $sub_category->slug;
+	                echo '<div class="drinks-categories">' . $subcat_name . '</div>';
+	                //product-level
+	                $args3 = array(
+	                	'category' => array( $subcat_slug )
+	                );
+					$products = wc_get_products( $args3 );
+					foreach ($products as $indiv_product) {
+						//echo '<div class="thumb">'.$indiv_product->get_image().'</div>';
+				        echo '<div class="drinks-line">';
+						echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
+						echo '<div class="product-price">'.$indiv_product->get_price().'€</div>';
+						//woocommerce_quantity_input();
+						
+						echo apply_filters( 'woocommerce_loop_add_to_cart_link',
+							sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div>',
+							esc_url( $indiv_product->add_to_cart_url() ),
+							esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
+							esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
+							isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
+							esc_html( $indiv_product->add_to_cart_text() )
+						),
+					$indiv_product, $args );
+					}
+	            }   
+	        }    
+		}
+	}
+	
     echo '</div>';
 }
 
@@ -307,3 +339,23 @@ function unset_cpt_pll( $post_types, $is_settings ) {
 
     return $post_types;
 }
+
+/**
+ * Exclude products from a particular category on the shop page
+ */
+function custom_pre_get_posts_query( $q ) {
+
+    $tax_query = (array) $q->get( 'tax_query' );
+
+    $tax_query[] = array(
+           'taxonomy' => 'product_cat',
+           'field' => 'slug',
+           'terms' => array( 'beverages', 'boissons'),
+           'operator' => 'NOT IN'
+    );
+
+
+    $q->set( 'tax_query', $tax_query );
+
+}
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );  
