@@ -1,330 +1,2772 @@
+.medium {
+  font-weight: 500;
+}
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+}
+.inline-flex {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -o-inline-flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+}
+.transition {
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+.container-1200 {
+  max-width: 1800px;
+  width: 100%;
+}
+.container-1200-2 {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.block {
+  margin: 0 auto;
+  display: block;
+}
+.block p {
+  line-height: 1.5;
+}
+.button-dl {
+  background: #566d64;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.button-dl:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
+}
 html {
   height: 100%;
 }
 html body {
-  margin: 0;
+  margin: 0 auto;
+  display: block;
   height: 100%;
-  font-family: 'Roboto';
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
   font-size: 11pt;
+  width: 100%;
+  overflow-x: hidden;
+  background: #bda27e;
+  max-width: 1800px;
+}
+html body.home .page-wrapper {
+  max-width: 100%;
 }
 html body h1,
 html body h2,
 html body h3 {
-  font-family: 'Oranienbaum', serif;
+  font-family: 'Crimson Text', serif;
+}
+html body h3,
+html body .h3 {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+html body h3 a,
+html body .h3 a {
+  color: #000;
+}
+html body h3 a:hover,
+html body .h3 a:hover {
+  background: transparent;
+  color: #000;
 }
 html body a {
-  color: grey;
-  transition: .5s;
+  color: #000;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
   text-decoration: none;
 }
 html body a:hover {
-  background-color: grey;
-  color: white;
+  opacity: 0.5;
 }
-html body #page-accueil {
-  height: 100%;
-}
-html body #page-accueil .bloc_photo {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: url(../images/fond.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-html body #page-accueil #logo {
-  position: absolute;
-  width: 25%;
-  min-width: 200px;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-html body #page-accueil #fleche {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 50%;
-  text-align: center;
-  bottom: 7%;
-  transform: translateX(-50%);
-  animation: move 1.5s infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-html body #page-accueil #fleche img {
-  width: 60%;
-  transition: .5s;
-}
-html body #page-accueil #fleche img:hover {
-  width: 70%;
-  cursor: pointer;
-}
-html body #page-accueil #message-travaux {
-  position: absolute;
-  left: 50%;
-  text-align: center;
-  bottom: 7%;
-  transform: translateX(-50%);
-  background-color: white;
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
-  font-size: 20px;
-  box-sizing: border-box;
-  padding-bottom: 20px;
-}
-html body #page-accueil #message-travaux:before {
-  font-family: dashicons;
-  content: "\f107";
-  color: white;
-  width: 100%;
-  display: block;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 auto 20px auto;
-  font-size: 40px;
-  background-color: #234;
-  border-top-left-radius: 30px;
-}
-html body #page-content {
-  max-width: 1400px;
-  height: 100%;
-  box-sizing: border-box;
-  margin: auto;
-}
-html body #page-content #header {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-}
-html body #page-content #header h1 {
-  /* width: 80%; */
-  margin: 0 30px;
-  padding: 20px;
-  font-family: 'Oranienbaum', serif;
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: inline-block;
-}
-html body #page-content #header #infos {
-  width: 90%;
-  margin: 50px auto 0;
-  text-align: justify;
-}
-html body #page-content #content {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-html body #page-content #content h2 {
-  margin: 0px 0 0px;
-}
-html body #page-content #content h6 {
-  margin: 5px 0;
-}
-html body #page-content #content #menus {
-  width: 100%;
-  min-width: 320px;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-html body #page-content #content #menus .case-menu {
-  width: 100%;
-  height: 200px;
-  border: 3px solid #f5f5eb;
-  text-align: center;
-  margin-bottom: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-html body #page-content #content #menus .case-menu:hover {
-  border: 3px solid #919187;
-}
-html body #page-content #content #menus .bouton-boissons {
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  display: block;
-  background-color: #f5f5eb;
-  margin-bottom: 20px;
-}
-html body #page-content #content #menus .bouton-boissons:hover {
-  background-color: #919187;
-}
-html body #page-content #content #formulaire {
-  width: 100%;
-  min-width: 320px;
-  padding: 66px 5% 43px;
-  background-color: #f5f5eb;
-  box-sizing: border-box;
-}
-html body #page-content #content #formulaire h2 {
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-html body #page-content #content #formulaire p {
-  padding-left: 0 !important;
-}
-html body #page-content #content #formulaire .wpcf7 {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0px;
-}
-html body #page-content #content #formulaire .wpcf7 * {
-  font-family: 'Roboto';
-}
-html body #page-content #content #formulaire .wpcf7 input,
-html body #page-content #content #formulaire .wpcf7 textarea {
-  width: 100%;
-  font-size: 10pt;
+html body button {
   border: none;
-  padding-left: 3px;
-  box-sizing: border-box;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
 }
-html body #page-content #content #formulaire .wpcf7 input::placeholder,
-html body #page-content #content #formulaire .wpcf7 textarea::placeholder {
-  font-size: 9pt;
+html body button:hover {
+  cursor: pointer;
 }
-html body #page-content #content #formulaire .wpcf7 textarea {
-  height: 4em;
-}
-html body #page-content #content #formulaire .wpcf7 input {
+html body img {
+  width: 100%;
   height: auto;
 }
-html body #page-content #content #formulaire .wpcf7 .numbers {
+html body .bouton-ingredients {
+  display: none;
+}
+html body header {
+  width: 100%;
+}
+html body header .menu-menu-principal-container,
+html body header .menu-english-menu-container {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  background: #bda27e;
+  z-index: 20;
+  max-width: 1800px;
+}
+html body header .menu-menu-principal-container ul,
+html body header .menu-english-menu-container ul {
+  padding-left: 0;
+  margin: 5px auto;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
 }
-html body #page-content #content #formulaire .wpcf7 .numbers #adultes,
-html body #page-content #content #formulaire .wpcf7 .numbers #enfants {
-  width: 50%;
+html body header .menu-menu-principal-container ul li,
+html body header .menu-english-menu-container ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  padding: 0 20px;
 }
-html body #page-content #content #formulaire .wpcf7 .numbers #adultes input,
-html body #page-content #content #formulaire .wpcf7 .numbers #enfants input {
-  width: 40px;
-  font-size: 10pt;
+html body header .menu-menu-principal-container ul li:last-child,
+html body header .menu-english-menu-container ul li:last-child {
+  border: 0;
+  padding-right: 0;
 }
-html body #page-content #content #formulaire .wpcf7 .cartouche-menus {
+html body header .menu-menu-principal-container ul li a,
+html body header .menu-english-menu-container ul li a {
+  color: #000;
+}
+html body header .menu-menu-principal-container ul li a:hover,
+html body header .menu-english-menu-container ul li a:hover {
+  background: none;
+}
+html body header .menu-menu-principal-container ul li.menu-item-type-cart a,
+html body header .menu-english-menu-container ul li.menu-item-type-cart a {
+  background: #566d64;
+  padding: 10px;
+  color: #fff;
   display: block;
 }
-html body #page-content #content #formulaire .wpcf7 .cartouche-menus div {
-  width: auto;
+html body header .menu-menu-principal-container ul li.menu-item-type-cart a:hover,
+html body header .menu-english-menu-container ul li.menu-item-type-cart a:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
 }
-html body #page-content #content #formulaire .wpcf7 .cartouche-menus .cartouche-menu2,
-html body #page-content #content #formulaire .wpcf7 .cartouche-menus .cartouche-menu3 {
-  width: 100%;
+html body header .menu-menu-principal-container ul li.menu-item-type-cart a span,
+html body header .menu-english-menu-container ul li.menu-item-type-cart a span {
+  display: block;
+  font-size: 10px;
+  text-transform: capitalize;
 }
-html body #page-content #content #formulaire .wpcf7 .formulaire-first-part {
-  height: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
+html body header .burger-menu {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
-html body #page-content #content #formulaire .wpcf7 .formulaire-first-part label,
-html body #page-content #content #formulaire .wpcf7 .formulaire-first-part p {
-  width: 47.5%;
-  min-width: 200px;
+html body header .burger-menu:hover {
+  cursor: pointer;
 }
-html body #page-content #content #formulaire .wpcf7 input[type="date"],
-html body #page-content #content #formulaire .wpcf7 input[type="submit"] {
-  width: 140px;
-  font-size: 10pt;
+html body header .burger-menu:hover span {
+  background: #fff;
 }
-html body #page-content #content #formulaire .wpcf7 input[type="number"] {
+html body header .burger-menu span {
   width: 30px;
+  height: 5px;
+  background: #566d64;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: block;
+  margin-bottom: 5px;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
 }
-html body #page-content #content #formulaire .wpcf7 input[type="checkbox"] {
-  width: 15px;
+html body header .responsive-menu {
+  background: #bda27e;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  position: fixed;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  z-index: 100;
+  box-shadow: 0 0 5px #000;
+  top: 0;
+  left: -100%;
 }
-html body #page-content #content #formulaire .wpcf7 input[type="submit"] {
-  float: right;
-  background-color: #919187;
-  color: white;
-  height: 30px;
+html body header .responsive-menu.active {
+  left: 0;
+}
+html body header .responsive-menu .menu-menu-principal-container,
+html body header .responsive-menu .menu-english-menu-container {
+  display: block;
+  position: relative;
+  background: none;
+}
+html body header .responsive-menu .menu-menu-principal-container ul,
+html body header .responsive-menu .menu-english-menu-container ul {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  padding: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+html body header .responsive-menu .menu-menu-principal-container ul li,
+html body header .responsive-menu .menu-english-menu-container ul li {
+  display: block;
+  border-bottom: 1px solid #000;
+  border-right: none;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -o-align-items: flex-start;
+  text-align: left;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
   width: 100%;
 }
-html body #page-content #content #formulaire .wpcf7 .wpcf7-mail-sent-ok,
-html body #page-content #content #formulaire .wpcf7 .wpcf7-validation-errors {
+html body header .responsive-menu .menu-menu-principal-container ul li:last-child,
+html body header .responsive-menu .menu-english-menu-container ul li:last-child {
+  border-bottom: none;
+}
+html body header .responsive-menu .menu-menu-principal-container ul li.menu-item-type-cart a,
+html body header .responsive-menu .menu-english-menu-container ul li.menu-item-type-cart a {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -o-justify-content: space-around;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+}
+html body header .responsive-menu #close {
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 101;
+}
+html body header .responsive-menu #close:hover {
+  cursor: pointer;
+}
+html body header .responsive-menu #close:hover:before,
+html body header .responsive-menu #close:hover:after {
+  background: #fff;
+}
+html body header .responsive-menu #close:before {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: #566d64;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body header .responsive-menu #close:after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  background: #566d64;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: block;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  top: -5px;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body header #logo {
+  max-width: 800px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 30px 0;
+}
+html body .products {
+  margin: 0;
+  padding: 0;
+}
+html body .products .product {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 768px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+}
+html body .products .product .product-image {
+  background-size: cover !important;
+  background-position-x: 50% !important;
+  background-position-y: 50% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+  z-index: -1;
+}
+html body .products .product h3 {
+  order: 0;
+}
+html body .products .product .bouton-ingredients {
+  cursor: pointer;
+}
+html body .products .product .cta-order {
+  background: #566d64;
+  height: 200px;
+  width: 200px;
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -o-align-self: flex-end;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  text-align: center;
+  transform: rotateZ(45deg) translate(-110px, 10px);
+  -webkit-transform: rotateZ(45deg) translate(-110px, 10px);
+  -moz-transform: rotateZ(45deg) translate(-110px, 10px);
+  -o-transform: rotateZ(45deg) translate(-110px, 10px);
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body .products .product .cta-order .anti-rotate {
+  transform: rotateZ(-45deg) translateY(15px);
+  -webkit-transform: rotateZ(-45deg) translateY(15px);
+  -moz-transform: rotateZ(-45deg) translateY(15px);
+  -o-transform: rotateZ(-45deg) translateY(15px);
+}
+html body .products .product .cta-order .anti-rotate .price {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  display: block;
+}
+html body .products .product .cta-order .anti-rotate .quantity {
+  display: none;
+}
+html body .products .product .cta-order .anti-rotate .button {
+  color: #bda27e;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+html body .products .product .cta-order .anti-rotate .button.added {
+  display: none;
+}
+html body .products .product .cta-order .anti-rotate .button:hover {
+  background: none;
+}
+html body .products .product .cta-order .anti-rotate .button .triangle {
+  display: block;
+  font-size: 30px;
+}
+html body .products .product .cta-order .anti-rotate .added_to_cart {
+  color: #bda27e;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: white;
+  padding: 15px;
+  position: relative;
+  top: 60px;
+  white-space: nowrap;
+  text-align: center;
+}
+html body .products .product .detail-menu {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -o-align-self: center;
+}
+html body .products .product .detail-menu .bouton-ingredients {
+  display: none;
+}
+html body .products .product .detail-menu .active {
+  transform: translateY(-58px);
+  -webkit-transform: translateY(-58px);
+  -moz-transform: translateY(-58px);
+  -o-transform: translateY(-58px);
+}
+html body .products .product .detail-menu .menu-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #bda27e;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 30px;
+}
+html body .products .product .detail-menu .menu-description div {
+  color: #566d64;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+html body .products .product .detail-menu .menu-description div p {
+  line-height: 1.5;
+}
+html body .products .product.product_cat-dessert {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -o-inline-flex;
+  width: 33%;
+}
+html body .products .product.product_cat-dessert .product-image {
+  background-position-x: 50% !important;
+  background-position-y: 40% !important;
+}
+html body .products .product.product_cat-dessert .cta-order {
+  position: absolute;
+  bottom: 120px;
+  left: calc(50% - 100px);
+  transform: rotateZ(45deg) translate(0, 0);
+  -webkit-transform: rotateZ(45deg) translate(0, 0);
+  -moz-transform: rotateZ(45deg) translate(0, 0);
+  -o-transform: rotateZ(45deg) translate(0, 0);
+}
+html body .products .product.post-151 {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -o-justify-content: flex-start;
+}
+html body .products .product.post-151 .short-description {
+  text-align: center;
+  max-width: 1800px;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+}
+html body .products .product.post-151 .short-description p {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+html body .products .product.post-151 .cta-order {
+  display: none;
+}
+html body .page-wrapper {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper p {
+  line-height: 1.5;
+}
+html body .page-wrapper .photos {
+  background-size: cover !important;
+  background-position: center top !important;
+  height: 600px!important;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+}
+html body .page-wrapper .photos h2 {
+  text-align: center;
+}
+html body .page-wrapper .photos#background-producteur {
+  background-position: 50% 50%!important;
+}
+html body .page-wrapper .photos .presentation {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+html body .page-wrapper .cadre-bas {
+  background: #bda27e;
+  width: 100%;
+  padding: 30px 0;
+}
+html body .page-wrapper .cadre-bas .container-1200 {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -o-align-items: flex-start;
+  margin: 0 auto;
+}
+html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+  width: 50%;
+  color: #566d64;
+  text-transform: uppercase;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 50px;
+  margin: 0;
+}
+html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+  width: 50%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+html body .page-wrapper .cadre-bas .container-1200 .texte-droite p {
+  margin: 0;
+}
+html body .page-wrapper .livraison {
+  background: #566d64;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  height: auto!important;
+}
+html body .page-wrapper .livraison.photos {
+  height: auto!important;
+}
+html body .page-wrapper .livraison .h3 {
+  color: #fff;
+}
+html body .page-wrapper .livraison .cadre-bas {
+  background: none;
+}
+html body .page-wrapper .livraison .cadre-bas img {
+  width: 50%;
+  padding-right: 50px;
+}
+html body .page-wrapper #photo-livraison {
+  width: 100%;
+  height: 800px!important;
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  background-position: top center !important;
+}
+html body .page-wrapper .woocommerce .cart-empty {
+  text-align: center;
+}
+html body .page-wrapper .woocommerce .return-to-shop a {
+  text-align: center;
+  color: #fff;
+  background: #566d64;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+}
+html body .page-wrapper .woocommerce .product-thumbnail,
+html body .page-wrapper .woocommerce .thumb {
+  display: none;
+}
+html body .page-wrapper .woocommerce .woocommerce-message {
+  text-align: center;
+  border: 1px solid #566d64;
+  font-size: 22px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 30px;
+  color: #566d64;
+  font-family: 'Libre Franklin', sans-serif;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields,
+html body .page-wrapper .woocommerce .woocommerce-account-fields,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields {
+  max-width: 1800px;
+  width: 100%;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields h3,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields h3,
+html body .page-wrapper .woocommerce .woocommerce-account-fields h3,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields h3 {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label {
+  position: relative;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label #ship-to-different-address-checkbox,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label #ship-to-different-address-checkbox,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label #ship-to-different-address-checkbox,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label #ship-to-different-address-checkbox {
+  position: relative;
+  top: -7px;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label span,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span {
+  position: relative;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label span:hover:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span:hover:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span:hover:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span:hover:before {
+  border: 2px solid #566d64;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label span:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span:before {
+  position: relative;
+  background: #fff;
+  left: -30px;
+  border: 2px solid #566d64;
+  content: '\00d7';
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  line-height: 0.7;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  color: #566d64;
+  font-size: 28px;
+  font-family: 'Libre Franklin', sans-serif;
+  display: inline-block;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label span.active:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span.active:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span.active:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span.active:before {
+  content: "";
+  border: 2px solid #000;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p {
+  width: 100%;
+  display: block;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p label,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p label,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p label,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p label,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p label,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p label,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p label,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p label,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p label,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p label {
+  max-width: 300px;
+  text-align: right;
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-right: 50px;
+  font-size: 22px;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea {
+  max-width: 350px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  font-size: 22px;
+  font-family: 'Crimson Text', serif;
+  box-sizing: border-box;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input {
+  background: none;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  box-shadow: none;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p input:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p input:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p input:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p input:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input:focus {
+  border-bottom: #566d64 1px solid;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2 {
+  background: none;
+  border: 1px solid #000;
+  padding: 10px;
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single {
+  background: none;
   border: none;
 }
-html body #page-content #content #formulaire .wpcf7 span.wpcf7-list-item {
-  margin: 0px;
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow {
+  top: 10px;
 }
-html body #page-content #content #formulaire .wpcf7 label,
-html body #page-content #content #formulaire .wpcf7 .wpcf7-list-item-label {
-  font-size: 9pt;
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea {
+  height: 200px;
+  vertical-align: top;
+  background: none;
+  border: 1px solid #000;
+  outline: none;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  padding: 10px;
 }
-html body #page-content #content #formulaire .wpcf7 .menus p {
-  margin: 5px auto;
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea:focus {
+  border: #566d64 1px solid;
 }
-@media (min-width: 568px) {
-  html body #page-content #header {
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before {
+  max-width: 300px;
+  text-align: right;
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-right: 50px;
+  content: "";
+}
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-billing-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .create-account p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .create-account p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .create-account p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .create-account p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
+html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field {
+  display: none;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment {
+  max-width: 1800px;
+  width: 100%;
+  margin-top: 60px;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment ul {
+  padding-left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment ul p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment ul li label {
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment ul li label img {
+  max-width: 40px;
+  vertical-align: top;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button {
+  background: #566d64;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  margin-left: auto;
+  display: block;
+  max-width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button:hover {
+  background: #fff;
+  color: #566d64;
+}
+html body .page-wrapper .woocommerce .woocommerce-NoticeGroup {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-NoticeGroup p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-NoticeGroup ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-NoticeGroup ul p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-NoticeGroup ul li {
+  margin-bottom: 20px;
+  color: #db0812;
+}
+html body .page-wrapper .woocommerce .woocommerce-order {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .page-wrapper .woocommerce .woocommerce-order p {
+  line-height: 1.5;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #566d64;
+  font-weight: 500;
+  text-align: center;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a {
+  color: #000;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a:hover {
+  background: transparent;
+  color: #000;
+}
+html body .page-wrapper .woocommerce .woocommerce-order ul {
+  list-style: none;
+  border: 1px solid #000;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+html body .page-wrapper .woocommerce .woocommerce-order ul li {
+  border-bottom: 1px solid #000;
+  padding: 20px 0;
+}
+html body .page-wrapper .woocommerce .woocommerce-order ul li:last-child {
+  border: none;
+}
+html body .page-wrapper .woocommerce .woocommerce-order p {
+  text-align: center;
+}
+html body .page-wrapper .woocommerce .woocommerce-order tfoot {
+  text-align: right;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-customer-details {
+  margin-top: 50px;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-customer-details .woocommerce-columns {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-customer-details .woocommerce-columns div {
+  width: 50%;
+  min-width: 320px;
+}
+html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-customer-details .woocommerce-columns div p {
+  text-align: left;
+}
+html body .page-wrapper .woocommerce .woocommerce-info {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+  color: #566d64;
+  margin-bottom: 50px;
+}
+html body .page-wrapper .woocommerce .woocommerce-info a {
+  color: #000;
+}
+html body .page-wrapper .woocommerce .woocommerce-info a:hover {
+  background: transparent;
+  color: #000;
+}
+html body .page-wrapper .woocommerce .woocommerce-info a {
+  background: #566d64;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  max-width: 430px;
+}
+html body .page-wrapper .woocommerce .woocommerce-info a:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields {
+  margin: 50px auto 0;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide {
+  margin-bottom: 50px;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label {
+  background: #566d64;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  max-width: 480px;
+  cursor: pointer;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label span:before {
+  display: none!important;
+}
+html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+html body .cart-collaterals {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .cart-collaterals:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #566d64;
+  margin: 100px 0 50px 0;
+  display: block;
+}
+html body .cart-collaterals p {
+  line-height: 1.5;
+}
+html body .cart-collaterals .cart_totals h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 50px;
+  color: #566d64;
+}
+html body .cart-collaterals .cart_totals .shop_table th,
+html body .cart-collaterals .cart_totals .shop_table td {
+  text-align: right;
+}
+html body .cart-collaterals .cart_totals .shop_table th {
+  padding-right: 100px;
+}
+html body .cart-collaterals .wc-proceed-to-checkout {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+html body .cart-collaterals .wc-proceed-to-checkout p {
+  line-height: 1.5;
+}
+html body .cart-collaterals .wc-proceed-to-checkout .button {
+  background: #566d64;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  margin-left: auto;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body .cart-collaterals .wc-proceed-to-checkout .button:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
+}
+html body table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+html body table .product-name {
+  text-align: left;
+}
+html body table .product-name a {
+  max-width: 370px;
+  width: 100%;
+  display: block;
+}
+html body table .product-total {
+  text-align: right;
+}
+html body table .product-price,
+html body table .product-quantity,
+html body table .product-subtotal {
+  text-align: right;
+}
+html body table .product-quantity .quantity {
+  max-width: 240px;
+  margin-left: auto;
+}
+html body table thead {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #566d64;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+html body table thead a {
+  color: #000;
+}
+html body table thead a:hover {
+  background: transparent;
+  color: #000;
+}
+html body table thead tr th:first-child {
+  padding-left: 20px;
+}
+html body table thead tr th:last-child {
+  padding-right: 20px;
+}
+html body table thead .product-remove {
+  visibility: hidden;
+}
+html body table tbody {
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+html body table tbody tr {
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body table tbody tr td {
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+html body table tbody tr td:first-child {
+  padding-left: 20px;
+}
+html body table tbody tr td:last-child {
+  padding-right: 20px;
+}
+html body table tbody tr td.product-remove .remove {
+  font-size: 40px;
+  top: -3px;
+  position: relative;
+}
+html body table tbody tr td.product-remove .remove:hover {
+  color: #fff;
+}
+html body table tbody tr td.product-quantity label {
+  display: none;
+}
+html body table tbody tr td.product-quantity .quantity .bouton {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background: #566d64;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-weight: 500;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  text-align: center;
+  line-height: 1.2;
+}
+html body table tbody tr td.product-quantity .quantity .bouton:hover {
+  background: #fff;
+  color: #566d64;
+  cursor: pointer;
+}
+html body table tbody tr td.product-quantity input[type=number] {
+  background: none;
+  border: none;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+html body table tbody tr td.product-quantity input[type=number]::-webkit-inner-spin-button,
+html body table tbody tr td.product-quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html body table tbody tr:last-child td {
+  border: none;
+}
+html body table tbody tr .button {
+  color: #566d64;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  font-size: 18px;
+  margin-left: auto;
+  display: block;
+  background: white;
+  padding: 10px;
+}
+html body table tbody tr .button:hover {
+  opacity: 0.5;
+}
+html body .drinks-choice {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 70px;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+html body .drinks-choice p {
+  line-height: 1.5;
+}
+html body .drinks-choice:hover .h3 {
+  color: #DDD;
+}
+html body .drinks-choice .drinks-categories {
+  width: 75%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;
+  background: #566d64;
+  padding: 10px;
+  box-sizing: border-box;
+}
+html body .drinks-choice p:first-child {
+  font-weight: 700;
+  color: #566d64;
+  text-align: left;
+  cursor: pointer;
+}
+html body .drinks-choice .drinks-line {
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+}
+html body .drinks-choice .drinks-line:last-child {
+  border-bottom: none;
+}
+html body .drinks-choice .drinks-line div {
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+html body .drinks-choice .drinks-line div.product-title {
+  width: 35%;
+}
+html body .drinks-choice .drinks-line div.product-price {
+  text-align: right;
+  width: 15%;
+}
+html body .drinks-choice .drinks-line div.quantity {
+  text-align: right;
+}
+html body .drinks-choice .drinks-line div.quantity label {
+  display: none;
+}
+html body .drinks-choice .drinks-line div.quantity input {
+  max-width: 55px;
+}
+html body .drinks-choice .drinks-line div.quantity .bouton {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background: #566d64;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-weight: 500;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  text-align: center;
+  line-height: 1.2;
+}
+html body .drinks-choice .drinks-line div.quantity .bouton:hover {
+  background: #fff;
+  color: #566d64;
+  cursor: pointer;
+}
+html body .drinks-choice .drinks-line div.quantity input[type=number] {
+  background: none;
+  border: none;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+html body .drinks-choice .drinks-line div.quantity input[type=number]::-webkit-inner-spin-button,
+html body .drinks-choice .drinks-line div.quantity input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html body .drinks-choice .drinks-line .button {
+  width: 25%;
+  text-align: center;
+  background: #566d64;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+html body .drinks-choice .drinks-line .button:hover {
+  background: #fff;
+  color: #566d64;
+  opacity: 1;
+}
+html body .open {
+  max-height: 2000px;
+}
+html body footer {
+  text-align: center;
+}
+html body footer h4 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+html body footer h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+html body footer .contact,
+html body footer .social {
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+}
+html body footer .contact li,
+html body footer .social li {
+  display: inline-block;
+  padding: 0 5px;
+}
+html body footer .social {
+  text-transform: uppercase;
+}
+html body footer .menu-menu-footer-container ul,
+html body footer .menu-menu-footer-english-container ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+html body footer .menu-menu-footer-container ul li,
+html body footer .menu-menu-footer-english-container ul li {
+  display: inline-block;
+  border-right: 1px solid #000;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+html body footer .menu-menu-footer-container ul li:last-child,
+html body footer .menu-menu-footer-english-container ul li:last-child {
+  border-right: none;
+  padding: 0 0 0 10px;
+}
+html body footer:after {
+  content: " ";
+  background: url(../../../../uploads/2018/04/motif.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+html body.single-product .product img {
+  height: 100%;
+}
+html body.single-product .product h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+html body.single-product .product h1 a {
+  color: #000;
+}
+html body.single-product .product h1 a:hover {
+  background: transparent;
+  color: #000;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container,
+  .container-1200 {
+    max-width: 850px;
+  }
+  html body h3,
+  html body .h3 {
+    font-size: 40px;
+  }
+  html body .products .product {
+    height: 400px;
+  }
+  html body .products .product .cta-order {
+    height: 150px;
+    width: 150px;
+  }
+  html body .products .product .cta-order .anti-rotate {
+    transform: rotateZ(-45deg) translateY(30px);
+    -webkit-transform: rotateZ(-45deg) translateY(30px);
+    -moz-transform: rotateZ(-45deg) translateY(30px);
+    -o-transform: rotateZ(-45deg) translateY(30px);
+  }
+  html body .products .product .cta-order .anti-rotate .price {
+    font-size: 30px;
+  }
+  html body .products .product .cta-order .anti-rotate .button {
+    font-size: 19px;
+    background: #fff;
+    color: #bda27e;
+    padding: 15px 10px;
+    top: 40px;
+    margin-top: 20px;
+    display: block;
+  }
+  html body .products .product .cta-order .anti-rotate .button .triangle {
+    display: none;
+  }
+  html body .products .product .cta-order .anti-rotate .added_to_cart {
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    display: block;
+    top: 0;
+  }
+  html body .products .product.product_cat-dessert .cta-order {
+    left: calc(50% - 75px);
+    bottom: 90px;
+  }
+  html body .products .product .detail-menu .menu-description div {
+    font-size: 13px;
+  }
+  html body .page-wrapper .photos {
+    height: 400px!important;
+  }
+  html body .page-wrapper .photos .presentation {
+    max-width: 850px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 40%;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+    width: 60%;
+  }
+  html body .page-wrapper #photo-livraison {
+    height: 500px!important;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-info {
+    font-size: 30px;
+  }
+  html body footer:after {
+    background-size: cover;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container-1200 {
+    max-width: 600px;
+  }
+  html body h3,
+  html body .h3 {
+    font-size: 30px;
+  }
+  html body header .menu-menu-principal-container,
+  html body header .menu-english-menu-container {
+    display: none;
+  }
+  html body header .burger-menu {
+    display: block;
+  }
+  html body header #logo {
+    padding: 30px 0;
+  }
+  html body .products .product {
+    height: 350px;
+  }
+  html body .products .product .cta-order {
+    height: 130px;
+    width: 130px;
+    transform: rotateZ(45deg) translate(-80px, 10px);
+    -webkit-transform: rotateZ(45deg) translate(-80px, 10px);
+    -moz-transform: rotateZ(45deg) translate(-80px, 10px);
+    -o-transform: rotateZ(45deg) translate(-80px, 10px);
+  }
+  html body .products .product .cta-order .anti-rotate .price {
+    font-size: 25px;
+  }
+  html body .products .product .cta-order .anti-rotate .button {
+    font-size: 15px;
+  }
+  html body .products .product .cta-order .anti-rotate .added_to_cart {
+    padding: 15px 2px;
+  }
+  html body .products .product.product_cat-dessert .cta-order {
+    left: calc(50% - 65px);
+    bottom: 110px;
+  }
+  html body .page-wrapper .photos .presentation {
+    max-width: 600px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
     width: 100%;
   }
-  html body #page-content #header h1 {
-    width: 130px;
+  html body .page-wrapper .cadre-bas .container-1200 img {
+    width: 100%;
   }
-  html body #page-content #content {
+  html body .page-wrapper #photo-livraison {
+    height: 500px!important;
+  }
+  html body .page-wrapper table thead {
+    font-size: 30px;
+  }
+  html body .page-wrapper .drinks-choice .h3 {
+    padding-left: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .container-1200 {
+    max-width: 600px;
+  }
+  html body h3,
+  html body .h3 {
+    font-size: 30px;
+  }
+  html body header .menu-menu-principal-container,
+  html body header .menu-english-menu-container {
+    display: none;
+  }
+  html body header .burger-menu {
+    display: block;
+  }
+  html body header #logo {
+    padding: 30px 0;
+  }
+  html body .products .product {
+    height: 350px;
+  }
+  html body .products .product .cta-order {
+    height: 130px;
+    width: 130px;
+    transform: rotateZ(45deg) translate(-80px, 10px);
+    -webkit-transform: rotateZ(45deg) translate(-80px, 10px);
+    -moz-transform: rotateZ(45deg) translate(-80px, 10px);
+    -o-transform: rotateZ(45deg) translate(-80px, 10px);
+  }
+  html body .products .product .cta-order .anti-rotate {
+    transform: rotateZ(-45deg) translateY(30px);
+    -webkit-transform: rotateZ(-45deg) translateY(30px);
+    -moz-transform: rotateZ(-45deg) translateY(30px);
+    -o-transform: rotateZ(-45deg) translateY(30px);
+  }
+  html body .products .product .cta-order .anti-rotate .price {
+    font-size: 25px;
+  }
+  html body .products .product .cta-order .anti-rotate .button {
+    font-size: 15px;
+    color: #bda27e;
+    background: #fff;
+    padding: 15px 10px;
+    margin-top: 20px;
+    display: block;
+  }
+  html body .products .product .cta-order .anti-rotate .button .triangle {
+    display: none;
+  }
+  html body .products .product .cta-order .anti-rotate .added_to_cart {
+    font-size: 14px;
+    padding: 15px 3px;
+    margin-top: 20px;
+    display: block;
+    top: 0;
+  }
+  html body .products .product.product_cat-dessert .cta-order {
+    left: calc(50% - 65px);
+    bottom: 110px;
+  }
+  html body .products .product.product_cat-dessert {
+    width: 32.9%;
+  }
+  html body .products .product .menu-description {
+    padding: 10px 0;
+  }
+  html body .products .product .menu-description div {
+    font-size: 12px;
+  }
+  html body .page-wrapper .photos {
+    height: 320px!important;
+  }
+  html body .page-wrapper .photos .presentation {
+    max-width: 600px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+    width: 100%;
+  }
+  html body .page-wrapper #photo-livraison {
+    height: 300px!important;
+    background-position-y: 55%!important;
+  }
+  html body .page-wrapper table thead {
+    font-size: 20px;
+  }
+  html body .page-wrapper table tbody {
+    font-size: 18px;
+  }
+  html body .page-wrapper table tbody tr td:first-child {
+    padding-left: 0;
+  }
+  html body .page-wrapper table tbody tr .product-quantity input {
+    max-width: 55px;
+  }
+  html body .page-wrapper .drinks-choice .h3 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line {
+    padding: 0 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div,
+  html body .page-wrapper .drinks-choice .drinks-line a {
+    font-size: 18px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.product-price,
+  html body .page-wrapper .drinks-choice .drinks-line a.product-price {
+    width: 10%;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.quantity,
+  html body .page-wrapper .drinks-choice .drinks-line a.quantity {
+    width: 30%;
+    text-align: center;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p {
+    padding: 0 20px;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p label {
+    max-width: 100%;
+    text-align: left;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea {
+    max-width: 100%;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-checkout-review-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-info {
+    font-size: 20px;
+  }
+  html body table thead {
+    font-size: 20px;
+  }
+  html body table tbody {
+    font-size: 18px;
+  }
+  html body footer h4 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body footer .menu-menu-footer-container ul li,
+  html body footer .menu-menu-footer-english-container ul li {
+    display: block;
+    border-right: none;
+    padding: 10px;
+  }
+  html body footer .menu-menu-footer-container ul li:after,
+  html body footer .menu-menu-footer-english-container ul li:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 10px auto;
+  }
+  html body footer .menu-menu-footer-container ul li:last-child,
+  html body footer .menu-menu-footer-english-container ul li:last-child {
+    padding: 10px;
+  }
+  html body footer:after {
+    background-size: cover;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) and (orientation: portrait) {
+  .container-1200 {
+    max-width: 580px;
+  }
+  html body .products .product.product_cat-dessert {
+    width: 32.9%;
+  }
+  html body .page-wrapper .photos {
+    height: 320px!important;
+  }
+  html body .page-wrapper .photos .presentation {
+    max-width: 580px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+    width: 100%;
+  }
+  html body .page-wrapper .livraison .cadre-bas img {
+    width: 100%;
+  }
+  html body .page-wrapper #photo-livraison {
+    height: 300px!important;
+    background-position-y: 55%!important;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p {
+    padding: 0 20px;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p label {
+    max-width: 100%;
+    text-align: left;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea {
+    max-width: 100%;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-checkout-review-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container-1200 {
+    max-width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  html body h3,
+  html body .h3 {
+    font-size: 30px;
+  }
+  html body header .menu-menu-principal-container,
+  html body header .menu-english-menu-container {
+    display: none;
+  }
+  html body header .burger-menu {
+    display: block;
+  }
+  html body header #logo {
+    padding: 10px 0;
+  }
+  html body .products .product {
+    height: 500px;
+  }
+  html body .products .product .detail-menu {
+    order: 2;
+    transform: translate(0, 80px);
+    -webkit-transform: translate(0, 80px);
+    -moz-transform: translate(0, 80px);
+    -o-transform: translate(0, 80px);
+  }
+  html body .products .product .detail-menu .menu-description {
+    bottom: -123px;
+  }
+  html body .products .product .detail-menu .active {
+    transform: translateY(-120px);
+    -webkit-transform: translateY(-120px);
+    -moz-transform: translateY(-120px);
+    -o-transform: translateY(-120px);
+  }
+  html body .products .product .cta-order {
+    width: 100%;
+    height: auto;
+    order: 3;
+    transform: none;
+  }
+  html body .products .product .cta-order .anti-rotate {
+    transform: none;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -o-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -o-justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  html body .products .product .cta-order .anti-rotate .price {
+    font-size: 25px;
+  }
+  html body .products .product .cta-order .anti-rotate .button {
+    font-size: 25px;
+  }
+  html body .products .product .cta-order .anti-rotate .button .triangle {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: 4px;
+  }
+  html body .products .product .cta-order .anti-rotate .added_to_cart {
+    top: 5px;
+  }
+  html body .products .product.product_cat-dessert {
+    width: 100%;
+  }
+  html body .products .product.product_cat-dessert .cta-order {
+    position: relative;
+    transform: none;
+    left: 0;
+    order: 3;
+    bottom: 0;
+  }
+  html body .products .product .menu-description {
+    padding: 10px 0;
+  }
+  html body .products .product .menu-description div {
+    font-size: 12px;
+  }
+  html body .products .product.product_cat-boissons .menu-description {
+    bottom: -314px;
+  }
+  html body .page-wrapper .photos {
+    height: 320px!important;
+  }
+  html body .page-wrapper .photos .presentation {
+    max-width: 600px;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+    width: 100%;
+  }
+  html body .page-wrapper .livraison.photos img {
+    width: 100%;
+  }
+  html body .page-wrapper #photo-livraison {
+    height: 300px!important;
+    background-position-y: 55%!important;
+  }
+  html body .page-wrapper .drinks-choice .h3 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line {
+    padding: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div {
+    font-size: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.product-price {
+    width: 10%;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.quantity {
+    width: 30%;
+    text-align: center;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line a {
+    font-size: 15px;
+  }
+  html body .page-wrapper table thead {
+    font-size: 20px;
+  }
+  html body .page-wrapper table tbody {
+    font-size: 20px;
+  }
+  html body .page-wrapper table tbody tr td:first-child {
+    padding-left: 0;
+  }
+  html body .page-wrapper table tbody tr .product-quantity input {
+    max-width: 45px;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p {
+    padding: 0 20px;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p label,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p label,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p label {
+    max-width: 100%;
+    text-align: left;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-billing-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
+  html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p textarea {
+    max-width: 100%;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-checkout-review-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-order {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice {
+    font-size: 30px;
+  }
+  html body .page-wrapper .woocommerce .woocommerce-info {
+    font-size: 20px;
+  }
+  html body table thead {
+    display: none;
+  }
+  html body table tbody {
+    font-size: 20px;
+  }
+  html body table tbody tr td {
+    display: block;
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  html body table tbody tr td.product-remove {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+  }
+  html body table tbody tr td.product-name {
+    display: inline-block;
+    width: 80%;
+  }
+  html body table tbody tr td.product-quantity .quantity {
     width: 90%;
     margin: 0 auto;
+    display: block;
+    text-align: center;
   }
-  html body #page-content #content #menus {
-    width: 100%;
+  html body table tbody tr td.product-quantity .quantity p {
+    line-height: 1.5;
+  }
+  html body table tbody tr td.product-quantity .quantity input {
+    max-width: 100%;
+  }
+  html body table tbody tr td.product-subtotal {
     text-align: left;
-    min-width: 0px;
-    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
   }
-  html body #page-content #content #menus .case-menu {
-    width: 49%;
+  html body table tbody tr td.product-subtotal:before {
+    content: "Prix :";
+    font-size: 15px;
+    display: inline;
   }
-  html body #page-content #content #menus .case-menu:nth-child(odd) {
-    margin-right: 2%;
+  html body table tbody tr td.product-subtotal:after {
+    background: #000;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    display: block;
+    margin: 30px auto;
+    content: "";
   }
-  html body #page-content #content #formulaire {
+  html body table tbody tr td.product-subtotal:after p {
+    line-height: 1.5;
+  }
+  html body table .product-price {
+    display: none;
+  }
+  html body table .quantity {
+    width: 130px;
+  }
+  html body footer h4 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body footer .menu-menu-footer-container ul li,
+  html body footer .menu-menu-footer-english-container ul li {
+    display: block;
+    border-right: none;
+    padding: 10px;
+  }
+  html body footer .menu-menu-footer-container ul li:after,
+  html body footer .menu-menu-footer-english-container ul li:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 10px auto;
+  }
+  html body footer .menu-menu-footer-container ul li:last-child,
+  html body footer .menu-menu-footer-english-container ul li:last-child {
+    padding: 10px;
+  }
+  html body footer:after {
+    background-size: cover;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container-1200 {
+    max-width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  html body h3,
+  html body .h3 {
+    font-size: 20px;
+  }
+  html body .products .product .detail-menu {
+    order: 2;
+    transform: translate(0, 60px);
+    -webkit-transform: translate(0, 60px);
+    -moz-transform: translate(0, 60px);
+    -o-transform: translate(0, 60px);
+  }
+  html body .products .product .detail-menu .menu-description {
+    bottom: -154px;
+  }
+  html body .products .product .detail-menu .active {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+  }
+  html body .products .product .cta-order .anti-rotate .price {
+    font-size: 20px;
+  }
+  html body .products .product .cta-order .anti-rotate .button {
+    font-size: 20px;
+  }
+  html body .products .product .cta-order .anti-rotate .button .triangle {
+    font-size: 20px;
+    top: 2px;
+  }
+  html body .products .product.product_cat-dessert {
     width: 100%;
-    min-width: 0px;
   }
-  html body #page-content #content #formulaire .wpcf7 .formulaire-first-part {
-    height: 60px;
+  html body .products .product.product_cat-dessert .cta-order {
+    position: relative;
+    transform: none;
+    left: 0;
+    order: 3;
+    bottom: 0;
   }
-}
-@media (min-width: 1024px) {
-  html body #page-content #content #menus {
-    width: 49.5%;
-    margin-right: 1%;
+  html body .products .product.product_cat-boissons .menu-description {
+    bottom: -314px;
   }
-  html body #page-content #content #formulaire {
-    width: 49.5%;
+  html body .page-wrapper .photos {
+    height: 320px!important;
   }
-  html body #page-content #content #formulaire .wpcf7 .formulaire-first-part {
-    height: 80px;
+  html body .page-wrapper .photos .presentation {
+    max-width: 600px;
   }
-  html body #page-content #content #formulaire .wpcf7 .formulaire-first-part label {
-    min-width: 160px;
+  html body .page-wrapper .cadre-bas .container-1200 {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
   }
-}
-@keyframes move {
-  0% {
-    bottom: 7%;
+  html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
   }
-  50% {
-    bottom: 6%;
+  html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
+    width: 100%;
   }
-  100% {
-    bottom: 7%;
+  html body .page-wrapper .livraison.photos img {
+    width: 100%;
+  }
+  html body .page-wrapper #photo-livraison {
+    height: 300px!important;
+    background-position-y: 55%!important;
+  }
+  html body .page-wrapper table thead {
+    display: none;
+  }
+  html body .page-wrapper table tbody {
+    font-size: 20px;
+  }
+  html body .page-wrapper table tbody tr td {
+    display: block;
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  html body .page-wrapper table tbody tr td.product-remove {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+  }
+  html body .page-wrapper table tbody tr td.product-name {
+    display: inline-block;
+    width: 80%;
+  }
+  html body .page-wrapper table tbody tr td.product-quantity .quantity {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  html body .page-wrapper table tbody tr td.product-quantity .quantity p {
+    line-height: 1.5;
+  }
+  html body .page-wrapper table tbody tr td.product-quantity .quantity input {
+    max-width: 100%;
+  }
+  html body .page-wrapper table tbody tr td.product-subtotal {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  html body .page-wrapper table tbody tr td.product-subtotal:before {
+    content: "Prix :";
+    font-size: 15px;
+    display: inline;
+  }
+  html body .page-wrapper table tbody tr td.product-subtotal:after {
+    background: #000;
+    width: 50px;
+    height: 1px;
+    margin: 0 auto;
+    display: block;
+    margin: 30px auto;
+    content: "";
+  }
+  html body .page-wrapper table tbody tr td.product-subtotal:after p {
+    line-height: 1.5;
+  }
+  html body .page-wrapper table .product-price {
+    display: none;
+  }
+  html body .page-wrapper table .quantity {
+    width: 130px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -o-align-items: flex-start;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div {
+    font-size: 20px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.product-title {
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -moz-align-self: flex-start;
+    -o-align-self: flex-start;
+    width: 70%;
+    padding-bottom: 10px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.product-price {
+    width: 30%;
+    order: 2;
+    padding-bottom: 10px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.quantity {
+    order: 3;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line div.quantity input {
+    max-width: 100%;
+  }
+  html body .page-wrapper .drinks-choice .drinks-line .button {
+    width: 100%;
+    order: 4;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 0;
+  }
+  html body footer h4 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body footer .menu-menu-footer-container ul li,
+  html body footer .menu-menu-footer-english-container ul li {
+    display: block;
+    border-right: none;
+    padding: 10px;
+  }
+  html body footer .menu-menu-footer-container ul li:after,
+  html body footer .menu-menu-footer-english-container ul li:after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 10px auto;
+  }
+  html body footer .menu-menu-footer-container ul li:last-child,
+  html body footer .menu-menu-footer-english-container ul li:last-child {
+    padding: 10px;
+  }
+  html body footer:after {
+    background-size: cover;
+    height: 200px;
   }
 }
