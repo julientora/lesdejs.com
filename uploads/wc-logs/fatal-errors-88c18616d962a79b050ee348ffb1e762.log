@@ -1160,3 +1160,57 @@ Stack trace:
 #5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
 #6 /Us
 
+2018-05-15T23:25:43+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:362
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(288): my_custom_checkout_field(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/class-wc-countries.php(1231): apply_filters('woocommerce_bil...', Array, 'FR')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(195): WC_Countries->get_address_fields('FR', 'billing_')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(37): WC_Checkout->get_checkout_fields()
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugin
+
+2018-05-15T23:39:32+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:361
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(288): my_custom_checkout_field(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/class-wc-countries.php(1231): apply_filters('woocommerce_bil...', Array, 'FR')
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(195): WC_Countries->get_address_fields('FR', 'billing_')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(37): WC_Checkout->get_checkout_fields()
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugin
+
+2018-05-15T23:41:45+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on string in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:361
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): my_custom_checkout_field('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(43): do_action('woocommerce_che...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(242): wc_get_templat
+
+2018-05-15T23:42:02+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on string in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:362
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): my_custom_checkout_field('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(43): do_action('woocommerce_che...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(242): wc_get_templat
+
+2018-05-15T23:48:11+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on string in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:362
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): my_custom_checkout_field('')
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(51): do_action('woocommerce_che...')
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(242): wc_get_templat
+
+2018-05-15T23:51:31+00:00 CRITICAL Uncaught Error: Call to a member function get_value() on array in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:362
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(286): my_custom_checkout_field(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(203): WP_Hook->apply_filters(Array, Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(225): apply_filters('woocommerce_che...', Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php(37): WC_Checkout->get_checkout_fields()
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/wc-core-functions.php(211): include('/Users/juliento...')
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/plugins/woocommerce/includes/shortc
+

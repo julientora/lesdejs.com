@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="<?php get_asset("css/main.css", true, true); ?>">
 <?php endif; ?>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Franklin:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<?php wp_head(); ?>
 </head>
 

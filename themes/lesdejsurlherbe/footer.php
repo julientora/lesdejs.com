@@ -23,7 +23,7 @@ wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
 
 <script>	
 (function ($){
-	$(document).ready(function(){	
+	$(window).ready(function(){	
         $('.burger-menu').click(function() {
             $('.responsive-menu').addClass('active');
         }); 
@@ -31,22 +31,11 @@ wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
             $('.responsive-menu').removeClass('active');
         }); 
 
-        $(".drinks-choice .h3").click(function(){
+        $(".page-wrapper").on('click', '.h3', function(){
         	$(".drinks-choice").toggleClass('open');
         });
         $(".woocommerce-form__label span").click(function(){
         	$(".woocommerce-form__label span").toggleClass('active');
-        });
-        $(".woocommerce").ajaxStop(function(){
-        	$(".drinks-choice .h3").click(function(){
-        		$(".drinks-choice").toggleClass('open');
-        	});
-        	$('.burger-menu').click(function() {
-                $('.responsive-menu').addClass('active');
-            }); 
-        	$('#close').click(function() {
-            	$('.responsive-menu').removeClass('active');
-        	}); 
         });
         $(".add_to_cart_button").append('<span class="triangle">&#x25B6;</span>');
 
@@ -70,10 +59,16 @@ wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
 			});
 		};
 		moreOrLess();
-		$(".woocommerce").ajaxStop(function(){
+		$(window).ajaxStop(function(){
 			if($(".bouton").length == 0){
 				moreOrLess();
 			}
+        	$('.burger-menu').click(function() {
+                $('.responsive-menu').addClass('active');
+            }); 
+        	$('#close').click(function() {
+            	$('.responsive-menu').removeClass('active');
+        	}); 
 		});
 
 		$(document).on("click",".bouton", function (e) {

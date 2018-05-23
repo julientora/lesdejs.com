@@ -1,0 +1,22 @@
+(function($){
+    $(document).ready(function(){
+        $(".adddayrow").click(function(){
+            $("#tblinitrow").find(".initrow").clone().insertAfter('#th_specific_day');
+            $(".removedayrow").click(function(){
+                $(this).parent().parent().remove();
+            });
+        });
+        $(".removedayrow").click(function(){
+            $(this).parent().parent().remove();
+        });
+        $(".addperiodrow").click(function(){
+            $("#tblinitperiodrow").find(".thinitperiodrow").clone().insertAfter('#th_specific_period_day');
+            $(".removeperiodrow").click(function(){
+                $(this).parent().parent().remove();
+            });
+        });
+        $(".removeperiodrow").click(function(){
+            $(this).parent().parent().remove();
+        });
+    });
+})(jQuery)

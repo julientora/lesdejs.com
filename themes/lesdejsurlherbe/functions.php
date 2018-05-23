@@ -33,7 +33,7 @@ function get_asset( $asset, $display = true, $uncache = false ) {
 function add_slug_body_class( $classes ) {
 global $post;
 if ( isset( $post ) ) {
-$classes[] = $post->post_type . '-' . $post->post_name;
+$classes[] = $post->post_type . '-' . $post->post_name . ' ' . pll_current_language();
 }
 return $classes;
 }
@@ -48,6 +48,7 @@ wp_enqueue_style( 'dashicons' );
 
 function bbx_enqueue_scripts() {
 wp_enqueue_script( 'jquery' );
+wp_enqueue_script( 'jquery_ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js', array() );
 }
 add_action( 'wp_enqueue_scripts', 'bbx_enqueue_scripts' );
 
@@ -328,3 +329,21 @@ function custom_pre_get_posts_query( $q ) {
 
 }
 add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );  
+
+
+// // Hook in
+// add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+// // Our hooked in function - $fields is passed via the filter!
+// function custom_override_checkout_fields( $fields ) {
+// 	$fields['order']['order_comments']['style'] = 'textarea';
+// 	if (pll_current_language() == 'fr'){
+// 		$fields['order']['order_comments']['label'] = "Date et heure de livraison";
+// 		$fields['order']['order_comments']['placeholder'] = "Indiquez la date et l'heure de livraison, ainsi que tout détail utile." ;
+// 	}
+// 	if (pll_current_language() == 'en'){
+// 		$fields['order']['order_comments']['label'] = "Date and time of delivery";
+// 		$fields['order']['order_comments']['placeholder'] = "Please give us the date and time of delivery and any other useful detail." ;
+// 	}
+//     $fields['order']['order_comments']['required'] = true;
+//      return $fields;
+// }
