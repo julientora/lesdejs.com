@@ -1,6 +1,9 @@
 .medium {
   font-weight: 500;
 }
+.text-center {
+  text-align: center;
+}
 .flex {
   display: flex;
   display: -webkit-flex;
@@ -49,7 +52,7 @@
 .button-dl {
   background: #566d64;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 22px;
   display: block;
@@ -58,9 +61,12 @@
   text-transform: uppercase;
 }
 .button-dl:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
+}
+.vert {
+  color: #566d64;
 }
 html {
   height: 100%;
@@ -94,15 +100,15 @@ html body .h3 {
 }
 html body h3 a,
 html body .h3 a {
-  color: #000;
+  color: #000000;
 }
 html body h3 a:hover,
 html body .h3 a:hover {
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 html body a {
-  color: #000;
+  color: #000000;
   transition: 0.5s linear all;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
@@ -166,7 +172,7 @@ html body header .menu-menu-principal-container ul li,
 html body header .menu-english-menu-container ul li {
   display: inline-block;
   text-transform: uppercase;
-  border-right: 1px solid #000;
+  border-right: 1px solid #000000;
   padding: 0 20px;
 }
 html body header .menu-menu-principal-container ul li:last-child,
@@ -176,7 +182,7 @@ html body header .menu-english-menu-container ul li:last-child {
 }
 html body header .menu-menu-principal-container ul li a,
 html body header .menu-english-menu-container ul li a {
-  color: #000;
+  color: #000000;
 }
 html body header .menu-menu-principal-container ul li a:hover,
 html body header .menu-english-menu-container ul li a:hover {
@@ -186,12 +192,12 @@ html body header .menu-menu-principal-container ul li.menu-item-type-cart a,
 html body header .menu-english-menu-container ul li.menu-item-type-cart a {
   background: #566d64;
   padding: 10px;
-  color: #fff;
+  color: #ffffff;
   display: block;
 }
 html body header .menu-menu-principal-container ul li.menu-item-type-cart a:hover,
 html body header .menu-english-menu-container ul li.menu-item-type-cart a:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
 }
@@ -206,12 +212,13 @@ html body header .burger-menu {
   position: fixed;
   top: 20px;
   left: 20px;
+  z-index: 100;
 }
 html body header .burger-menu:hover {
   cursor: pointer;
 }
 html body header .burger-menu:hover span {
-  background: #fff;
+  background: #ffffff;
 }
 html body header .burger-menu span {
   width: 30px;
@@ -239,7 +246,7 @@ html body header .responsive-menu {
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   z-index: 100;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000000;
   top: 0;
   left: -100%;
 }
@@ -269,7 +276,7 @@ html body header .responsive-menu .menu-english-menu-container ul {
 html body header .responsive-menu .menu-menu-principal-container ul li,
 html body header .responsive-menu .menu-english-menu-container ul li {
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   border-right: none;
   align-items: flex-start;
   -webkit-align-items: flex-start;
@@ -313,7 +320,7 @@ html body header .responsive-menu #close:hover {
 }
 html body header .responsive-menu #close:hover:before,
 html body header .responsive-menu #close:hover:after {
-  background: #fff;
+  background: #ffffff;
 }
 html body header .responsive-menu #close:before {
   content: "";
@@ -356,11 +363,14 @@ html body header .responsive-menu #close:after {
   -o-transition: 0.5s linear all;
 }
 html body header #logo {
-  max-width: 800px;
+  max-width: 700px;
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 80px 0 30px 0;
+  padding: 80px 0 0 0;
+}
+html body header h3 {
+  margin-bottom: 30px;
 }
 html body .products {
   margin: 0;
@@ -443,7 +453,7 @@ html body .products .product .cta-order .anti-rotate {
   -o-transform: rotateZ(-45deg) translateY(15px);
 }
 html body .products .product .cta-order .anti-rotate .price {
-  color: #fff;
+  color: #ffffff;
   font-size: 40px;
   font-weight: 500;
   transition: 0.5s linear all;
@@ -513,7 +523,7 @@ html body .products .product .detail-menu .menu-description {
   margin-top: 30px;
 }
 html body .products .product .detail-menu .menu-description div {
-  color: #566d64;
+  color: #000000;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -522,18 +532,27 @@ html body .products .product .detail-menu .menu-description div {
 html body .products .product .detail-menu .menu-description div p {
   line-height: 1.5;
 }
-html body .products .product.product_cat-dessert {
+html body .products .product.product_cat-petite-faim h3:after {
+  content: "Petite Faim";
+  text-transform: uppercase;
+  display: block;
+  font-size: 30px;
+}
+html body .products .product.product_cat-dessert-en-fr,
+html body .products .product.product_cat-dessert-en {
   display: inline-flex;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
   display: -o-inline-flex;
   width: 33%;
 }
-html body .products .product.product_cat-dessert .product-image {
+html body .products .product.product_cat-dessert-en-fr .product-image,
+html body .products .product.product_cat-dessert-en .product-image {
   background-position-x: 50% !important;
   background-position-y: 40% !important;
 }
-html body .products .product.product_cat-dessert .cta-order {
+html body .products .product.product_cat-dessert-en-fr .cta-order,
+html body .products .product.product_cat-dessert-en .cta-order {
   position: absolute;
   bottom: 120px;
   left: calc(50% - 100px);
@@ -542,26 +561,30 @@ html body .products .product.product_cat-dessert .cta-order {
   -moz-transform: rotateZ(45deg) translate(0, 0);
   -o-transform: rotateZ(45deg) translate(0, 0);
 }
-html body .products .product.post-151 {
+html body .products .product.post-151,
+html body .products .product.post-240 {
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -moz-justify-content: flex-start;
   -o-justify-content: flex-start;
 }
-html body .products .product.post-151 .short-description {
+html body .products .product.post-151 .short-description,
+html body .products .product.post-240 .short-description {
   text-align: center;
   max-width: 1800px;
   width: 100%;
   display: block;
   font-size: 15px;
 }
-html body .products .product.post-151 .short-description p {
+html body .products .product.post-151 .short-description p,
+html body .products .product.post-240 .short-description p {
   background: rgba(255, 255, 255, 0.2);
   padding: 5px;
   max-width: 750px;
   margin: 0 auto;
 }
-html body .products .product.post-151 .cta-order {
+html body .products .product.post-151 .cta-order,
+html body .products .product.post-240 .cta-order {
   display: none;
 }
 html body .page-wrapper {
@@ -572,19 +595,6 @@ html body .page-wrapper {
 }
 html body .page-wrapper p {
   line-height: 1.5;
-}
-html body .page-wrapper .woocommerce-message {
-  text-align: center;
-  border: 1px solid #566d64;
-  font-size: 22px;
-  padding: 10px;
-  width: 100%;
-  max-width: 500px;
-  display: block;
-  margin: 0 auto 30px;
-  color: #566d64;
-  font-family: 'Libre Franklin', sans-serif;
-  box-sizing: border-box;
 }
 html body .page-wrapper .photos {
   background-size: cover !important;
@@ -663,7 +673,7 @@ html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
 }
 html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
   width: 50%;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -682,7 +692,7 @@ html body .page-wrapper .livraison.photos {
   height: auto!important;
 }
 html body .page-wrapper .livraison .h3 {
-  color: #fff;
+  color: #ffffff;
 }
 html body .page-wrapper .livraison .cadre-bas {
   background: none;
@@ -698,23 +708,7 @@ html body .page-wrapper #photo-livraison {
   background-repeat: no-repeat;
   background-position: top center !important;
 }
-html body .page-wrapper .woocommerce .cart-empty {
-  text-align: center;
-}
-html body .page-wrapper .woocommerce .return-to-shop a {
-  text-align: center;
-  color: #fff;
-  background: #566d64;
-  padding: 20px;
-  margin: 0 auto;
-  display: block;
-  max-width: 200px;
-}
-html body .page-wrapper .woocommerce .product-thumbnail,
-html body .page-wrapper .woocommerce .thumb {
-  display: none;
-}
-html body .page-wrapper .woocommerce .woocommerce-message {
+html body .page-wrapper .woocommerce-message {
   text-align: center;
   border: 1px solid #566d64;
   font-size: 22px;
@@ -726,6 +720,22 @@ html body .page-wrapper .woocommerce .woocommerce-message {
   color: #566d64;
   font-family: 'Libre Franklin', sans-serif;
   box-sizing: border-box;
+}
+html body .page-wrapper .woocommerce .cart-empty {
+  text-align: center;
+}
+html body .page-wrapper .woocommerce .return-to-shop a {
+  text-align: center;
+  color: #ffffff;
+  background: #566d64;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+}
+html body .page-wrapper .woocommerce .product-thumbnail,
+html body .page-wrapper .woocommerce .thumb {
+  display: none;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields,
@@ -740,56 +750,6 @@ html body .page-wrapper .woocommerce .woocommerce-account-fields h3,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields h3 {
   padding: 0 20px;
   box-sizing: border-box;
-}
-html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field,
-html body .page-wrapper .woocommerce .woocommerce-account-fields #delivery_datetime_field,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field {
-  width: 100%;
-  display: block;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  box-sizing: border-box;
-  text-align: center;
-}
-html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field label,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field label,
-html body .page-wrapper .woocommerce .woocommerce-account-fields #delivery_datetime_field label,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field label {
-  max-width: 300px;
-  text-align: right;
-  font-family: 'Crimson Text', serif;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 100%;
-  margin-right: 50px;
-  font-size: 22px;
-}
-html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field input,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field input,
-html body .page-wrapper .woocommerce .woocommerce-account-fields #delivery_datetime_field input,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field input {
-  max-width: 350px;
-  text-align: left;
-  display: inline-block;
-  width: 100%;
-  font-size: 22px;
-  font-family: 'Crimson Text', serif;
-  box-sizing: border-box;
-  background: none;
-  border-bottom: 1px solid #000;
-  padding: 10px;
-  box-shadow: none;
-  outline: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  transition: 0.5s linear all;
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-form__label,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label,
@@ -821,10 +781,10 @@ html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-f
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span:before {
   position: relative;
-  background: #fff;
+  background: #ffffff;
   left: -30px;
   border: 2px solid #566d64;
-  content: '';
+  content: '\00d7';
   height: 16px;
   width: 16px;
   cursor: pointer;
@@ -842,8 +802,8 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-fo
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span.active:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span.active:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span.active:before {
-  content: "\00d7";
-  border: 2px solid #000;
+  content: "";
+  border: 2px solid #000000;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper,
@@ -857,10 +817,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper,
@@ -881,10 +837,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p,
@@ -903,10 +855,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p,
@@ -931,10 +879,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p label,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p label,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p label,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p label,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p label,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p label,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p label,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p label,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p label,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p label,
@@ -960,10 +904,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p input,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input,
@@ -980,10 +920,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p .select2,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2,
@@ -1000,10 +936,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p textarea,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea,
@@ -1028,16 +960,12 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p input,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p input,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input {
   background: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding: 10px;
   box-shadow: none;
   outline: none;
@@ -1061,10 +989,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input:active,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input:active,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input:active,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p input:active,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p input:active,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p input:active,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p input:active,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input:active,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input:active,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input:active,
@@ -1081,10 +1005,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p input:focus,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p input:focus,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p input:focus,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p input:focus,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p input:focus,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p input:focus,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p input:focus,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p input:focus,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p input:focus,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input:focus,
@@ -1103,16 +1023,12 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p .select2,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p .select2,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2 {
   background: none;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   padding: 10px;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
@@ -1127,10 +1043,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2 .select2-selection--single,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2 .select2-selection--single,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2 .select2-selection--single,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single,
@@ -1150,10 +1062,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p .select2 .select2-selection--single .select2-selection__arrow,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single .select2-selection__arrow,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single .select2-selection__arrow,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single .select2-selection__arrow,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p .select2 .select2-selection--single .select2-selection__arrow,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2 .select2-selection--single .select2-selection__arrow,
@@ -1172,10 +1080,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p textarea,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p textarea,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea,
@@ -1183,7 +1087,7 @@ html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce
   height: 200px;
   vertical-align: top;
   background: none;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   outline: none;
   transition: 0.5s linear all;
   -webkit-transition: 0.5s linear all;
@@ -1203,10 +1107,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea:active,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea:active,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea:active,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p textarea:active,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p textarea:active,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p textarea:active,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p textarea:active,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea:active,
@@ -1223,10 +1123,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p textarea:focus,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p textarea:focus,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p textarea:focus,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p textarea:focus,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p textarea:focus,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p textarea:focus,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p textarea:focus,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p textarea:focus,
@@ -1245,10 +1141,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#billing_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#billing_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#billing_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p#billing_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p#billing_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p#billing_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p#billing_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#billing_address_2_field:before,
@@ -1265,10 +1157,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#shipping_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#shipping_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#shipping_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p#shipping_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p#shipping_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p#shipping_address_2_field:before,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p#shipping_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#shipping_address_2_field:before,
@@ -1294,10 +1182,6 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .shipping_addre
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .shipping_address p#shipping_country_field,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .shipping_address p#shipping_country_field,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .shipping_address p#shipping_country_field,
-html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additionnal-fields p#shipping_country_field,
-html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additionnal-fields p#shipping_country_field,
-html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additionnal-fields p#shipping_country_field,
-html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additionnal-fields p#shipping_country_field,
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p#shipping_country_field,
@@ -1339,7 +1223,7 @@ html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order 
 html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button {
   background: #566d64;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 22px;
   margin-left: auto;
@@ -1349,7 +1233,7 @@ html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order 
   text-transform: uppercase;
 }
 html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
 }
 html body .page-wrapper .woocommerce .woocommerce-NoticeGroup {
@@ -1390,22 +1274,22 @@ html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice {
   text-align: center;
 }
 html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a {
-  color: #000;
+  color: #000000;
 }
 html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a:hover {
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul {
   list-style: none;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   max-width: 600px;
   margin: 50px auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul li {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding: 20px 0;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul li:last-child {
@@ -1447,16 +1331,16 @@ html body .page-wrapper .woocommerce .woocommerce-info {
   margin-bottom: 50px;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a {
-  color: #000;
+  color: #000000;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a:hover {
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a {
   background: #566d64;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 22px;
   display: block;
@@ -1466,7 +1350,7 @@ html body .page-wrapper .woocommerce .woocommerce-info a {
   max-width: 430px;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
 }
@@ -1479,7 +1363,7 @@ html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide 
 html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label {
   background: #566d64;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 22px;
   display: block;
@@ -1490,7 +1374,7 @@ html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide 
   cursor: pointer;
 }
 html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
 }
@@ -1545,7 +1429,7 @@ html body .cart-collaterals .wc-proceed-to-checkout p {
 html body .cart-collaterals .wc-proceed-to-checkout .button {
   background: #566d64;
   padding: 10px 20px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   font-size: 22px;
   margin-left: auto;
@@ -1555,7 +1439,7 @@ html body .cart-collaterals .wc-proceed-to-checkout .button {
   text-transform: uppercase;
 }
 html body .cart-collaterals .wc-proceed-to-checkout .button:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
 }
@@ -1596,11 +1480,11 @@ html body table thead {
   box-sizing: border-box;
 }
 html body table thead a {
-  color: #000;
+  color: #000000;
 }
 html body table thead a:hover {
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 html body table thead tr th:first-child {
   padding-left: 20px;
@@ -1626,7 +1510,7 @@ html body table tbody tr {
   -o-transition: 0.5s linear all;
 }
 html body table tbody tr td {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1643,7 +1527,7 @@ html body table tbody tr td.product-remove .remove {
   position: relative;
 }
 html body table tbody tr td.product-remove .remove:hover {
-  color: #fff;
+  color: #ffffff;
 }
 html body table tbody tr td.product-quantity label {
   display: none;
@@ -1651,7 +1535,7 @@ html body table tbody tr td.product-quantity label {
 html body table tbody tr td.product-quantity .quantity .bouton {
   height: 30px;
   width: 30px;
-  color: #fff;
+  color: #ffffff;
   background: #566d64;
   font-size: 22px;
   display: inline-block;
@@ -1670,7 +1554,7 @@ html body table tbody tr td.product-quantity .quantity .bouton {
   line-height: 1.2;
 }
 html body table tbody tr td.product-quantity .quantity .bouton:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   cursor: pointer;
 }
@@ -1740,7 +1624,7 @@ html body .drinks-choice p:first-child {
   cursor: pointer;
 }
 html body .drinks-choice .drinks-line {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1788,7 +1672,7 @@ html body .drinks-choice .drinks-line div.quantity input {
 html body .drinks-choice .drinks-line div.quantity .bouton {
   height: 30px;
   width: 30px;
-  color: #fff;
+  color: #ffffff;
   background: #566d64;
   font-size: 22px;
   display: inline-block;
@@ -1807,7 +1691,7 @@ html body .drinks-choice .drinks-line div.quantity .bouton {
   line-height: 1.2;
 }
 html body .drinks-choice .drinks-line div.quantity .bouton:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   cursor: pointer;
 }
@@ -1827,7 +1711,7 @@ html body .drinks-choice .drinks-line .button {
   text-align: center;
   background: #566d64;
   padding: 5px 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
   transition: 0.5s linear all;
@@ -1836,7 +1720,7 @@ html body .drinks-choice .drinks-line .button {
   -o-transition: 0.5s linear all;
 }
 html body .drinks-choice .drinks-line .button:hover {
-  background: #fff;
+  background: #ffffff;
   color: #566d64;
   opacity: 1;
 }
@@ -1878,7 +1762,7 @@ html body footer .menu-menu-footer-english-container ul {
 html body footer .menu-menu-footer-container ul li,
 html body footer .menu-menu-footer-english-container ul li {
   display: inline-block;
-  border-right: 1px solid #000;
+  border-right: 1px solid #000000;
   padding: 0 10px;
   text-transform: uppercase;
 }
@@ -1889,7 +1773,7 @@ html body footer .menu-menu-footer-english-container ul li:last-child {
 }
 html body footer:after {
   content: " ";
-  background: url(../../../../uploads/2018/04/motif-2.svg);
+  background: url(/wp-content/uploads/2018/04/motif-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1906,11 +1790,11 @@ html body.single-product .product h1 {
   text-align: center;
 }
 html body.single-product .product h1 a {
-  color: #000;
+  color: #000000;
 }
 html body.single-product .product h1 a:hover {
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container,
@@ -1939,7 +1823,7 @@ html body.single-product .product h1 a:hover {
   }
   html body .products .product .cta-order .anti-rotate .button {
     font-size: 19px;
-    background: #fff;
+    background: #ffffff;
     color: #bda27e;
     padding: 15px 10px;
     top: 40px;
@@ -1956,7 +1840,8 @@ html body.single-product .product h1 a:hover {
     display: block;
     top: 0;
   }
-  html body .products .product.product_cat-dessert .cta-order {
+  html body .products .product.product_cat-dessert-en-fr .cta-order,
+  html body .products .product.product_cat-dessert-en .cta-order {
     left: calc(50% - 75px);
     bottom: 90px;
   }
@@ -2028,9 +1913,13 @@ html body.single-product .product h1 a:hover {
   html body .products .product .cta-order .anti-rotate .added_to_cart {
     padding: 15px 2px;
   }
-  html body .products .product.product_cat-dessert .cta-order {
+  html body .products .product.product_cat-dessert-en-fr .cta-order,
+  html body .products .product.product_cat-dessert-en .cta-order {
     left: calc(50% - 65px);
     bottom: 110px;
+  }
+  html body .products .product.product_cat-petite-faim h3:after {
+    font-size: 20px;
   }
   html body .page-wrapper .photos .presentation {
     max-width: 600px;
@@ -2106,7 +1995,7 @@ html body.single-product .product h1 a:hover {
   html body .products .product .cta-order .anti-rotate .button {
     font-size: 15px;
     color: #bda27e;
-    background: #fff;
+    background: #ffffff;
     padding: 15px 10px;
     margin-top: 20px;
     display: block;
@@ -2121,11 +2010,13 @@ html body.single-product .product h1 a:hover {
     display: block;
     top: 0;
   }
-  html body .products .product.product_cat-dessert .cta-order {
+  html body .products .product.product_cat-dessert-en-fr .cta-order,
+  html body .products .product.product_cat-dessert-en .cta-order {
     left: calc(50% - 65px);
     bottom: 110px;
   }
-  html body .products .product.product_cat-dessert {
+  html body .products .product.product_cat-dessert-en-fr,
+  html body .products .product.product_cat-dessert-en {
     width: 32.9%;
   }
   html body .products .product .menu-description {
@@ -2133,6 +2024,9 @@ html body.single-product .product h1 a:hover {
   }
   html body .products .product .menu-description div {
     font-size: 12px;
+  }
+  html body .products .product.product_cat-petite-faim h3:after {
+    font-size: 18px;
   }
   html body .page-wrapper .photos {
     height: 320px!important;
@@ -2275,7 +2169,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000;
+    background: #000000;
     display: block;
     margin: 10px auto;
   }
@@ -2292,7 +2186,8 @@ html body.single-product .product h1 a:hover {
   .container-1200 {
     max-width: 580px;
   }
-  html body .products .product.product_cat-dessert {
+  html body .products .product.product_cat-dessert-en-fr,
+  html body .products .product.product_cat-dessert-en {
     width: 32.9%;
   }
   html body .page-wrapper .photos {
@@ -2465,10 +2360,12 @@ html body.single-product .product h1 a:hover {
   html body .products .product .cta-order .anti-rotate .added_to_cart {
     top: 5px;
   }
-  html body .products .product.product_cat-dessert {
+  html body .products .product.product_cat-dessert-en-fr,
+  html body .products .product.product_cat-dessert-en {
     width: 100%;
   }
-  html body .products .product.product_cat-dessert .cta-order {
+  html body .products .product.product_cat-dessert-en-fr .cta-order,
+  html body .products .product.product_cat-dessert-en .cta-order {
     position: relative;
     transform: none;
     left: 0;
@@ -2481,8 +2378,12 @@ html body.single-product .product h1 a:hover {
   html body .products .product .menu-description div {
     font-size: 12px;
   }
-  html body .products .product.post-151 .detail-menu .menu-description {
+  html body .products .product.post-151 .detail-menu .menu-description,
+  html body .products .product.post-240 .detail-menu .menu-description {
     bottom: -335px;
+  }
+  html body .products .product.product_cat-petite-faim h3:after {
+    font-size: 15px;
   }
   html body .page-wrapper .photos {
     height: 320px!important;
@@ -2507,6 +2408,9 @@ html body.single-product .product h1 a:hover {
   }
   html body .page-wrapper .livraison.photos img {
     width: 100%;
+  }
+  html body .page-wrapper .livraison.photos .cadre-bas img {
+    padding-right: 0;
   }
   html body .page-wrapper #photo-livraison {
     height: 300px!important;
@@ -2543,21 +2447,6 @@ html body.single-product .product h1 a:hover {
   }
   html body .page-wrapper table tbody tr .product-quantity input {
     max-width: 45px;
-  }
-  html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field,
-  html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field,
-  html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field {
-    padding: 0 20px;
-  }
-  html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field label,
-  html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field label,
-  html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field label {
-    text-align: left;
-  }
-  html body .page-wrapper .woocommerce .woocommerce-billing-fields #delivery_datetime_field input,
-  html body .page-wrapper .woocommerce .woocommerce-shipping-fields #delivery_datetime_field input,
-  html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_datetime_field input {
-    max-width: 100%;
   }
   html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p,
   html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper p,
@@ -2636,7 +2525,7 @@ html body.single-product .product h1 a:hover {
     margin-right: auto;
   }
   html body .woocommerce-cart-form__cart-item.cart_item {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
     width: 80%;
     margin: 0 auto;
     display: block;
@@ -2717,7 +2606,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000;
+    background: #000000;
     display: block;
     margin: 10px auto;
   }
@@ -2766,10 +2655,12 @@ html body.single-product .product h1 a:hover {
     font-size: 20px;
     top: 2px;
   }
-  html body .products .product.product_cat-dessert {
+  html body .products .product.product_cat-dessert-en-fr,
+  html body .products .product.product_cat-dessert-en {
     width: 100%;
   }
-  html body .products .product.product_cat-dessert .cta-order {
+  html body .products .product.product_cat-dessert-en-fr .cta-order,
+  html body .products .product.product_cat-dessert-en .cta-order {
     position: relative;
     transform: none;
     left: 0;
@@ -2884,7 +2775,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000;
+    background: #000000;
     display: block;
     margin: 10px auto;
   }
