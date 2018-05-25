@@ -616,7 +616,7 @@ html {
                         color: @white;
                         background: @vert;
                         padding: 20px;
-                        margin: 0 auto;
+                        margin: 0 0 0 auto;
                         display: block;
                         max-width: 200px;
                     }
@@ -634,6 +634,49 @@ html {
                     h3 {
                         padding: 0 20px;
                         box-sizing: border-box;
+                    }
+                    #delivery_datetime_field{
+                        width: 100%;
+                        display: block;
+                        max-width: 730px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 30px;
+                        box-sizing: border-box;
+
+                        label {
+                            max-width: 300px;
+                            text-align: right;
+                            font-family: @titles;
+                            text-transform: uppercase;
+                            display: inline-block;
+                            width: 100%;
+                            margin-right: 50px;
+                            font-size: 22px;
+                        }
+                        input {
+                            max-width: 350px;
+                            text-align: left;
+                            display: inline-block;
+                            width: 100%;
+                            font-size: 22px;
+                            font-family: @titles;
+                            box-sizing: border-box;
+                            background: none;
+                            border-bottom: 1px solid @black;
+                            padding: 10px;
+                            box-shadow: none;
+                            outline: none;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            .transition;
+
+                            &:active,
+                            &:focus {
+                                border-bottom: @vert 1px solid;
+                            }
+                        }  
                     }
                     .woocommerce-form__label {
                         position: relative;
@@ -678,7 +721,7 @@ html {
                     .woocommerce-billing-fields__field-wrapper,
                     .create-account,
                     .shipping_address,
-                    .woocommerce-additional-fields__field-wrapper {
+                    .woocommerce-additional-fields__field-wrapper{
                         max-width: 1200px;
                         .block;
                         p {
@@ -950,7 +993,7 @@ html {
                     }
                 }
             }
-            .wc-proceed-to-checkout {
+            .wc-proceed-to-checkout{
                 width: 100%;
                 max-width: 1200px;
                 .block;
@@ -1649,6 +1692,16 @@ html {
                     }
                 }
                 .woocommerce {
+                    #delivery_datetime_field{
+                        padding: 0 20px;
+                        label {
+                            max-width: 100%;
+                            text-align: left;
+                        }
+                        input{
+                            max-width: 100%;
+                        }  
+                    }
                     .woocommerce-billing-fields,
                     .woocommerce-shipping-fields,
                     .woocommerce-additional-fields {
@@ -1774,6 +1827,16 @@ html {
                     background-position-y: 55%!important;
                 }
                 .woocommerce {
+                    #delivery_datetime_field{
+                        padding: 0 20px;
+                        label {
+                            max-width: 100%;
+                            text-align: left;
+                        }
+                        input{
+                            max-width: 100%;
+                        }  
+                    }
                     .woocommerce-billing-fields,
                     .woocommerce-shipping-fields,
                     .woocommerce-additional-fields {
@@ -1991,6 +2054,16 @@ html {
                     }
                 }
                 .woocommerce {
+                    #delivery_datetime_field{
+                        padding: 0 20px;
+                        label {
+                            max-width: 100%;
+                            text-align: left;
+                        }
+                        input{
+                            max-width: 100%;
+                        }  
+                    }
                     .woocommerce-billing-fields,
                     .woocommerce-shipping-fields,
                     .woocommerce-additional-fields {
