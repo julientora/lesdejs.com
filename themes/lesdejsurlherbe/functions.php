@@ -1,8 +1,4 @@
 <?php 
-
-
-// 👌
-
 //Ensure the $wp_rewrite global is loaded
 global $wp_rewrite;
 //Call flush_rules() as a method of the $wp_rewrite object
@@ -268,6 +264,15 @@ function add_drinks_products_to_cart() {
     echo '</div>';
 }
 
+add_action('woocommerce_after_cart_totals','back_to_shop_button', 10);
+function back_to_shop_button(){
+	$site_url = get_site_url();
+	if (pll_current_language() == 'fr'){
+		echo '<p class="return-to-shop"><a class="button backward" href="' . $site_url .'">Retour à la boutique</a></p>';
+	}else{
+		echo '<p class="return-to-shop"><a class="button backward" href="' . $site_url .'">Return to shop</a></p>';
+	}
+}
  
 /**
  * This function adds the WooCommerce cart icons/items to the top_nav menu area as the last item.

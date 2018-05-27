@@ -52,7 +52,7 @@
 .button-dl {
   background: #566d64;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 22px;
   display: block;
@@ -61,7 +61,7 @@
   text-transform: uppercase;
 }
 .button-dl:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -100,15 +100,21 @@ html body .h3 {
 }
 html body h3 a,
 html body .h3 a {
-  color: #000000;
+  color: #000;
 }
 html body h3 a:hover,
 html body .h3 a:hover {
   background: transparent;
-  color: #000000;
+  color: #000;
+}
+html body input::placeholder,
+html body textarea::placeholder,
+html body select::placeholder,
+html body button::placeholder {
+  color: #555;
 }
 html body a {
-  color: #000000;
+  color: #000;
   transition: 0.5s linear all;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
@@ -172,7 +178,7 @@ html body header .menu-menu-principal-container ul li,
 html body header .menu-english-menu-container ul li {
   display: inline-block;
   text-transform: uppercase;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #000;
   padding: 0 20px;
 }
 html body header .menu-menu-principal-container ul li:last-child,
@@ -182,7 +188,7 @@ html body header .menu-english-menu-container ul li:last-child {
 }
 html body header .menu-menu-principal-container ul li a,
 html body header .menu-english-menu-container ul li a {
-  color: #000000;
+  color: #000;
 }
 html body header .menu-menu-principal-container ul li a:hover,
 html body header .menu-english-menu-container ul li a:hover {
@@ -192,12 +198,12 @@ html body header .menu-menu-principal-container ul li.menu-item-type-cart a,
 html body header .menu-english-menu-container ul li.menu-item-type-cart a {
   background: #566d64;
   padding: 10px;
-  color: #ffffff;
+  color: #fff;
   display: block;
 }
 html body header .menu-menu-principal-container ul li.menu-item-type-cart a:hover,
 html body header .menu-english-menu-container ul li.menu-item-type-cart a:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -218,7 +224,7 @@ html body header .burger-menu:hover {
   cursor: pointer;
 }
 html body header .burger-menu:hover span {
-  background: #ffffff;
+  background: #fff;
 }
 html body header .burger-menu span {
   width: 30px;
@@ -246,7 +252,7 @@ html body header .responsive-menu {
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   z-index: 100;
-  box-shadow: 0 0 5px #000000;
+  box-shadow: 0 0 5px #000;
   top: 0;
   left: -100%;
 }
@@ -276,7 +282,7 @@ html body header .responsive-menu .menu-english-menu-container ul {
 html body header .responsive-menu .menu-menu-principal-container ul li,
 html body header .responsive-menu .menu-english-menu-container ul li {
   display: block;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   border-right: none;
   align-items: flex-start;
   -webkit-align-items: flex-start;
@@ -320,7 +326,7 @@ html body header .responsive-menu #close:hover {
 }
 html body header .responsive-menu #close:hover:before,
 html body header .responsive-menu #close:hover:after {
-  background: #ffffff;
+  background: #fff;
 }
 html body header .responsive-menu #close:before {
   content: "";
@@ -453,7 +459,7 @@ html body .products .product .cta-order .anti-rotate {
   -o-transform: rotateZ(-45deg) translateY(15px);
 }
 html body .products .product .cta-order .anti-rotate .price {
-  color: #ffffff;
+  color: #fff;
   font-size: 40px;
   font-weight: 500;
   transition: 0.5s linear all;
@@ -523,7 +529,7 @@ html body .products .product .detail-menu .menu-description {
   margin-top: 30px;
 }
 html body .products .product .detail-menu .menu-description div {
-  color: #000000;
+  color: #000;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -673,7 +679,7 @@ html body .page-wrapper .cadre-bas .container-1200 .titre-gauche {
 }
 html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
   width: 50%;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -692,7 +698,7 @@ html body .page-wrapper .livraison.photos {
   height: auto!important;
 }
 html body .page-wrapper .livraison .h3 {
-  color: #ffffff;
+  color: #fff;
 }
 html body .page-wrapper .livraison .cadre-bas {
   background: none;
@@ -726,7 +732,7 @@ html body .page-wrapper .woocommerce .cart-empty {
 }
 html body .page-wrapper .woocommerce .return-to-shop a {
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background: #566d64;
   padding: 20px;
   margin: 0 0 0 auto;
@@ -788,7 +794,7 @@ html body .page-wrapper .woocommerce .woocommerce-additional-fields #delivery_da
   font-family: 'Crimson Text', serif;
   box-sizing: border-box;
   background: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   padding: 10px;
   box-shadow: none;
   outline: none;
@@ -840,10 +846,10 @@ html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-f
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span:before {
   position: relative;
-  background: #ffffff;
+  background: #fff;
   left: -30px;
   border: 2px solid #566d64;
-  content: '\00d7';
+  content: '';
   height: 16px;
   width: 16px;
   cursor: pointer;
@@ -861,8 +867,8 @@ html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-fo
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-form__label span.active:before,
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-form__label span.active:before,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-form__label span.active:before {
-  content: "";
-  border: 2px solid #000000;
+  content: "\00d7";
+  border: 2px solid #000;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper,
 html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-billing-fields__field-wrapper,
@@ -1024,7 +1030,7 @@ html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-a
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p input,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p input {
   background: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   padding: 10px;
   box-shadow: none;
   outline: none;
@@ -1087,7 +1093,7 @@ html body .page-wrapper .woocommerce .woocommerce-shipping-fields .woocommerce-a
 html body .page-wrapper .woocommerce .woocommerce-account-fields .woocommerce-additional-fields__field-wrapper p .select2,
 html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper p .select2 {
   background: none;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   padding: 10px;
 }
 html body .page-wrapper .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper p .select2 .select2-selection--single,
@@ -1146,7 +1152,7 @@ html body .page-wrapper .woocommerce .woocommerce-additional-fields .woocommerce
   height: 200px;
   vertical-align: top;
   background: none;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   outline: none;
   transition: 0.5s linear all;
   -webkit-transition: 0.5s linear all;
@@ -1282,7 +1288,7 @@ html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order 
 html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button {
   background: #566d64;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 22px;
   margin-left: auto;
@@ -1292,7 +1298,7 @@ html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order 
   text-transform: uppercase;
 }
 html body .page-wrapper .woocommerce .woocommerce-checkout-payment .place-order .button:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
 }
 html body .page-wrapper .woocommerce .woocommerce-NoticeGroup {
@@ -1333,22 +1339,22 @@ html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice {
   text-align: center;
 }
 html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a {
-  color: #000000;
+  color: #000;
 }
 html body .page-wrapper .woocommerce .woocommerce-order .woocommerce-notice a:hover {
   background: transparent;
-  color: #000000;
+  color: #000;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul {
   list-style: none;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   max-width: 600px;
   margin: 50px auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul li {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   padding: 20px 0;
 }
 html body .page-wrapper .woocommerce .woocommerce-order ul li:last-child {
@@ -1390,16 +1396,16 @@ html body .page-wrapper .woocommerce .woocommerce-info {
   margin-bottom: 50px;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a {
-  color: #000000;
+  color: #000;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a:hover {
   background: transparent;
-  color: #000000;
+  color: #000;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a {
   background: #566d64;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 22px;
   display: block;
@@ -1409,7 +1415,7 @@ html body .page-wrapper .woocommerce .woocommerce-info a {
   max-width: 430px;
 }
 html body .page-wrapper .woocommerce .woocommerce-info a:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -1422,7 +1428,7 @@ html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide 
 html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label {
   background: #566d64;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 22px;
   display: block;
@@ -1433,7 +1439,7 @@ html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide 
   cursor: pointer;
 }
 html body .page-wrapper .woocommerce .woocommerce-account-fields .form-row-wide label:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -1488,7 +1494,7 @@ html body .cart-collaterals .wc-proceed-to-checkout p {
 html body .cart-collaterals .wc-proceed-to-checkout .button {
   background: #566d64;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 22px;
   margin-left: auto;
@@ -1498,7 +1504,7 @@ html body .cart-collaterals .wc-proceed-to-checkout .button {
   text-transform: uppercase;
 }
 html body .cart-collaterals .wc-proceed-to-checkout .button:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -1539,11 +1545,11 @@ html body table thead {
   box-sizing: border-box;
 }
 html body table thead a {
-  color: #000000;
+  color: #000;
 }
 html body table thead a:hover {
   background: transparent;
-  color: #000000;
+  color: #000;
 }
 html body table thead tr th:first-child {
   padding-left: 20px;
@@ -1569,7 +1575,7 @@ html body table tbody tr {
   -o-transition: 0.5s linear all;
 }
 html body table tbody tr td {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1586,7 +1592,7 @@ html body table tbody tr td.product-remove .remove {
   position: relative;
 }
 html body table tbody tr td.product-remove .remove:hover {
-  color: #ffffff;
+  color: #fff;
 }
 html body table tbody tr td.product-quantity label {
   display: none;
@@ -1594,7 +1600,7 @@ html body table tbody tr td.product-quantity label {
 html body table tbody tr td.product-quantity .quantity .bouton {
   height: 30px;
   width: 30px;
-  color: #ffffff;
+  color: #fff;
   background: #566d64;
   font-size: 22px;
   display: inline-block;
@@ -1613,7 +1619,7 @@ html body table tbody tr td.product-quantity .quantity .bouton {
   line-height: 1.2;
 }
 html body table tbody tr td.product-quantity .quantity .bouton:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   cursor: pointer;
 }
@@ -1683,7 +1689,7 @@ html body .drinks-choice p:first-child {
   cursor: pointer;
 }
 html body .drinks-choice .drinks-line {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -1731,7 +1737,7 @@ html body .drinks-choice .drinks-line div.quantity input {
 html body .drinks-choice .drinks-line div.quantity .bouton {
   height: 30px;
   width: 30px;
-  color: #ffffff;
+  color: #fff;
   background: #566d64;
   font-size: 22px;
   display: inline-block;
@@ -1750,7 +1756,7 @@ html body .drinks-choice .drinks-line div.quantity .bouton {
   line-height: 1.2;
 }
 html body .drinks-choice .drinks-line div.quantity .bouton:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   cursor: pointer;
 }
@@ -1770,7 +1776,7 @@ html body .drinks-choice .drinks-line .button {
   text-align: center;
   background: #566d64;
   padding: 5px 0;
-  color: #ffffff;
+  color: #fff;
   font-size: 22px;
   text-transform: uppercase;
   transition: 0.5s linear all;
@@ -1779,7 +1785,7 @@ html body .drinks-choice .drinks-line .button {
   -o-transition: 0.5s linear all;
 }
 html body .drinks-choice .drinks-line .button:hover {
-  background: #ffffff;
+  background: #fff;
   color: #566d64;
   opacity: 1;
 }
@@ -1821,7 +1827,7 @@ html body footer .menu-menu-footer-english-container ul {
 html body footer .menu-menu-footer-container ul li,
 html body footer .menu-menu-footer-english-container ul li {
   display: inline-block;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #000;
   padding: 0 10px;
   text-transform: uppercase;
 }
@@ -1849,11 +1855,11 @@ html body.single-product .product h1 {
   text-align: center;
 }
 html body.single-product .product h1 a {
-  color: #000000;
+  color: #000;
 }
 html body.single-product .product h1 a:hover {
   background: transparent;
-  color: #000000;
+  color: #000;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container,
@@ -1882,7 +1888,7 @@ html body.single-product .product h1 a:hover {
   }
   html body .products .product .cta-order .anti-rotate .button {
     font-size: 19px;
-    background: #ffffff;
+    background: #fff;
     color: #bda27e;
     padding: 15px 10px;
     top: 40px;
@@ -2054,7 +2060,7 @@ html body.single-product .product h1 a:hover {
   html body .products .product .cta-order .anti-rotate .button {
     font-size: 15px;
     color: #bda27e;
-    background: #ffffff;
+    background: #fff;
     padding: 15px 10px;
     margin-top: 20px;
     display: block;
@@ -2238,7 +2244,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000000;
+    background: #000;
     display: block;
     margin: 10px auto;
   }
@@ -2614,7 +2620,7 @@ html body.single-product .product h1 a:hover {
     margin-right: auto;
   }
   html body .woocommerce-cart-form__cart-item.cart_item {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000;
     width: 80%;
     margin: 0 auto;
     display: block;
@@ -2695,7 +2701,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000000;
+    background: #000;
     display: block;
     margin: 10px auto;
   }
@@ -2864,7 +2870,7 @@ html body.single-product .product h1 a:hover {
     content: "";
     width: 20px;
     height: 1px;
-    background: #000000;
+    background: #000;
     display: block;
     margin: 10px auto;
   }

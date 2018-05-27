@@ -150,6 +150,11 @@ html {
                 }
             }
         }
+        input, textarea, select, button{
+            &::placeholder{
+                color: #555;
+            }
+        }
         a {
             color: @black;
             .transition;
@@ -697,7 +702,7 @@ html {
                                 background: @white;
                                 left: -30px;
                                 border: 2px solid @vert;
-                                content: '\00d7';
+                                content: '';
                                 height: 16px;
                                 width: 16px;
                                 cursor: pointer;
@@ -712,7 +717,7 @@ html {
 
                             &.active {
                                 &:before {
-                                    content: "";
+                                    content: "\00d7";
                                     border: 2px solid @black;
                                 }
                             }
