@@ -28,8 +28,8 @@ class Variable
     public function __construct()
     {
         // Handle variations duplication
-        add_action('save_post', array($this, 'duplicateVariations'), 10, 3);
-        add_action('save_post', array($this, 'syncDefaultAttributes'), 10, 3);
+        add_action( 'save_post_product', array( $this, 'duplicateVariations' ), 10, 3 );
+        add_action( 'save_post_product', array( $this, 'syncDefaultAttributes' ), 10, 3 );
 
         // Remove variations
         add_action('wp_ajax_woocommerce_remove_variations', array($this, 'removeVariations'), 9);
@@ -105,6 +105,9 @@ class Variable
         $langs = pll_languages_list();
         foreach ($langs as $lang) {
             remove_action('save_post', array($this, __FUNCTION__), 10);
+            add_filter( 'woocommerce_hide_invisible_variations', function() {
+              return false;
+            } );
             $variation = new Variation(
                     $from,
                 Utilities::getProductTranslationByObject($product, $lang)
@@ -167,6 +170,12 @@ class Variable
                 }
 
                 foreach ($meta_value as $key => $value) {
+					//TODO JM: get_term_by is filtered by Polylang, so
+					//will not retrieve data if the term is not in the correct language
+					//so the rest of the check does not execute as expected
+					//(it is not possible to get the term without knowing the language,
+					// and not possible to get the translation without getting the term)
+					// the fix is the additional return false which prevents save of the incorrect version when Polylang attempts to synchronise it
                     $term = get_term_by('slug', $value, $key);
 
                     if ($term && pll_is_translated_taxonomy($term->taxonomy)) {
@@ -182,6 +191,8 @@ class Variable
                             return false;
                         }
                     }
+					// Attribute is in wrong language and must not be saved
+					return false;
                 }
             }
         }
@@ -227,6 +238,7 @@ class Variable
 
             if (!empty($attributes_translation) && isset($attributes_translation[$_GET['new_lang']])) {
                 update_post_meta($product->get_id(), '_default_attributes', $attributes_translation[$_GET['new_lang']]);
+				$product->set_default_attributes( $attributes_translation[ $_GET[ 'new_lang' ] ] );
             }
         } elseif ($product && 'variable' === $product->get_type()) {
             // Variable Product
@@ -340,7 +352,7 @@ class Variable
                     .'     defaultLang : "%s"'
                     .'};',
                 __('Wrong Language For Variable Product', 'woo-poly-integration'),
-                __("Variable product must be created in the default language first or things will get messy. <br> <a href='https://github.com/hyyan/woo-poly-integration/tree/master#what-you-need-to-know-about-this-plugin' target='_blank'>Read more , to know why</a>", 'woo-poly-integration'),
+                __("Variable product must be created in the default language first or things will get messy. <br> <a href='https://github.com/hyyan/woo-poly-integration/tree/master#what-you-need-to-know-about-this-plugin' target='_blank'>Read more, to know why</a>", 'woo-poly-integration'),
                 pll_default_language()
             );
 

@@ -71,6 +71,13 @@
 html {
   height: 100%;
 }
+html .page-evenements p {
+  background-color: #566d64;
+  margin: auto;
+  padding: 2em 20%;
+  text-align: left;
+  font-size: 20px;
+}
 html body {
   margin: 0 auto;
   display: block;
@@ -382,6 +389,10 @@ html body .products {
   margin: 0;
   padding: 0;
 }
+html body .products .outofstock {
+  pointer-events: none;
+  opacity: 0.6;
+}
 html body .products .product {
   margin: 0;
   padding: 0;
@@ -594,6 +605,7 @@ html body .products .product.post-240 .cta-order {
   display: none;
 }
 html body .page-wrapper {
+  text-align: center;
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
@@ -643,6 +655,16 @@ html body .page-wrapper .photos .presentation {
   width: 100%;
   margin: 0 auto;
 }
+html body .page-wrapper .titre-bas {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+}
 html body .page-wrapper .cadre-bas {
   background: #bda27e;
   width: 100%;
@@ -682,9 +704,37 @@ html body .page-wrapper .cadre-bas .container-1200 .texte-droite {
   color: #fff;
   font-size: 20px;
   line-height: 1.5;
+  text-align: left;
 }
 html body .page-wrapper .cadre-bas .container-1200 .texte-droite p {
   margin: 0;
+}
+html body .page-wrapper #logos_partenaires {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4em 10% 2em 10%;
+  background: #566d64;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -o-align-items: flex-start;
+  flex-wrap: wrap;
+}
+html body .page-wrapper #logos_partenaires .logo_partenaire {
+  width: 150px;
+  height: 80px;
+  margin: 20px 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 html body .page-wrapper .livraison {
   background: #566d64;
@@ -1660,7 +1710,7 @@ html body .drinks-choice {
   max-width: 1200px;
   max-height: 70px;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0 auto;
   display: block;
   margin-top: 20px;
@@ -2636,7 +2686,6 @@ html body.single-product .product h1 a:hover {
     font-size: 20px;
   }
   html body table tbody tr td {
-    display: block;
     border-bottom: none;
     margin: 0;
     padding-bottom: 10px;
@@ -2789,6 +2838,10 @@ html body.single-product .product h1 a:hover {
   html body .page-wrapper .livraison.photos img {
     width: 100%;
   }
+  html body .page-wrapper .texte-evenements {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   html body .page-wrapper #photo-livraison {
     height: 300px!important;
     background-position-y: 55%!important;
@@ -2800,7 +2853,6 @@ html body.single-product .product h1 a:hover {
     font-size: 20px;
   }
   html body .page-wrapper table tbody tr td {
-    display: block;
     border-bottom: none;
     margin: 0;
     padding-bottom: 10px;

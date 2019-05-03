@@ -1,0 +1,4 @@
+2019-05-02T15:18:24+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/footer.php on line 85
+
+2019-05-02T15:20:32+00:00 CRITICAL syntax error, unexpected ':' in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/footer.php on line 7
+

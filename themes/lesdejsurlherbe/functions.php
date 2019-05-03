@@ -1,4 +1,4 @@
-<?php 
+<?php
 //Ensure the $wp_rewrite global is loaded
 global $wp_rewrite;
 //Call flush_rules() as a method of the $wp_rewrite object
@@ -16,13 +16,13 @@ function get_asset( $asset, $display = true, $uncache = false ) {
 		} else {
 			$asset .= "?burst=".rand(100000,999999);
 		}
-		
+
 	}
 
 	if ( $display ) echo $asset;
 
 	return $asset;
-	
+
 }
 
 //Page Slug Body Class
@@ -56,17 +56,18 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 add_theme_support( 'post-thumbnails' );
 
-function register_my_menu(){
-	register_nav_menu( 'primary', 'Primary Menu' );
-	register_nav_menu( 'secondary', 'Secondary Menu' );
-}
-
-add_action( 'init', 'register_my_menu' );
+// function register_my_menu(){
+// 	register_nav_menu( 'menu-principal', 'Menu Principal');
+// 	register_nav_menu( 'secondary', 'Secondary Menu' );
+// }
+//
+// add_action( 'init', 'register_my_menu' );
 
 // register menus
 register_nav_menus( array(
-	'menu_principal' => 'Menu principal',
-	'menu_footer' => 'Menu footer'
+	'menu-principal' => 'Menu principal',
+	'panier' => 'Panier',
+	'menu-footer' => 'Menu footer'
 ) );
 
 
@@ -124,7 +125,7 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 )
 
 // Remove sidebar
 function remove_sidebar_in_wcmp_vendor_shop()
-{ 
+{
     remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 }
 add_action( 'template_redirect', 'remove_sidebar_in_wcmp_vendor_shop', 999 );
@@ -194,14 +195,14 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     remove_action( 'woocommerce_shop_loop', 'woocommerce_template_loop', 10);
     remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
     remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
-    
+
     // add the product thumbnail and title back in with custom structure
     add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 10 );
     function sls_woocommerce_template_loop_product_thumbnail() {
        echo '<div class="product-image" style="background:url('.get_the_post_thumbnail_url().')"></div>';
        echo '<h3>'.get_the_title().'</a></h3>';
-    } 
-    
+    }
+
 }
 // add_drinks_products_to_cart
 add_action('woocommerce_after_cart_table', 'add_drinks_products_to_cart', 20);
@@ -222,7 +223,7 @@ function add_drinks_products_to_cart() {
 	foreach ($allcategories as $cat) {
 		$cat_id = $cat->term_id;
 		$cat_slug = $cat->slug;
-		if($cat->category_parent == 0) {  
+		if($cat->category_parent == 0) {
 			$args2 = array(
                 'child_of' => 0,
         		'taxonomy' => $taxonomy,
@@ -245,7 +246,7 @@ function add_drinks_products_to_cart() {
 						echo '<div class="product-title">'.$indiv_product->get_title().'</div>';
 						echo '<div class="product-price">'.$indiv_product->get_price().'€</div>';
 						//woocommerce_quantity_input();
-						
+
 						echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 							sprintf( '<a href="%s" data-quantity="%s" class="%s" %s>%s</a></div>',
 							esc_url( $indiv_product->add_to_cart_url() ),
@@ -256,11 +257,11 @@ function add_drinks_products_to_cart() {
 						),
 					$indiv_product, $args );
 					}
-	            }   
-	        }    
+	            }
+	        }
 		}
 	}
-	
+
     echo '</div>';
 }
 
@@ -273,14 +274,14 @@ function back_to_shop_button(){
 		echo '<p class="return-to-shop"><a class="button backward" href="' . $site_url .'">Return to shop</a></p>';
 	}
 }
- 
+
 /**
  * This function adds the WooCommerce cart icons/items to the top_nav menu area as the last item.
  */
 add_filter( 'wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 2 );
 function my_wp_nav_menu_items( $items, $args, $ajax = false ) {
 	// Top Navigation Area Only
-	if ( ( isset( $ajax ) && $ajax ) || ( property_exists( $args, 'theme_location' ) && $args->theme_location === 'menu_principal' ) ) {
+	if ( ( isset( $ajax ) && $ajax ) || ( property_exists( $args, 'theme_location' ) && $args->theme_location === 'panier' ) ) {
 		// WooCommerce
 		if ( class_exists( 'woocommerce' ) ) {
 			$css_class = 'menu-item menu-item-type-cart menu-item-type-woocommerce-cart';
@@ -333,7 +334,7 @@ function custom_pre_get_posts_query( $q ) {
     $q->set( 'tax_query', $tax_query );
 
 }
-add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );  
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 
 
 // // Hook in

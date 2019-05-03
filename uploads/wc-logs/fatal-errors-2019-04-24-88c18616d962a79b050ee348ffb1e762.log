@@ -1,0 +1,16 @@
+2019-04-24T13:54:57+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/page.php on line 11
+
+2019-04-24T13:55:50+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/page.php on line 10
+
+2019-04-24T13:56:10+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/page.php on line 8
+
+2019-04-24T16:36:30+00:00 CRITICAL Uncaught Error: Call to undefined function pll_current_language() in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php:32
+Stack trace:
+#0 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/class-wp-hook.php(288): add_slug_body_class(Array)
+#1 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/plugin.php(208): WP_Hook->apply_filters(Array, Array)
+#2 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/post-template.php(815): apply_filters('body_class', Array, Array)
+#3 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/post-template.php(578): get_body_class(Array)
+#4 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/header.php(19): body_class()
+#5 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(704): require_once('/Users/juliento...')
+#6 /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-includes/template.php(653): load_template in /Users/julientora/Google Drive/htdocs/lesdejsurlherbe/wp-content/themes/lesdejsurlherbe/functions.php on line 32
+

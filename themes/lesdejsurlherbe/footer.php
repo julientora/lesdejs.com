@@ -4,7 +4,9 @@
 
 <footer>
 <?php
-
+if(!is_page( 'partenaires' )):
+	echo '<h4>Commandez après 12h, c’est livré entre 11h et 15h.</h4>';
+endif;
 $the_query = new WP_Query( array( 'pagename' => 'footer' ) );
 
 if ( $the_query->have_posts() ) {
@@ -15,21 +17,21 @@ if ( $the_query->have_posts() ) {
 	wp_reset_postdata();
 } else {
 }
-wp_nav_menu( array( 'theme_location' => 'menu_footer' ) ); 
+wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
 
 ?>
 
 </footer>
 
-<script>	
+<script>
 (function ($){
-	$(window).ready(function(){	
+	$(window).ready(function(){
         $('.burger-menu').click(function() {
             $('.responsive-menu').addClass('active');
-        }); 
+        });
         $('#close').click(function() {
             $('.responsive-menu').removeClass('active');
-        }); 
+        });
 
         $(".page-wrapper").on('click', '.h3', function(){
         	$(".drinks-choice").toggleClass('open');
@@ -65,10 +67,10 @@ wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
 			}
         	$('.burger-menu').click(function() {
                 $('.responsive-menu').addClass('active');
-            }); 
+            });
         	$('#close').click(function() {
             	$('.responsive-menu').removeClass('active');
-        	}); 
+        	});
 		});
 
 		$(document).on("click",".bouton", function (e) {
@@ -77,7 +79,7 @@ wp_nav_menu( array( 'theme_location' => 'menu_footer' ) );
 	});
 });
 
-}(jQuery));	    	
+}(jQuery));
 </script>
 </body>
 </html>

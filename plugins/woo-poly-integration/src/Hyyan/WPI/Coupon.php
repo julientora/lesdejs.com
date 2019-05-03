@@ -138,9 +138,13 @@ class Coupon
     public function adminRegisterCouponStrings()
     {
         if (is_admin() && (!is_ajax())) {
-            $this->registerCouponStringsForTranslation();
+        global $pagenow;
+            if ( ($pagenow) && ( $pagenow == 'admin.php' ) && ($_GET[ 'page' ] == 'mlang_strings') ) {
+                  $this->registerCouponStringsForTranslation();
+            }
         }
-    }
+	  }
+
     /**
      * Register coupon titles adn descriptions in Polylang's Strings translations table.
      */
@@ -165,21 +169,21 @@ class Coupon
                     $coupon_code = $coupon->get_code();
                     $coupon_slug = sanitize_title_with_dashes($coupon_code);
                     pll_register_string($coupon_slug, $coupon_code,
-                        __('Woocommerce Coupon Names', 'woo-poly-integration'));
+                        __('WooCommerce Coupon Names', 'woo-poly-integration'));
                     pll_register_string($coupon_slug . '_description', $coupon->get_description(),
-                        __('Woocommerce Coupon Names', 'woo-poly-integration'), true);
+                        __('WooCommerce Coupon Names', 'woo-poly-integration'), true);
 
                     if (self::$enable_wjecf) {
                         
                         $coupon_message = $coupon->get_meta('_wjecf_enqueue_message', true);
                         if ($coupon_message) {
                             pll_register_string($coupon_slug . '_message', $coupon_message,
-                            __('Woocommerce Coupon Names', 'woo-poly-integration'), true);
+                            __('WooCommerce Coupon Names', 'woo-poly-integration'), true);
                         }
                         $freeproduct_message = $coupon->get_meta('_wjecf_select_free_product_message', true);
                         if ($freeproduct_message) {
                             pll_register_string($coupon_slug . '_freeproductmessage', $coupon_message,
-                            __('Woocommerce Coupon Names', 'woo-poly-integration'), true);
+                            __('WooCommerce Coupon Names', 'woo-poly-integration'), true);
                         }
                     }
                 }
@@ -198,8 +202,7 @@ class Coupon
     {
         global $woocommerce;
         
-        $locale = (function_exists('pll_current_language')) ? pll_current_language('locale') : get_locale();
-        $tKey = 'coupons-' . $locale;
+        $tKey	 = 'coupons-ids';
         
         $coupon_ids = get_transient($tKey);
         if ($coupon_ids) {
