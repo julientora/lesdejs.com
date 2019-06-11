@@ -151,77 +151,29 @@ html body .bouton-ingredients {
 html body header {
   width: 100%;
 }
-html body header .menu-menu-principal-container,
-html body header .menu-english-menu-container {
-  width: 100%;
-  display: block;
+html body header .menu-item-type-cart {
   position: fixed;
-  top: 0;
-  background: #bda27e;
-  z-index: 20;
-  max-width: 1800px;
+  right: 10px;
+  list-style: none;
+  z-index: 100;
 }
-html body header .menu-menu-principal-container ul,
-html body header .menu-english-menu-container ul {
-  padding-left: 0;
-  margin: 5px auto;
-  text-align: center;
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -o-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -o-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -o-align-items: center;
-}
-html body header .menu-menu-principal-container ul li,
-html body header .menu-english-menu-container ul li {
-  display: inline-block;
-  text-transform: uppercase;
-  border-right: 1px solid #000;
-  padding: 0 20px;
-}
-html body header .menu-menu-principal-container ul li:last-child,
-html body header .menu-english-menu-container ul li:last-child {
-  border: 0;
-  padding-right: 0;
-}
-html body header .menu-menu-principal-container ul li a,
-html body header .menu-english-menu-container ul li a {
-  color: #000;
-}
-html body header .menu-menu-principal-container ul li a:hover,
-html body header .menu-english-menu-container ul li a:hover {
-  background: none;
-}
-html body header .menu-menu-principal-container ul li.menu-item-type-cart a,
-html body header .menu-english-menu-container ul li.menu-item-type-cart a {
+html body header .menu-item-type-cart a {
   background: #566d64;
   padding: 10px;
   color: #fff;
   display: block;
 }
-html body header .menu-menu-principal-container ul li.menu-item-type-cart a:hover,
-html body header .menu-english-menu-container ul li.menu-item-type-cart a:hover {
+html body header .menu-item-type-cart a:hover {
   background: #fff;
   color: #566d64;
   opacity: 1;
 }
-html body header .menu-menu-principal-container ul li.menu-item-type-cart a span,
-html body header .menu-english-menu-container ul li.menu-item-type-cart a span {
+html body header .menu-item-type-cart a span {
   display: block;
   font-size: 10px;
   text-transform: capitalize;
 }
 html body header .burger-menu {
-  display: none;
   position: fixed;
   top: 20px;
   left: 20px;
@@ -318,6 +270,10 @@ html body header .responsive-menu .menu-english-menu-container ul li.menu-item-t
   -webkit-align-items: center;
   -moz-align-items: center;
   -o-align-items: center;
+}
+html body header .responsive-menu .menu-menu-principal-container ul li a,
+html body header .responsive-menu .menu-english-menu-container ul li a {
+  text-transform: uppercase;
 }
 html body header .responsive-menu #close {
   background: none;

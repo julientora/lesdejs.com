@@ -4,14 +4,13 @@
 
 <footer>
 <?php
-if(!is_page( 'partenaires' )):
-	echo '<h4>Commandez après 12h, c’est livré entre 11h et 15h.</h4>';
-endif;
 $the_query = new WP_Query( array( 'pagename' => 'footer' ) );
-
 if ( $the_query->have_posts() ) {
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
+		if(!is_page( 'evenements' )):
+			echo '<h4>' . get_field('accroche_footer') . '</h4>';
+		endif;
 		the_content();
 	}
 	wp_reset_postdata();
